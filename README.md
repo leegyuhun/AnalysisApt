@@ -13,6 +13,8 @@ data/articles/{no}.json     단지별 매물 스냅샷 (scrape.mjs가 생성)
 assets/base.css             공통 팔레트·타이포
 assets/articles.css|js      매물 렌더러 (모든 단지 페이지 공용)
 scripts/scrape.mjs          네이버 부동산 수집기
+update-prices.bat           매물 갱신 — 더블클릭용 런처
+scripts/update-prices.ps1   갱신 본체 (수집 → 커밋 → 푸시)
 ```
 
 ## 열어보기
@@ -27,12 +29,34 @@ npm run serve        # 로컬 정적 서버 (http://localhost:3000)
 
 ## 매물 시세 갱신
 
+**`update-prices.bat` 더블클릭.** 수집부터 커밋·푸시까지 한 번에 끝난다.
+푸시하고 20초쯤 지나면 사이트에 반영된다.
+
+- 매물이 하나도 안 바뀌었으면 커밋하지 않는다. 매일 돌려도 히스토리가 안 쌓인다.
+- 지난번 푸시가 실패해 남은 커밋이 있으면 이번에 마저 올린다.
+- 어느 단계에서 실패하든 원인과 대처를 알려주고 멈춘다.
+
+```
+update-prices.bat -NoPush     커밋까지만 하고 푸시는 생략
+update-prices.bat -NoPause    끝나고 창을 바로 닫음 (예약 실행용)
+```
+
+손으로 돌리려면:
+
 ```bash
 npm run scrape                      # apartments.json의 모든 단지 수집
 npm run scrape -- --complex 3098    # 특정 단지만
+git add data/articles
+git commit -m "매물 시세 갱신"
+git push
 ```
 
 수집이 끝나면 `data/articles/*.json`이 갱신된다. **커밋해야 Pages에 반영된다.**
+
+> 배치파일은 ASCII로만 써야 한다. cmd.exe가 UTF-8 배치파일의 한글을 파싱하지 못해
+> 인자 처리까지 깨진다. 그래서 로직은 전부 `scripts/update-prices.ps1`에 있고,
+> 이 파일은 Windows PowerShell 5.1이 한글을 제대로 읽도록 **UTF-8 BOM**으로 저장돼 있다.
+> 편집할 때 BOM을 날리지 말 것.
 
 > **회사망 등 SSL 인스펙션 환경**에서는 Node가 인증서 검증에 실패한다.
 > npm 스크립트에 `--use-system-ca`가 이미 들어가 있어 그대로 쓰면 된다.

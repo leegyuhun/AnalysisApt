@@ -1,0 +1,12 @@
+{
+  "name": "analysis-apt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "이사 후보 아파트 분석 정적 사이트 + 네이버 부동산 매물 스냅샷 수집기",
+  "scripts": {
+    "scrape": "node --use-system-ca scripts/scrape.mjs",
+    "search": "node --use-system-ca scripts/scrape.mjs --search",
+    "serve": "npx --yes serve ."
+  }
+}

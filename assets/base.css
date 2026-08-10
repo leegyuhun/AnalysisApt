@@ -1,0 +1,34 @@
+/* 이사 후보 아파트 분석 — 공통 팔레트/타이포
+   sk-map.html의 톤(화강암·산안개·소나무)을 그대로 계승한다. */
+
+:root{
+  --granite:#20262b;      /* 화강암 능선 */
+  --slate:#4a5560;
+  --mist:#e8ebe6;         /* 산안개 */
+  --paper:#f6f5f1;
+  --pine:#2f5d4f;         /* 소나무 */
+  --clay:#a8563c;         /* 등산로 흙 */
+  --gold:#c08a2e;
+  --line:#cdd2c9;
+  --dim:#8b948d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--granite);
+  font-family:'IBM Plex Sans KR',sans-serif;font-weight:400;line-height:1.75;
+  font-size:15.5px;letter-spacing:-0.01em;
+}
+a{color:inherit}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;
+  background:var(--mist);padding:1px 5px;color:var(--granite)}
+
+/* ── 상단 복귀 바 (각 아파트 페이지가 공유) ── */
+.topbar{background:var(--granite);color:var(--mist)}
+.topbar .inner{max-width:940px;margin:0 auto;padding:0 22px;display:flex;align-items:center;gap:14px;height:42px}
+.topbar a{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:500;
+  color:#b9c2bd;text-decoration:none;letter-spacing:.02em;transition:color .15s}
+.topbar a:hover{color:#fff}
+.topbar a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.topbar .sep{color:#4d565a;font-size:12px}
+.topbar .cur{font-size:12.5px;color:#7d8781;letter-spacing:.02em}

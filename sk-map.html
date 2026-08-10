@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SK북한산시티 · 배치도와 입주민 이야기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" href="assets/articles.css">
+<style>
+
+:root{
+  --granite:#20262b;      /* 화강암 능선 */
+  --slate:#4a5560;
+  --mist:#e8ebe6;         /* 산안개 */
+  --paper:#f6f5f1;
+  --pine:#2f5d4f;         /* 북한산 소나무 */
+  --clay:#a8563c;         /* 등산로 흙 */
+  --gold:#c08a2e;
+  --line:#cdd2c9;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--granite);
+  font-family:'IBM Plex Sans KR',sans-serif;font-weight:400;line-height:1.75;
+  font-size:15.5px;letter-spacing:-0.01em;
+}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px 100px}
+
+/* ── 등고선 히어로 ── */
+header{position:relative;overflow:hidden;background:var(--granite);color:var(--mist);padding:70px 0 56px;margin-bottom:52px}
+header svg{position:absolute;inset:0;width:100%;height:100%;opacity:.28}
+header .inner{position:relative;max-width:940px;margin:0 auto;padding:0 22px}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:500}
+h1{font-family:'Gowun Batang',serif;font-weight:700;font-size:clamp(30px,5.4vw,50px);line-height:1.2;margin:0 0 18px}
+h1 em{font-style:normal;color:var(--gold)}
+.sub{max-width:600px;color:#b9c2bd;font-size:14.5px;margin:0}
+.counts{display:flex;flex-wrap:wrap;gap:26px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15)}
+.counts div{min-width:88px}
+.counts b{display:block;font-family:'Gowun Batang',serif;font-size:27px;line-height:1.1;color:#fff}
+.counts span{font-size:11.5px;color:#94a09a;letter-spacing:.04em}
+
+/* ── 섹션 ── */
+section{margin:0 0 60px;scroll-margin-top:20px}
+h2{font-family:'Gowun Batang',serif;font-size:25px;margin:0 0 6px;font-weight:700;
+   display:flex;align-items:baseline;gap:12px}
+h2 .alt{font-family:'IBM Plex Sans KR';font-size:11.5px;font-weight:500;color:var(--slate);
+   letter-spacing:.14em;text-transform:uppercase}
+.lede{color:var(--slate);font-size:14px;margin:0 0 24px;padding-bottom:18px;border-bottom:2px solid var(--granite)}
+
+h3{font-size:16px;margin:32px 0 12px;font-weight:600;display:flex;align-items:center;gap:9px}
+h3::before{content:"";width:7px;height:7px;background:var(--clay);flex:none}
+
+/* ── 언급 빈도 바 ── */
+.bars{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:11px 26px;margin:8px 0 4px}
+.bar{display:grid;grid-template-columns:74px 1fr 44px;align-items:center;gap:10px;font-size:13px}
+.bar .t{color:var(--slate)}
+.bar .track{height:7px;background:var(--mist);position:relative}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--pine)}
+.bar .n{text-align:right;font-variant-numeric:tabular-nums;font-size:12px;color:var(--slate)}
+
+/* ── 평가 카드 ── */
+.point{border-left:3px solid var(--line);padding:2px 0 2px 18px;margin:0 0 22px}
+.point.plus{border-left-color:var(--pine)}
+.point.minus{border-left-color:var(--clay)}
+.point.split{border-left-color:var(--gold)}
+.point h4{margin:0 0 6px;font-size:15px;font-weight:600}
+.point p{margin:0 0 8px;font-size:14.5px}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.1em;padding:2px 7px;margin-left:8px;
+     vertical-align:2px;background:var(--mist);color:var(--slate);font-weight:500}
+.tag.pine{background:#dfe9e2;color:var(--pine)}
+.tag.clay{background:#f0e0d9;color:var(--clay)}
+.tag.gold{background:#f2e8d2;color:#8a6318}
+
+blockquote{margin:8px 0 0;padding:10px 0 10px 15px;border-left:2px solid var(--mist);
+  font-family:'Gowun Batang',serif;font-size:14px;color:#3b444b}
+blockquote p{margin:0 0 6px}
+blockquote p:last-child{margin:0}
+blockquote .who{display:block;font-family:'IBM Plex Sans KR';font-size:11px;color:#8b948d;margin-top:5px;letter-spacing:.03em}
+
+/* ── 동 배지 ── */
+.dongs{display:flex;flex-wrap:wrap;gap:20px;margin:14px 0 6px}
+.dongs > div{flex:1 1 180px}
+.dongs h5{margin:0 0 8px;font-size:12px;letter-spacing:.1em;color:var(--slate);font-weight:600}
+.chip{display:inline-block;font-family:'Gowun Batang',serif;font-size:15px;font-weight:700;
+  padding:5px 11px;margin:0 6px 6px 0;background:var(--granite);color:#fff}
+
+/* ── 표 ── */
+table{width:100%;border-collapse:collapse;margin:12px 0 4px;font-size:14px}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11.5px;letter-spacing:.1em;color:var(--slate);text-transform:uppercase;font-weight:600;
+   border-bottom:1.5px solid var(--granite)}
+td:first-child{white-space:nowrap;font-weight:500;padding-right:20px}
+
+.note{background:var(--mist);padding:16px 18px;font-size:13.5px;color:var(--slate);margin:24px 0 0;border-left:3px solid var(--slate)}
+footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:#8b948d}
+
+@media (max-width:600px){
+  .bar{grid-template-columns:66px 1fr 38px}
+  .counts{gap:18px}
+}
+@media (prefers-reduced-motion:no-preference){
+  section{animation:rise .5s ease both;animation-timeline:view();animation-range:entry 0% entry 32%}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+
+
+/* ══ 탭 ══ */
+header{margin-bottom:0}
+.tabs{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);
+  box-shadow:0 1px 0 rgba(32,38,43,.04)}
+.tabs .inner{max-width:940px;margin:0 auto;padding:0 22px;display:flex}
+.tabs button{background:none;border:none;border-bottom:2px solid transparent;padding:16px 2px 13px;
+  margin-right:30px;font-family:'IBM Plex Sans KR',sans-serif;font-size:14px;font-weight:600;
+  color:#8b948d;cursor:pointer;letter-spacing:-.01em;transition:color .15s}
+.tabs button:hover{color:var(--granite)}
+.tabs button[aria-selected="true"]{color:var(--granite);border-bottom-color:var(--clay)}
+.tabs button:focus-visible{outline:2px solid var(--granite);outline-offset:-3px}
+.tabs button .c{font-size:11px;color:#a2aba4;font-weight:500;margin-left:6px}
+.wrap{padding-top:44px}
+.panel[hidden]{display:none}
+
+/* ══ 배치도 ══ */
+.legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}
+.lg{border:1px solid var(--line);background:#fff;padding:7px 13px 7px 10px;
+  display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:13px;font-weight:500;color:var(--granite);cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.lg:hover{border-color:var(--slate)}
+.lg:focus-visible{outline:2px solid var(--granite);outline-offset:2px}
+.lg[aria-pressed="true"]{border-color:var(--granite);box-shadow:inset 0 0 0 1px var(--granite)}
+.lg .dot{width:13px;height:13px;flex:none}
+.lg .ring{width:15px;height:15px;flex:none;border-radius:50%;background:#fff;
+  box-shadow:0 0 0 2px var(--granite), inset 0 0 0 2px #fff, 0 0 0 3.5px #fff}
+.lg .n{font-size:11.5px;color:#8b948d;font-variant-numeric:tabular-nums}
+
+.mapbox{background:#fbfaf7;border:1px solid var(--line);padding:8px;overflow:hidden}
+.mapbox svg{display:block;width:100%;height:auto;touch-action:manipulation}
+.lm{font-size:11px;fill:#a6afa7;font-weight:500;font-family:'IBM Plex Sans KR',sans-serif}
+.pill{cursor:pointer;transition:opacity .2s}
+.pill.dim{opacity:.16}
+.pill text{font-family:'IBM Plex Sans KR',sans-serif;font-size:11.5px;font-weight:600;
+  text-anchor:middle;dominant-baseline:central;pointer-events:none;fill:#fff}
+.pill:focus{outline:none}
+.pill:focus-visible rect.fr{stroke:#20262b;stroke-width:3}
+rect.fr{fill:none;stroke:rgba(32,38,43,.28);stroke-width:1}
+
+.readout{margin:14px 0 0;padding:14px 16px;background:#fff;border:1px solid var(--line);min-height:52px}
+.readout .hd{font-family:'Gowun Batang',serif;font-size:17px;font-weight:700;color:var(--granite)}
+.readout .sub{display:block;font-size:13px;color:var(--slate);margin-top:4px}
+.readout .ev{display:inline-block;margin-top:7px;font-size:11.5px;letter-spacing:.08em;
+  padding:3px 9px;background:var(--granite);color:#fff;font-weight:500}
+
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.ok{text-align:center;color:var(--pine);font-weight:700}
+.sw{display:inline-block;width:10px;height:10px;margin-right:8px}
+.dlist{font-size:13px;line-height:1.9;color:var(--slate);font-variant-numeric:tabular-nums}
+@media (max-width:600px){
+  .tabs button{margin-right:20px;font-size:13px}
+  .wrap{padding-top:32px}
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="inner">
+    <a href="index.html">← 후보 단지 목록</a>
+    <span class="sep">/</span>
+    <span class="cur">SK북한산시티</span>
+  </div>
+</nav>
+
+<header>
+  <svg viewBox="0 0 1200 320" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="none" stroke="#8fa79a" stroke-width="1">
+      <path d="M0 300 Q200 250 380 268 T760 232 T1200 258"/>
+      <path d="M0 272 Q210 214 400 236 T780 192 T1200 224"/>
+      <path d="M0 244 Q220 178 420 204 T800 152 T1200 190"/>
+      <path d="M0 216 Q230 142 440 172 T820 112 T1200 156"/>
+      <path d="M0 188 Q240 106 460 140 T840 72 T1200 122"/>
+      <path d="M0 160 Q250 70 480 108 T860 32 T1200 88"/>
+      <path d="M0 132 Q260 34 500 76 T880 -8 T1200 54"/>
+    </g>
+  </svg>
+  <div class="inner">
+    <p class="eyebrow">강북구 미아동 1353 · 솔샘로 174 · 2004.05 준공</p>
+    <h1>SK북한산시티<br><em>배치도</em>와 <em>입주민 이야기</em></h1>
+    <p class="sub">건축물대장 전유부 5,482건으로 확정한 동별 전용면적, 그리고 호갱노노 이야기 3,220건 전수 분석. 한 페이지에서 탭으로 오갑니다.</p>
+    <div class="counts">
+      <div><b>5,327</b><span>총 세대수</span></div>
+      <div><b>54</b><span>개 동</span></div>
+      <div><b>9</b><span>지하 직결 동</span></div>
+      <div><b>3,220</b><span>수집한 이야기</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <div class="inner">
+    <button type="button" data-p="panel-map" aria-selected="true">동별 배치도<span class="c">54개 동</span></button>
+    <button type="button" data-p="panel-rev" aria-selected="false">입주민 이야기<span class="c">3,220건</span></button>
+    <button type="button" data-p="panel-price" aria-selected="false">매물 시세<span class="c" id="tab-price-c"></span></button>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="panel" id="panel-map">
+
+<section>
+  <h2>동별 전용면적 <span class="alt">Floor plan</span></h2>
+  <p class="lede">54개 동 전체. 세대수·층수·라인수는 건축물대장 전유부 실측이고, 평형은 분양 세대수와 교차검증해 오차 0으로 확정했습니다. 지하주차장 엘리베이터 직결 9개 동은 테두리로 표시했습니다.</p>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="mapbox">
+    <svg id="map" viewBox="0 0 778 680" role="img" aria-label="SK북한산시티 동별 전용면적 배치도">
+      <defs><clipPath id="clip147"><rect x="406" y="113" width="36" height="22"/></clipPath></defs>
+      <g id="landmarks"></g><g id="pills"></g>
+    </svg>
+  </div>
+
+  <div class="readout" id="readout">동을 탭하면 세대수 · 층수 · 라인수 · 지하 연결 여부가 나옵니다.</div>
+
+  <h3>지하주차장 엘리베이터 직결</h3>
+  <p style="margin:0 0 6px;font-size:14.5px">54개 동 중 <b>9개 동</b>뿐입니다. 나머지 45개 동은 지하에 대고 지상으로 걸어 나와야 합니다. 경사지 단지라 이 차이가 체감이 큽니다.</p>
+  <div class="dongs">
+    <div><h5>20평대</h5><span class="chip">120</span><span class="chip">128</span><span class="chip">130</span><span class="chip">147</span></div>
+    <div><h5>30평대</h5><span class="chip">123</span><span class="chip">147</span></div>
+    <div><h5>40평대</h5><span class="chip">106</span><span class="chip">107</span><span class="chip">110</span><span class="chip">111</span></div>
+  </div>
+  <div class="note" style="margin-top:18px">
+    <b>147동이 20평대와 30평대 양쪽에 다 올라온 게 의미심장합니다.</b> 앞서 세대수 산술로만 도출했던
+    &ldquo;147동은 24평 50세대 + 33평 86세대 혼합&rdquo;이라는 결론이, 완전히 다른 출처인 승강기 정보로도
+    똑같이 확인된 셈입니다. 단지 전체에서 유일한 혼합 동이 맞습니다.
+  </div>
+
+  <h3>평형별 검산</h3>
+  <table>
+    <thead><tr><th>평형</th><th>전용 / 공급</th><th class="num">세대수</th><th class="num">분양기준</th><th style="text-align:center">일치</th></tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <h3>평형별 동 목록</h3>
+  <table>
+    <thead><tr><th>평형</th><th>동</th><th class="num">동 수</th></tr></thead>
+    <tbody id="dbody"></tbody>
+  </table>
+
+  <h3>눈에 띄는 배치 패턴</h3>
+  <div class="point plus">
+    <h4>2라인 계단식 동 11개 중 10개가 43평<span class="tag pine">대형 클러스터</span></h4>
+    <p>102·103·104·105·106·107·110·111·112·113이 단지 북서~중앙에 몰려 있습니다. 예외는 117동 하나뿐(38세대·19층·2라인인데 33평).</p>
+  </div>
+  <div class="point split">
+    <h4>43평 나머지 5개 동은 서편 외곽 축<span class="tag gold">136·140·141·144·146</span></h4>
+    <p>단지 서쪽 경계를 따라 줄지어 있습니다. 조용한 대신 정문·역과는 거리가 있습니다.</p>
+  </div>
+  <div class="point minus">
+    <h4>24평은 동편에 한 덩어리<span class="tag clay">120~134</span></h4>
+    <p>120·121·122·127·128·130·132·133·134가 붙어 있고, 서쪽 예외는 137·142·143입니다.</p>
+  </div>
+
+  <div class="note">
+    <b>지하 직결 동을 평형별로 보면</b> 24평 4개(120·128·130·147), 33평 2개(123·147), 43평 4개(106·107·110·111)입니다.
+    43평 직결 4개 동이 전부 2라인 계단식 클러스터 안에 있다는 점은 매수 검토 시 참고할 만합니다.
+  </div>
+
+  <footer>
+    세대수·층수·라인수: 국토교통부 건축물대장 전유부(2026-08-04 추출, 미아동 1353·1353-1 전유부 5,482건 직접 집계).
+    동별 평형: 기입값을 분양 세대수로 교차검증, 147동 내부 배분은 산술적으로 유일 결정.
+    지하주차장 엘리베이터 직결 동: 사용자 제공.
+    배치 좌표는 제공된 지도 캡처 기준이며 116동은 원본에서 라벨에 가려져 위치가 근사치입니다.
+  </footer>
+</section>
+
+  </div>
+  <div class="panel" id="panel-rev" hidden>
+
+
+<section>
+  <h2>무엇이 가장 많이 언급되나 <span class="alt">Frequency</span></h2>
+  <p class="lede">전체 3,220건에서 키워드가 등장한 글 수. 이 단지 게시판의 관심사가 어디에 쏠려 있는지 보여줍니다.</p>
+  <div class="bars">
+    <div class="bar"><span class="t">교통</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">589</span></div>
+    <div class="bar"><span class="t">학군</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">469</span></div>
+    <div class="bar"><span class="t">언덕·경사</span><span class="track"><span class="fill" style="width:79%"></span></span><span class="n">467</span></div>
+    <div class="bar"><span class="t">주차</span><span class="track"><span class="fill" style="width:37%"></span></span><span class="n">217</span></div>
+    <div class="bar"><span class="t">상가·마트</span><span class="track"><span class="fill" style="width:37%"></span></span><span class="n">217</span></div>
+    <div class="bar"><span class="t">인테리어</span><span class="track"><span class="fill" style="width:24%"></span></span><span class="n">144</span></div>
+    <div class="bar"><span class="t">조망·채광</span><span class="track"><span class="fill" style="width:12%"></span></span><span class="n">72</span></div>
+    <div class="bar"><span class="t">소음</span><span class="track"><span class="fill" style="width:12%"></span></span><span class="n">71</span></div>
+    <div class="bar"><span class="t">엘리베이터</span><span class="track"><span class="fill" style="width:12%"></span></span><span class="n">70</span></div>
+    <div class="bar"><span class="t">커뮤니티</span><span class="track"><span class="fill" style="width:12%"></span></span><span class="n">69</span></div>
+    <div class="bar"><span class="t">관리비</span><span class="track"><span class="fill" style="width:9%"></span></span><span class="n">51</span></div>
+    <div class="bar"><span class="t">주방</span><span class="track"><span class="fill" style="width:5%"></span></span><span class="n">32</span></div>
+    <div class="bar"><span class="t">난방·보일러</span><span class="track"><span class="fill" style="width:5%"></span></span><span class="n">28</span></div>
+    <div class="bar"><span class="t">누수·결로</span><span class="track"><span class="fill" style="width:4%"></span></span><span class="n">26</span></div>
+    <div class="bar"><span class="t">화장실</span><span class="track"><span class="fill" style="width:4%"></span></span><span class="n">26</span></div>
+    <div class="bar"><span class="t">배달·택배</span><span class="track"><span class="fill" style="width:4%"></span></span><span class="n">22</span></div>
+    <div class="bar"><span class="t">벌레</span><span class="track"><span class="fill" style="width:1.5%"></span></span><span class="n">8</span></div>
+    <div class="bar"><span class="t">수압</span><span class="track"><span class="fill" style="width:1%"></span></span><span class="n">4</span></div>
+  </div>
+  <p class="note">벌레(8건)와 수압(4건)이 바닥권이라는 건 의미가 있습니다. 구축에서 흔히 터지는 불만인데 여기선 거의 안 나옵니다. 반대로 <b>언덕은 467건</b> — 이 단지의 정체성이자 논쟁의 핵입니다.</p>
+</section>
+
+<section>
+  <h2>장점 <span class="alt">What residents like</span></h2>
+  <p class="lede">여러 글에서 반복적으로 겹치는 것만 추렸습니다.</p>
+
+  <div class="point plus">
+    <h4>초역세권 — 솔샘역이 사실상 단지 전용역<span class="tag pine">반복 언급</span></h4>
+    <p>우이신설선 노선 발표 당시 역명 후보가 'SK북한산시티역'이었다는 얘기가 여러 번 나옵니다. 정문에서 바로입니다. 경전철 악평을 걱정하다 직접 타보고 기우였다는 후기가 다수.</p>
+    <blockquote>
+      <p>배차 3분 내외, 3정거장이면 성신여대입구에서 4호선 환승. CBD 기준 도어투도어 35분, 역투역 23분.</p>
+      <p>여의도 40분, 강남 50분. 아쉽지만 이동 가능한 수준.</p>
+      <span class="who">복수 후기 종합</span>
+    </blockquote>
+  </div>
+
+  <div class="point plus">
+    <h4>삼각산초 100% 입주민 배정 초품아<span class="tag pine">학군 469건</span></h4>
+    <p>단지 안에 학교가 있어 큰길을 안 건넙니다. 삼각산중은 영훈국제중 다음 입결이라는 언급. 위장전입 방지 현수막이 걸릴 정도로 학군 수요가 있다는 글도.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>주차 스트레스 사실상 없음<span class="tag pine">지하 4,073대</span></h4>
+    <p>지하 4층까지 뚫려 있고, 이중주차를 본 적 없다는 후기가 반복됩니다. 집들이에 차 4대가 와도 여유롭다는 얘기까지.</p>
+    <blockquote><p>아무리 늦은 시간에 와도 지하주차장에 빈자리가 있고, 이중주차는 단 한 번도 본 적이 없습니다.</p></blockquote>
+  </div>
+
+  <div class="point plus">
+    <h4>북한산 뷰와 공기<span class="tag pine">조망 72건</span></h4>
+    <p>고층 라인은 거실로 삼양·미아 일대가 트이고 주방·방으로 북한산이 잡힙니다. 남향에 앞이 막히지 않은 집은 맞바람이 쳐서 한여름에도 에어컨을 덜 튼다는 후기가 여러 건.</p>
+    <blockquote><p>삼각산 조망권으로 속초에서 설악산 조망권에 버금갑니다.</p><span class="who">10년 거주 후기</span></blockquote>
+  </div>
+
+  <div class="point plus">
+    <h4>3,830세대 대단지 · 낮은 관리비<span class="tag pine">관리비 16~18만</span></h4>
+    <p>규모의 경제로 관리비가 싸다는 평. 헬스장(3개월 7만원, 06~23시), 골프연습장, 테니스장, 독서실이 있고 독서실은 최근 공사로 깨끗해졌다는 언급. 조경 나무가 많아 계절감이 좋다는 얘기도 여러 번.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>동네가 조용하고 유해시설이 없음</h4>
+    <p>술집이 없어서 오히려 좋다는 표현이 인상적입니다. 단지 뒤로 북한산 둘레길·삼각산길이 바로 연결되어 도보 등산이 가능합니다.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>동북선(27년 11월 예정)과 김포공항 리무진<span class="tag gold">호재</span></h4>
+    <p>동북선 개통 시 미아사거리 → 왕십리 → 수인분당선으로 강남 접근 경로가 생긴다는 분석. 김포공항행 리무진이 솔샘역 앞에서 출발한다는 소식도 최근 글에 있습니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>단점 <span class="alt">What residents complain about</span></h2>
+  <p class="lede">방어성 글이 워낙 많은 게시판이라, 실제 불만이 적힌 문장만 골라냈습니다.</p>
+
+  <div class="point split">
+    <h4>언덕 — 논쟁의 핵<span class="tag clay">467건</span></h4>
+    <p>양쪽 다 있습니다. "심하지 않다"는 쪽이 수적으로 많지만, 실측성 발언은 이렇습니다.</p>
+    <blockquote>
+      <p>솔샘역에서 맨 윗 동까지 걸어 올라오면 10분 정도. 평온한 호흡으로 올라오기는 어려웠습니다.</p>
+      <p>유모차를 끌거나 노인 등 체력이 약한 분에게는 단점. 평균 체력 성인에겐 조금 귀찮은 정도.</p>
+      <p>이전 집주인 노부부도 언덕이 힘들어 평지 아파트로 간다고 했습니다.</p>
+    </blockquote>
+    <p style="margin-top:10px"><b>핵심은 동 위치</b>입니다. 아래쪽 122동 같은 동은 지하철까지 남자 걸음 3분. 윗 라인(135~139동)은 체감이 완전히 다릅니다. 단지 내 엘리베이터와 사잇길을 타면 상당 부분 상쇄된다는 꿀팁이 반복 등장합니다.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>지하주차장에서 동으로 바로 연결되는 동이 적음<span class="tag clay">구조적</span></h4>
+    <p>가장 자주 나오는 구조적 불만입니다. 연결 안 된 동은 지상으로 나와 계단으로 올라가야 합니다. 게시판 답변으로 정리된 연결 동 목록:</p>
+    <div class="dongs">
+      <div><h5>20평대</h5>
+        <span class="chip">120</span><span class="chip">128</span><span class="chip">130</span><span class="chip">147</span></div>
+      <div><h5>30평대</h5>
+        <span class="chip">123</span><span class="chip">147</span></div>
+      <div><h5>40평대</h5>
+        <span class="chip">106</span><span class="chip">107</span><span class="chip">110</span><span class="chip">111</span></div>
+    </div>
+    <p style="margin-top:8px;font-size:13.5px;color:var(--slate)">입주민 댓글 기준이라 참고용입니다. 계약 전 현장 확인 권장.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>윗동 기준 상권이 멀다<span class="tag clay">상가 217건</span></h4>
+    <p>주상가·부상가가 있지만 맨 윗 동에서는 접근이 불편하고, 삼양동 상가는 도보 10분 이상. 은행이나 미용실 잠깐 가려 해도 주상가까지 10분 걸린다는 옛 거주자 증언. 카공할 만한 카페가 단지 상가에 없어 투썸까지 나가야 한다는 글도 있습니다.</p>
+    <p style="font-size:13.5px;color:var(--slate)">→ 반론: 쿠팡 로켓·컬리 샛별·배민·런드리고 다 되고, 롯데마트 삼양점이 차로 10분. 실제로 불편한 적 없었다는 후기가 다수.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>층간소음 — 갈리지만 강한 불만이 존재<span class="tag clay">71건</span></h4>
+    <blockquote>
+      <p>층간소음 진짜 지린다. 가장 대표적인 단점.</p>
+      <p>새벽 6시마다 알람이 울려서 내 것인 줄 알았는데 윗집인지 아랫집인지…</p>
+    </blockquote>
+    <p style="font-size:13.5px;color:var(--slate)">→ 반대로 "이사 전에 걱정했는데 전혀 문제없다"는 글도 있습니다. 2004년 준공 구축 특성상 세대 편차로 봐야 합니다.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>온수배관 노후 · 누수<span class="tag clay">26건</span></h4>
+    <p>PVC 배관 수명이 20년 정도라 <b>입주 전 냉온수배관 교체가 사실상 필수</b>라는 조언이 반복됩니다. 겨울철 뒤쪽 베란다 보일러 배관 동파, 일부 저층 베란다 동파 역류 사례도 언급됩니다. 하수구 냄새 같은 자잘한 구축 이슈도.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>커뮤니티 시설 수준은 아쉬움</h4>
+    <p>헬스장·독서실·골프연습장이 있긴 하나 시설 자체는 좋은 편이 아니라는 평. 근처 체육센터 완공되면 보완될 거라는 기대.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>엘리베이터 교체 공사 진행 중 — 생활 불편 진행형<span class="tag clay">현재 이슈</span></h4>
+    <p>한여름에 동별 순차 공사가 진행돼 10층 이상 세대가 계단을 쓰는 상황이 있었습니다. 택배·분리수거 대책 안내가 부족했다는 불만 글이 여럿. 다만 결과적으로 새 엘리베이터가 되므로 앞으로 들어오는 사람은 이득이라는 정리도 있습니다. <b>입주·인테리어 일정 잡기 전 해당 동 공사 일정 확인 필수.</b></p>
+  </div>
+
+  <div class="point minus">
+    <h4>구축이라는 사실 자체 · 재건축 사업성 낮음</h4>
+    <p>2004년 5월 준공, 용적률 271%. 시설 노후는 분명한 단점이고 재건축 사업성은 낮게 보는 분석이 게시판 내에서도 나옵니다. 즉 <b>재건축 기대가 아니라 실거주 + 리모델링으로 접근하는 단지</b>라는 게 중론입니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>인테리어 — 여기가 알맹이 <span class="alt">Renovation intel</span></h2>
+  <p class="lede">입주 예정자 질문과 실제 시공자 답변이 쌓여 있는 영역입니다. 이 단지 특유의 정보만 뽑았습니다.</p>
+
+  <h3>0순위: 냉온수배관 교체</h3>
+  <p>거의 모든 인테리어 스레드에서 첫 번째로 나오는 항목입니다.</p>
+  <blockquote>
+    <p>타일 덧방과 누수는 상관없고, 온수배관에서 거의 누수가 발생합니다. PVC 배관 수명 20년 정도라 교체 안 한 곳이면 입주 전에 꼭 교체하세요.</p>
+    <p>40평대 온수배관 공사비 2백이 채 안 됩니다.</p>
+    <p>냉온수배관만 교체했습니다. 난방 배관은 교체가 빡세고 1년에 길어야 3개월 트니 아직 걱정할 수준은 아닌 듯.</p>
+  </blockquote>
+  <p style="margin-top:10px">→ 정리: <b>급탕(욕실·주방·세면대) 냉온수배관은 교체, 바닥난방 배관은 대체로 스킵</b>이 이 단지 표준 해법입니다.</p>
+
+  <h3>확장 — 거실이냐 주방이냐</h3>
+  <p>예산이 한정된 경우 어디를 확장할지 묻는 글이 가장 많습니다. 답변이 꽤 일관됩니다.</p>
+  <blockquote>
+    <p>확장은 주방 쪽을 하시고(구조변경 신고 필수) 거실은 안 하는 걸 추천합니다. 주방은 확장 면적이 적어도 냉장고 자리가 확보되고 동선이 편해집니다. 거실은 단열을 잘해야 하고 위층도 확장한 상태여야 열 손실이 덜합니다.</p>
+    <p>발코니는 활용도가 높아 젖은 물품이나 끝부분 서랍을 창고로 쓰기 좋고, 거실-발코니 사이를 폴딩도어로 하면 활용도가 높습니다.</p>
+    <p>주방 확장해서 밀고 4인 식탁 놨어요. 훨씬 넓어 보입니다.</p>
+    <p>전체 확장 안 했는데 창고가 없다 보니 주방·작은방 다용도실을 창고로 써서 오히려 좋습니다.</p>
+  </blockquote>
+  <p class="note" style="margin-top:14px"><b>주의</b> — 24평 발코니 벽은 <b>내력벽</b>이라는 답변이 있습니다. 확장 계획 세울 때 가장 먼저 확인할 항목. 그리고 작은방·부엌을 확장하면 그쪽 <b>샷시 교체가 따라붙습니다</b>.</p>
+
+  <h3>샷시 — 예산 쪼개는 법</h3>
+  <blockquote>
+    <p>예산이 걱정돼서 외벽 부분만 좋은 걸로 하고 내벽은 있는 걸 살렸습니다. 외벽만 좋은 걸로 해도 좋아요.</p>
+    <p>이전 거주자 말로는 샷시가 오래돼 외풍이 좀 있다고.</p>
+  </blockquote>
+
+  <h3>비용 감각</h3>
+  <table>
+    <tr><th>항목</th><th>게시판에 나온 수치</th></tr>
+    <tr><td>24평 가성비 올수리</td><td>3,000만원 안으로 가능한지 묻는 글 다수 — 확장 포함 시 샷시가 붙어 초과 우려</td></tr>
+    <tr><td>33평 올수리</td><td>샷시 제외 3,000만원대로 완료 후기 있음</td></tr>
+    <tr><td>40평대 온수배관</td><td>200만원 미만</td></tr>
+  </table>
+  <p style="margin-top:10px;font-size:13.5px;color:var(--slate)">→ 여러 곳 견적 비교 권장이 공통 조언. 업체마다 자재·배관 단가 편차가 크다는 언급이 반복됩니다.</p>
+
+  <h3>평형별 실전 팁</h3>
+  <table>
+    <tr><th>이슈</th><th>내용</th></tr>
+    <tr><td>24평 화장실</td><td>좁아서 욕조보다 <b>샤워 파티션</b> 권장. 다만 아기 계획 있으면 욕조가 낫다는 반론도. 젠다이 제작 시 변기·세면대 실측 필수(집마다 다름).</td></tr>
+    <tr><td>33평 주방</td><td>가로 약 2,700mm ㄱ자. ㄷ자 리모델링 + 핏앤맥스급 냉장고 조합으로 무리 없다는 후기.</td></tr>
+    <tr><td>세탁기 위치</td><td>대부분 주방 쪽 베란다에 설치. 거실 베란다 워시타워는 어렵다는 분위기. 세탁기 뒤 보일러 옆 자투리에 철제 렉 놓아 창고로 쓰는 팁.</td></tr>
+    <tr><td>김치냉장고</td><td>안방 베란다에 두고 에어컨 배관 구멍으로 전기 빼서 연결한 사례.</td></tr>
+    <tr><td>인덕션</td><td>24평은 단독배선만으로 충분. 30평대에서 건조기+세탁기+식세기 동시 사용 시 차단기 떨어진 사례 있음 → 용량 검토.</td></tr>
+    <tr><td>시스템에어컨</td><td>천장고가 스프링클러 유무로 갈림(16층 기준). 12층 기준 약 4cm 추정 답변. 실측 필수.</td></tr>
+    <tr><td>실링팬</td><td>24평 거실 설치 후 "강추" 후기 있음.</td></tr>
+    <tr><td>중문</td><td>"중문 필수" — 소음 차단 효과가 확실하다는 답변.</td></tr>
+    <tr><td>화장실 덧방</td><td>덧방 자체는 누수와 무관하다는 게 중론. 누수는 배관 문제.</td></tr>
+    <tr><td>단내림·무몰딩</td><td>단내림 + 시스템에어컨 + 무몰딩 + 간접조명 조합 만족 후기.</td></tr>
+  </table>
+
+  <h3>절차 · 업체</h3>
+  <p>업체와 계약해서 진행하면 동의서 등은 업체가 처리합니다. 개별 시공이면 관리사무소를 직접 방문해 안내받아야 합니다. 게시판에서 실제로 거명된 곳은 <b>주상가 지하 미담인테리어</b>(박목수 등 5개 업체 비교 후 선택했다는 후기), <b>GOOD인테리어 디자인</b>(2년째 하자 없음, 냉온수배관·샷시는 꼭 하라는 조언 첨부) 정도. 숨고나 오늘의집으로 각각 알아보라는 답변도 많습니다.</p>
+  <p style="font-size:13.5px;color:var(--slate)">보관이사 필요 시 여름철 컨테이너 곰팡이 우려로 온습도 관리되는 업체를 비교 견적 받았다는 후기(오이사 / 스테이박스 비교 사례).</p>
+</section>
+
+<section>
+  <h2>형님용 한 줄 판단 <span class="alt">Bottom line</span></h2>
+  <p class="lede">전용 84㎡(33평) 매수를 전제로 한 정리입니다.</p>
+  <div class="point split">
+    <p><b>이 단지는 "언덕값"을 치르고 초품아·초역세권·주차여유·북한산뷰를 사는 구조</b>입니다. 게시판 여론은 언덕 방어에 과열되어 있지만, 실측 발언을 보면 <b>동 위치가 사실상 전부</b>입니다. 윗 라인은 솔샘역까지 도보 10분에 숨이 찹니다.</p>
+    <p style="margin-top:10px">30평대에서 지하주차장 엘리베이터가 연결된 동은 <b>123동, 147동 두 곳</b>뿐이라는 답변이 있습니다. 147동은 "SK의 제주도"라 불리는 로얄동이라는 언급까지 붙습니다. 형님이 지금 승강기안전공단 API로 검증하려던 항목과 정확히 겹치니, 이 목록을 교차검증 기준선으로 쓰시면 됩니다.</p>
+    <p style="margin-top:10px">매수 시 <b>비용 계상에 반드시 넣을 것</b>: 냉온수배관 교체, 샷시(최소 외벽), 확장 여부에 따른 추가 샷시. 그리고 해당 동의 엘리베이터 교체 공사 일정 — 인테리어·이사 일정과 충돌하면 여름에 계단으로 짐 나릅니다.</p>
+  </div>
+</section>
+
+<footer>
+  출처: 호갱노노 SK북한산시티 이야기 게시판 (2026년 8월 10일 수집). 총 3,229건 중 3,220건 수집·분류.
+  단순 시세·호가 글 1,266건은 제외했습니다. 인용은 원문 요지를 옮긴 것으로, 개별 발언은 작성자 개인의 경험입니다.
+</footer>
+
+
+  </div>
+  <div class="panel" id="panel-price" hidden>
+
+<section>
+  <h2>매물 시세 <span class="alt">Listings</span></h2>
+  <p class="lede">네이버 부동산에 올라온 이 단지 매물을 전수 수집해 거래유형별로 정리했습니다. 가격대는 0.5억 단위 절대 구간이라 다른 단지와 같은 눈금으로 비교됩니다. 실시간이 아니라 아래 표시된 시점의 스냅샷입니다.</p>
+
+  <div id="articles"></div>
+
+  <div class="note">
+    33평(전용 84㎡) 기준으로 보실 거면 <b>평형별 가격</b>의 중앙값을, 협상 여지를 보려면 <b>가격대 분포</b>에서 같은 평형이 어느 구간에 몰려 있는지를 보시면 됩니다.
+    목록을 펼치면 동·층·향까지 나오니, <b>배치도 탭의 동 위치와 겹쳐 보면 언덕 라인인지 바로 확인</b>됩니다.
+    지하주차장 직결 9개 동(106·107·110·111·120·123·128·130·147)에 나온 매물인지도 같이 보세요.
+  </div>
+
+  <footer>
+    출처: 네이버 부동산 단지 매물(complexNo 3098) 수집 스냅샷. 동일매물 묶음 기준이라 같은 물건을 여러 중개사가 올린 건은 1건으로 집계됩니다.
+    호가이며 실거래가가 아닙니다. 갱신은 저장소에서 <code>npm run scrape</code> 실행 후 커밋.
+  </footer>
+</section>
+
+  </div>
+</div>
+
+<script src="assets/articles.js"></script>
+<script>
+// 전용면적 → 이 단지에서 통용되는 평형 표기 (배치도 탭과 용어를 맞춘다)
+AptArticles.mount('#articles', {
+  complexNo: '3098',
+  pyeongAlias: { 59: '24평', 84: '33평', 114: '43평' }
+}).then(snap => {
+  if (snap) document.getElementById('tab-price-c').textContent = snap.totalCount + '건';
+});
+</script>
+
+<script>
+
+const T={
+  t24:{label:"24평",area:"전용 59.98 / 공급 81.4㎡",hex:"#2f5d4f",target:1195},
+  t33:{label:"33평",area:"전용 84.8 / 공급 109–111㎡",hex:"#c08a2e",target:1786},
+  t43:{label:"43평",area:"전용 114.85 / 공급 142.2㎡",hex:"#a8563c",target:849},
+  im :{label:"임대 15평",area:"전용 32.79 / 공급 49.5㎡",hex:"#4a5560",target:1497}
+};
+const ORDER=["t24","t33","t43","im"];
+const EV=new Set([106,107,110,111,120,123,128,130,147]);
+
+const D={
+101:[330,92,100,25,4,"t33"],  102:[275,117,50,25,2,"t43"], 103:[232,150,50,25,2,"t43"],
+104:[181,172,50,25,2,"t43"],  105:[234,264,50,25,2,"t43"], 106:[275,238,44,24,2,"t43"],
+107:[318,212,38,19,2,"t43"],  108:[365,156,100,25,4,"t33"],109:[410,237,84,21,4,"t33"],
+110:[372,284,38,19,2,"t43"],  111:[330,309,38,21,2,"t43"], 112:[285,344,50,25,2,"t43"],
+113:[330,407,50,25,2,"t43"],  114:[390,394,100,25,4,"t24"],115:[420,457,100,25,4,"t33"],
+116:[521,364,100,25,4,"t33"], 117:[510,296,38,19,2,"t33"], 118:[565,325,100,25,4,"t33"],
+119:[560,467,90,24,4,"t33"],  120:[630,418,100,25,4,"t24"],121:[633,289,72,18,4,"t24"],
+122:[719,296,72,18,4,"t24"],  123:[681,341,100,25,4,"t33"],124:[727,397,100,25,4,"t33"],
+125:[678,477,92,25,4,"t33"],  126:[715,553,100,25,4,"t33"],127:[740,619,84,21,4,"t24"],
+128:[657,589,84,21,4,"t24"],  129:[613,538,100,25,4,"t33"],130:[556,587,88,25,4,"t24"],
+131:[578,655,96,25,4,"t33"],  132:[487,650,100,25,4,"t24"],133:[505,523,100,25,4,"t24"],
+134:[466,561,81,22,4,"t24"],  135:[408,622,100,25,4,"t33"],136:[340,530,80,23,4,"t43"],
+137:[272,581,64,16,4,"t24"],  138:[213,552,100,25,4,"t33"],139:[172,516,100,25,4,"t33"],
+140:[262,467,74,20,4,"t43"],  141:[196,385,77,20,4,"t43"], 142:[141,442,100,25,4,"t24"],
+143:[92,352,100,25,4,"t24"],  144:[148,297,80,20,4,"t43"], 145:[33,258,100,25,4,"t33"],
+146:[86,208,80,20,4,"t43"],   147:[424,124,136,25,6,"MIX"],
+148:[617,55,259,20,13,"im"],  149:[718,62,279,20,14,"im"], 150:[734,188,120,20,6,"im"],
+151:[668,158,240,20,12,"im"], 152:[611,197,180,20,9,"im"], 153:[567,117,140,20,7,"im"],
+154:[545,168,279,20,14,"im"]
+};
+const MIX147={t24:50,t33:86};
+const LM=[{x:528,y:16,t:"솔샘역 (우이신설선)",a:"middle"},{x:455,y:44,t:"NH농협은행",a:"middle"},
+  {x:88,y:126,t:"솔샘로",a:"start"},{x:248,y:645,t:"삼양로15길",a:"middle"},{x:752,y:512,t:"GS25",a:"middle"}];
+
+/* ── 탭 ── */
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  document.querySelectorAll("#tabs button").forEach(x=>x.setAttribute("aria-selected",x===b));
+  document.querySelectorAll(".panel").forEach(p=>p.hidden = p.id!==b.dataset.p);
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+
+/* ── 지도 ── */
+const NS="http://www.w3.org/2000/svg";
+const pg=document.getElementById("pills"), lgg=document.getElementById("landmarks"), nodes={};
+let filter=null;
+
+LM.forEach(l=>{const t=document.createElementNS(NS,"text");
+  t.setAttribute("x",l.x);t.setAttribute("y",l.y);t.setAttribute("text-anchor",l.a);
+  t.setAttribute("class","lm");t.textContent=l.t;lgg.appendChild(t);});
+
+function rect(x,y,w,h,fill){const r=document.createElementNS(NS,"rect");
+  r.setAttribute("x",x);r.setAttribute("y",y);r.setAttribute("width",w);r.setAttribute("height",h);
+  if(fill)r.setAttribute("fill",fill);return r;}
+
+Object.keys(D).forEach(k=>{
+  const d=+k,[x,y,n,fl,ln,ty]=D[k];
+  const g=document.createElementNS(NS,"g");
+  g.setAttribute("class","pill");g.setAttribute("tabindex","0");g.setAttribute("role","button");
+  g.setAttribute("aria-label",`${d}동 ${n}세대 ${ty==="MIX"?"24평·33평 혼합":T[ty].label}${EV.has(d)?" 지하주차장 직결":""}`);
+
+  if(ty==="MIX"){
+    const gc=document.createElementNS(NS,"g"); gc.setAttribute("clip-path","url(#clip147)");
+    gc.appendChild(rect(x-18,y-11,13,22,T.t24.hex));
+    gc.appendChild(rect(x-5,y-11,23,22,T.t33.hex));
+    g.appendChild(gc);
+  } else { g.appendChild(rect(x-18,y-11,36,22,T[ty].hex)); }
+
+  if(EV.has(d)){
+    const halo=rect(x-21.5,y-14.5,43,29,null);
+    halo.setAttribute("fill","none");halo.setAttribute("stroke","#20262b");halo.setAttribute("stroke-width","2");
+    const gap=rect(x-19.5,y-12.5,39,25,null);
+    gap.setAttribute("fill","none");gap.setAttribute("stroke","#f6f5f1");gap.setAttribute("stroke-width","2");
+    g.appendChild(gap);g.appendChild(halo);
+  }
+  const fr=rect(x-18,y-11,36,22,null); fr.setAttribute("class","fr"); g.appendChild(fr);
+
+  const t=document.createElementNS(NS,"text");
+  t.setAttribute("x",x);t.setAttribute("y",y+0.5);t.textContent=d;
+  g.appendChild(t); pg.appendChild(g); nodes[d]=g;
+
+  const act=()=>show(d);
+  g.addEventListener("click",act);
+  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();act();}});
+});
+
+function sumOf(k){let s=0;Object.keys(D).forEach(kk=>{const[,,n,,,ty]=D[kk];
+  if(ty===k)s+=n; else if(ty==="MIX"&&MIX147[k])s+=MIX147[k];});return s;}
+function dongsOf(k){return Object.keys(D).filter(kk=>{const ty=D[kk][5];
+  return ty===k||(ty==="MIX"&&MIX147[k]);}).map(Number).sort((a,b)=>a-b);}
+
+function applyFilter(){
+  Object.keys(D).forEach(kk=>{
+    const d=+kk, ty=D[kk][5];
+    let hit=true;
+    if(filter==="EV") hit=EV.has(d);
+    else if(filter) hit = ty===filter || (ty==="MIX"&&(filter==="t24"||filter==="t33"));
+    nodes[d].classList.toggle("dim",!hit);
+  });
+}
+
+const lgd=document.getElementById("legend");
+ORDER.forEach(k=>{
+  const b=document.createElement("button");
+  b.className="lg";b.type="button";b.dataset.k=k;b.setAttribute("aria-pressed","false");
+  b.innerHTML=`<span class="dot" style="background:${T[k].hex}"></span>${T[k].label}<span class="n">${sumOf(k).toLocaleString()}세대</span>`;
+  lgd.appendChild(b);
+});
+const be=document.createElement("button");
+be.className="lg";be.type="button";be.dataset.k="EV";be.setAttribute("aria-pressed","false");
+be.innerHTML=`<span class="ring"></span>지하주차장 직결<span class="n">9개 동</span>`;
+lgd.appendChild(be);
+
+lgd.addEventListener("click",e=>{
+  const b=e.target.closest(".lg"); if(!b) return;
+  filter = filter===b.dataset.k ? null : b.dataset.k;
+  [...lgd.children].forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===filter));
+  applyFilter();
+});
+
+const tb=document.getElementById("tbody");
+ORDER.forEach(k=>{const u=sumOf(k),tr=document.createElement("tr");
+  tr.innerHTML=`<td><span class="sw" style="background:${T[k].hex}"></span>${T[k].label}</td>`+
+    `<td style="font-size:13px;color:var(--slate)">${T[k].area}</td>`+
+    `<td class="num">${u.toLocaleString()}</td><td class="num" style="color:#8b948d">${T[k].target.toLocaleString()}</td>`+
+    `<td class="ok">${u===T[k].target?"✓":u-T[k].target}</td>`;
+  tb.appendChild(tr);});
+const allU=ORDER.reduce((s,k)=>s+sumOf(k),0), tr=document.createElement("tr");
+tr.innerHTML=`<td><b>합계</b></td><td></td><td class="num"><b>${allU.toLocaleString()}</b></td>`+
+  `<td class="num" style="color:#8b948d">5,327</td><td class="ok">${allU===5327?"✓":allU-5327}</td>`;
+tb.appendChild(tr);
+
+const db=document.getElementById("dbody");
+ORDER.forEach(k=>{const list=dongsOf(k),tr=document.createElement("tr");
+  tr.innerHTML=`<td><span class="sw" style="background:${T[k].hex}"></span>${T[k].label}</td>`+
+    `<td class="dlist">${list.map(d=>(EV.has(d)?"<b>"+d+"</b>":d)+(D[d][5]==="MIX"?"*":"")).join(" · ")}</td>`+
+    `<td class="num">${list.length}</td>`;
+  db.appendChild(tr);});
+const legend=document.createElement("tr");
+legend.innerHTML=`<td colspan="3" style="font-size:12px;color:#8b948d;border-bottom:none">굵은 동 = 지하주차장 엘리베이터 직결 · * 147동은 24평 50세대 + 33평 86세대 혼합</td>`;
+db.appendChild(legend);
+
+function show(d){
+  const [,,n,fl,ln,ty]=D[d], ro=document.getElementById("readout");
+  const ev = EV.has(d) ? `<span class="ev">지하주차장 엘리베이터 직결</span>` : "";
+  if(ty==="MIX"){
+    ro.innerHTML=`<span class="hd">${d}동 — 24평 · 33평 혼합</span>`+
+      `<span class="sub">${n}세대 · 지상 ${fl}층 · ${ln}라인</span>`+
+      `<span class="sub">24평 50세대(25층 라인 2개) / 33평 86세대(18층 라인 2개 + 25층 라인 2개)</span>${ev}`;
+  }else{
+    ro.innerHTML=`<span class="hd">${d}동 — ${T[ty].label}</span>`+
+      `<span class="sub">${n}세대 · 지상 ${fl}층 · ${ln}라인 · ${T[ty].area}</span>${ev}`;
+  }
+}
+
+</script>
+</body>
+</html>

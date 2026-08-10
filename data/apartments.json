@@ -1,0 +1,23 @@
+{
+  "apartments": [
+    {
+      "id": "sk-bukhansan",
+      "name": "SK북한산시티",
+      "file": "sk-map.html",
+      "complexNo": "3098",
+      "region": "서울 강북구",
+      "address": "미아동 1353 · 솔샘로 174",
+      "built": "2004.05",
+      "households": 5327,
+      "buildings": 54,
+      "accent": "#2f5d4f",
+      "tags": ["북한산 조망", "경사지 단지", "지하 직결 9개 동"],
+      "summary": "건축물대장 전유부 5,482건으로 확정한 동별 전용면적, 그리고 호갱노노 이야기 3,220건 전수 분석.",
+      "highlights": [
+        { "label": "총 세대수", "value": "5,327" },
+        { "label": "개 동", "value": "54" },
+        { "label": "지하 직결", "value": "9개 동" }
+      ]
+    }
+  ]
+}

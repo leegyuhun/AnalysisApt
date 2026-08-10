@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>이사 후보 아파트 · 분석 모음</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.wrap{max-width:940px;margin:0 auto;padding:0 22px 100px}
+
+/* ── 지적도 히어로 ── */
+header{position:relative;overflow:hidden;background:var(--granite);color:var(--mist);padding:66px 0 52px}
+header svg{position:absolute;inset:0;width:100%;height:100%;opacity:.22}
+header .inner{position:relative;max-width:940px;margin:0 auto;padding:0 22px}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:500}
+h1{font-family:'Gowun Batang',serif;font-weight:700;font-size:clamp(28px,5vw,46px);line-height:1.22;margin:0 0 18px}
+h1 em{font-style:normal;color:var(--gold)}
+.sub{max-width:620px;color:#b9c2bd;font-size:14.5px;margin:0}
+.counts{display:flex;flex-wrap:wrap;gap:26px;margin-top:32px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15)}
+.counts div{min-width:88px}
+.counts b{display:block;font-family:'Gowun Batang',serif;font-size:26px;line-height:1.1;color:#fff}
+.counts span{font-size:11.5px;color:#94a09a;letter-spacing:.04em}
+
+/* ── 섹션 헤더 ── */
+.sechd{display:flex;align-items:baseline;gap:12px;margin:52px 0 6px}
+.sechd h2{font-family:'Gowun Batang',serif;font-size:24px;margin:0;font-weight:700}
+.sechd .alt{font-family:'IBM Plex Sans KR';font-size:11.5px;font-weight:500;color:var(--slate);
+  letter-spacing:.14em;text-transform:uppercase}
+.lede{color:var(--slate);font-size:14px;margin:0 0 26px;padding-bottom:18px;border-bottom:2px solid var(--granite)}
+
+/* ── 카드 그리드 ── */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(296px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
+  text-decoration:none;color:inherit;position:relative;overflow:hidden;
+  transition:border-color .18s,box-shadow .18s,transform .18s}
+.card::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--accent,var(--pine))}
+.card:hover{border-color:var(--slate);box-shadow:0 6px 22px rgba(32,38,43,.09);transform:translateY(-2px)}
+.card:focus-visible{outline:2px solid var(--granite);outline-offset:2px}
+
+.card .hd{padding:20px 20px 0 22px}
+.region{font-size:11px;letter-spacing:.14em;color:var(--accent,var(--pine));font-weight:600;text-transform:uppercase}
+.card h3{font-family:'Gowun Batang',serif;font-size:22px;font-weight:700;margin:6px 0 4px;line-height:1.25}
+.addr{font-size:12.5px;color:var(--dim);margin:0}
+
+.specs{display:flex;gap:18px;padding:16px 20px 0 22px;flex-wrap:wrap}
+.specs div{min-width:52px}
+.specs b{display:block;font-size:16px;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums}
+.specs span{font-size:10.5px;color:var(--dim);letter-spacing:.03em}
+
+.summary{padding:14px 20px 0 22px;margin:0;font-size:13.5px;color:var(--slate);line-height:1.7}
+
+.tags{display:flex;flex-wrap:wrap;gap:5px;padding:14px 20px 0 22px}
+.tags span{font-size:10.5px;letter-spacing:.04em;padding:3px 8px;background:var(--mist);color:var(--slate);font-weight:500}
+
+/* ── 카드 내 매물 요약 ── */
+.market{margin:16px 0 0;padding:13px 20px 14px 22px;background:#fbfaf7;border-top:1px solid var(--line)}
+.market .mhd{font-size:10.5px;letter-spacing:.13em;color:var(--dim);text-transform:uppercase;margin-bottom:8px;
+  display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.market .mhd .when{letter-spacing:0;text-transform:none;font-size:10.5px}
+.mrow{display:grid;grid-template-columns:38px 44px 1fr;align-items:baseline;gap:8px;font-size:13px;padding:2px 0}
+.mrow .tt{font-weight:600;font-size:12px}
+.mrow .tt[data-t="매매"]{color:var(--clay)}
+.mrow .tt[data-t="전세"]{color:var(--pine)}
+.mrow .tt[data-t="월세"]{color:var(--gold)}
+.mrow .cnt{font-size:11.5px;color:var(--dim);font-variant-numeric:tabular-nums}
+.mrow .rng{font-variant-numeric:tabular-nums;font-weight:500}
+.market .none{font-size:12px;color:var(--dim)}
+
+.go{margin-top:auto;padding:14px 20px 16px 22px;font-size:12.5px;font-weight:600;color:var(--granite);
+  display:flex;align-items:center;gap:6px}
+.card:hover .go .arw{transform:translateX(3px)}
+.go .arw{transition:transform .18s}
+
+/* ── 상태 ── */
+.state{border:1px dashed var(--line);background:#fff;padding:30px 24px;text-align:center;color:var(--slate);font-size:14px}
+.state code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;
+  background:var(--mist);padding:2px 6px;color:var(--granite)}
+.state b{display:block;font-size:15px;color:var(--granite);margin-bottom:6px}
+
+footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim)}
+footer p{margin:0 0 6px}
+
+@media (max-width:600px){
+  .counts{gap:18px}
+  .grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .card{animation:rise .45s ease both;animation-timeline:view();animation-range:entry 0% entry 30%}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <svg viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="none" stroke="#8fa79a" stroke-width="1">
+      <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200"/>
+      <path d="M150 0 V300 M330 0 V300 M510 0 V300 M690 0 V300 M870 0 V300 M1050 0 V300"/>
+      <path d="M330 60 H690 V180 H330 Z" stroke="#c08a2e" stroke-width="1.4"/>
+      <path d="M690 120 H1050 V240 H690 Z" stroke="#c08a2e" stroke-width="1.4" opacity=".55"/>
+      <path d="M150 180 H330 V300 H150 Z" stroke="#c08a2e" stroke-width="1.4" opacity=".35"/>
+    </g>
+  </svg>
+  <div class="inner">
+    <p class="eyebrow" id="eyebrow">이사 후보 정리</p>
+    <h1>살아볼 만한 곳을<br><em>한 단지씩</em> 뜯어봅니다</h1>
+    <p class="sub">건축물대장·입주민 이야기·네이버 부동산 매물을 단지별로 모아 한 페이지로 정리합니다. 카드를 누르면 해당 단지 분석으로 들어갑니다.</p>
+    <div class="counts" id="counts"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="sechd">
+    <h2>후보 단지</h2><span class="alt">Candidates</span>
+  </div>
+  <p class="lede">분석이 끝난 단지만 올라옵니다. 매물 시세는 네이버 부동산에서 수집한 스냅샷이며, 카드에는 거래유형별 건수와 가격 범위만 요약해 보여줍니다.</p>
+
+  <div id="grid" class="grid"></div>
+
+  <footer>
+    <p>단지 분석: 국토교통부 건축물대장 · 호갱노노 게시판 등 공개 자료 기반.</p>
+    <p>매물 시세: 네이버 부동산 수집 스냅샷. 실시간이 아니며 각 카드에 수집 시각이 표시됩니다. 실제 거래 전에는 반드시 원본을 확인하세요.</p>
+  </footer>
+</div>
+
+<script>
+const fmt = n => n == null ? '—' : n.toLocaleString('ko-KR');
+// 억 미만은 "5,000만"으로 — 상세 페이지 렌더러(assets/articles.js)와 표기를 맞춘다
+const eok = m => m >= 10000
+  ? (m / 10000).toFixed(1).replace(/\.0$/, '') + '억'
+  : m.toLocaleString('ko-KR') + '만';
+
+function sinceText(iso) {
+  const diff = Date.now() - new Date(iso).getTime();
+  const h = Math.floor(diff / 3600000);
+  if (h < 1) return '방금 수집';
+  if (h < 24) return h + '시간 전 수집';
+  return Math.floor(h / 24) + '일 전 수집';
+}
+
+// 카드 하단 매물 요약: 거래유형별 건수와 최저~최고가만
+function marketHtml(snap) {
+  if (!snap) return '';
+  const rows = (snap.byTradeType || []).map(g => `
+    <div class="mrow">
+      <span class="tt" data-t="${g.tradeType}">${g.tradeType}</span>
+      <span class="cnt">${g.total}건</span>
+      <span class="rng">${eok(g.minPrice)}${g.minPrice === g.maxPrice ? '' : ' ~ ' + eok(g.maxPrice)}</span>
+    </div>`).join('');
+  return `
+    <div class="market">
+      <div class="mhd"><span>매물 시세</span><span class="when">${sinceText(snap.scrapedAt)}</span></div>
+      ${rows || '<div class="none">등록된 매물이 없습니다.</div>'}
+    </div>`;
+}
+
+function cardHtml(apt, snap) {
+  const specs = (apt.highlights || []).map(h =>
+    `<div><b>${h.value}</b><span>${h.label}</span></div>`).join('');
+  const tags = (apt.tags || []).map(t => `<span>${t}</span>`).join('');
+  return `
+    <a class="card" href="${apt.file}" style="--accent:${apt.accent || 'var(--pine)'}">
+      <div class="hd">
+        <div class="region">${apt.region || ''}</div>
+        <h3>${apt.name}</h3>
+        <p class="addr">${apt.address || ''}${apt.built ? ' · ' + apt.built + ' 준공' : ''}</p>
+      </div>
+      ${specs ? `<div class="specs">${specs}</div>` : ''}
+      ${apt.summary ? `<p class="summary">${apt.summary}</p>` : ''}
+      ${tags ? `<div class="tags">${tags}</div>` : ''}
+      ${marketHtml(snap)}
+      <div class="go">자세히 보기 <span class="arw">→</span></div>
+    </a>`;
+}
+
+async function main() {
+  const grid = document.getElementById('grid');
+  let meta;
+  try {
+    meta = await fetch('data/apartments.json').then(r => {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    });
+  } catch (e) {
+    // file:// 로 직접 열면 fetch가 막힌다 — 정적 서버로 열도록 안내
+    grid.innerHTML = `<div class="state"><b>목록을 불러오지 못했습니다</b>
+      브라우저에서 파일을 직접 연 경우(<code>file://</code>) 데이터를 읽을 수 없습니다.<br>
+      <code>npm run serve</code> 로 띄우거나 GitHub Pages 주소로 열어주세요.</div>`;
+    return;
+  }
+
+  const apts = meta.apartments || [];
+  if (!apts.length) {
+    grid.innerHTML = `<div class="state"><b>아직 등록된 단지가 없습니다</b>
+      <code>data/apartments.json</code> 에 항목을 추가하면 여기에 카드가 생깁니다.</div>`;
+    return;
+  }
+
+  // 매물 스냅샷은 있으면 붙이고 없으면 조용히 건너뛴다
+  const snaps = await Promise.all(apts.map(a =>
+    a.complexNo
+      ? fetch(`data/articles/${a.complexNo}.json`).then(r => r.ok ? r.json() : null).catch(() => null)
+      : Promise.resolve(null)
+  ));
+
+  grid.innerHTML = apts.map((a, i) => cardHtml(a, snaps[i])).join('');
+
+  const totalArticles = snaps.reduce((s, x) => s + (x?.totalCount || 0), 0);
+  const latest = snaps.filter(Boolean).map(x => new Date(x.scrapedAt).getTime()).sort((a, b) => b - a)[0];
+  document.getElementById('counts').innerHTML = `
+    <div><b>${apts.length}</b><span>분석 완료 단지</span></div>
+    <div><b>${fmt(totalArticles)}</b><span>수집된 매물</span></div>
+    ${latest ? `<div><b>${new Date(latest).toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}</b><span>최근 시세 갱신</span></div>` : ''}`;
+}
+
+main();
+</script>
+</body>
+</html>

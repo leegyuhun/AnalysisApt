@@ -131,6 +131,18 @@ const getComplexArticles = (complexNo, page) =>
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+async function readPrev(file) {
+  try {
+    return JSON.parse(await readFile(file, 'utf8'));
+  } catch {
+    return null; // 파일이 없거나 깨졌으면 새로 쓴다
+  }
+}
+
+/** 수집 시각을 뺀 나머지가 같은지. 같으면 파일을 건드리지 않아 불필요한 커밋을 막는다. */
+const sameContent = (a, b) =>
+  !!a && !!b && JSON.stringify({ ...a, scrapedAt: null }) === JSON.stringify({ ...b, scrapedAt: null });
+
 /* ── 파싱 ─────────────────────────────────────────────────────────── */
 
 /** "12억 5,000" → 125000(만원), "8억" → 80000, "5,000" → 5000. 실패 시 null. */
@@ -295,6 +307,10 @@ async function scrapeComplex(complexNo, name) {
   }
   console.log(`  총 ${articles.length}건 수집 완료`);
 
+  // 네이버 응답은 호출할 때마다 매물 순서가 달라진다. articleNo로 고정해두지 않으면
+  // 내용이 하나도 안 바뀌어도 파일 전체가 diff로 잡혀 매번 커밋이 생긴다.
+  articles.sort((a, b) => a.articleNo.localeCompare(b.articleNo));
+
   const byType = new Map(TRADE_ORDER.map((t) => [t, []]));
   for (const a of articles) {
     if (!byType.has(a.tradeType)) byType.set(a.tradeType, []);
@@ -375,8 +391,15 @@ async function main() {
     try {
       const data = await scrapeComplex(t.complexNo, t.name);
       const out = join(ARTICLES_DIR, `${t.complexNo}.json`);
-      await writeFile(out, JSON.stringify(data, null, 2), 'utf8');
-      console.log(`  → ${out}`);
+      const prev = await readPrev(out);
+
+      if (sameContent(prev, data)) {
+        const hours = Math.round((Date.now() - new Date(prev.scrapedAt).getTime()) / 3600000);
+        console.log(`  변동 없음 — 파일을 그대로 둡니다 (마지막 변동 ${hours}시간 전)`);
+      } else {
+        await writeFile(out, JSON.stringify(data, null, 2), 'utf8');
+        console.log(`  → ${out}`);
+      }
     } catch (e) {
       console.error(`  ✕ ${t.name ?? t.complexNo} 실패: ${e.message}`);
     }

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>벽산라이브파크 · 입주민 이야기 1,375건 정리</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1b2320;
+  --slate:#4d5a54;
+  --mist:#e6ece7;
+  --paper:#f7f6f2;
+  --moss:#3d6b52;        /* 둘레길 이끼 */
+  --brick:#9d4f3e;
+  --amber:#b8862c;
+  --line:#ccd4cd;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'IBM Plex Sans KR',sans-serif;line-height:1.75;font-size:15.5px;letter-spacing:-0.01em}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px 100px}
+
+header{position:relative;overflow:hidden;background:var(--ink);color:var(--mist);padding:70px 0 56px;margin-bottom:52px}
+header svg{position:absolute;inset:0;width:100%;height:100%;opacity:.26}
+header .inner{position:relative;max-width:940px;margin:0 auto;padding:0 22px}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin:0 0 16px;font-weight:500}
+h1{font-family:'Gowun Batang',serif;font-weight:700;font-size:clamp(30px,5.4vw,50px);line-height:1.2;margin:0 0 18px}
+h1 em{font-style:normal;color:var(--amber)}
+.sub{max-width:620px;color:#b3c0b7;font-size:14.5px;margin:0}
+.counts{display:flex;flex-wrap:wrap;gap:26px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15)}
+.counts b{display:block;font-family:'Gowun Batang',serif;font-size:27px;line-height:1.1;color:#fff}
+.counts span{font-size:11.5px;color:#8fa096;letter-spacing:.04em}
+
+section{margin:0 0 60px}
+h2{font-family:'Gowun Batang',serif;font-size:25px;margin:0 0 6px;font-weight:700;display:flex;align-items:baseline;gap:12px}
+h2 .alt{font-family:'IBM Plex Sans KR';font-size:11.5px;font-weight:500;color:var(--slate);letter-spacing:.14em;text-transform:uppercase}
+.lede{color:var(--slate);font-size:14px;margin:0 0 24px;padding-bottom:18px;border-bottom:2px solid var(--ink)}
+h3{font-size:16px;margin:32px 0 12px;font-weight:600;display:flex;align-items:center;gap:9px}
+h3::before{content:"";width:7px;height:7px;background:var(--brick);flex:none}
+
+.bars{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:11px 26px;margin:8px 0 4px}
+.bar{display:grid;grid-template-columns:80px 1fr 44px;align-items:center;gap:10px;font-size:13px}
+.bar .t{color:var(--slate)}
+.bar .track{height:7px;background:var(--mist);position:relative}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--moss)}
+.bar .n{text-align:right;font-variant-numeric:tabular-nums;font-size:12px;color:var(--slate)}
+
+.point{border-left:3px solid var(--line);padding:2px 0 2px 18px;margin:0 0 22px}
+.point.plus{border-left-color:var(--moss)}
+.point.minus{border-left-color:var(--brick)}
+.point.split{border-left-color:var(--amber)}
+.point h4{margin:0 0 6px;font-size:15px;font-weight:600}
+.point p{margin:0 0 8px;font-size:14.5px}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.1em;padding:2px 7px;margin-left:8px;vertical-align:2px;background:var(--mist);color:var(--slate);font-weight:500}
+.tag.moss{background:#dbe8de;color:var(--moss)}
+.tag.brick{background:#f0dfd9;color:var(--brick)}
+.tag.amber{background:#f2e9d1;color:#84611c}
+
+blockquote{margin:8px 0 0;padding:10px 0 10px 15px;border-left:2px solid var(--mist);font-family:'Gowun Batang',serif;font-size:14px;color:#333c37}
+blockquote p{margin:0 0 6px}
+blockquote p:last-child{margin:0}
+blockquote .who{display:block;font-family:'IBM Plex Sans KR';font-size:11px;color:#87918a;margin-top:5px;letter-spacing:.03em}
+
+table{width:100%;border-collapse:collapse;margin:12px 0 4px;font-size:14px}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11.5px;letter-spacing:.1em;color:var(--slate);text-transform:uppercase;font-weight:600;border-bottom:1.5px solid var(--ink)}
+td:first-child{white-space:nowrap;font-weight:500;padding-right:20px}
+
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);margin:16px 0 4px}
+.vs > div{padding:18px}
+.vs > div:first-child{border-right:1px solid var(--line);background:#eef2ee}
+.vs h5{margin:0 0 10px;font-family:'Gowun Batang',serif;font-size:17px;font-weight:700}
+.vs ul{margin:0;padding-left:17px;font-size:13.5px}
+.vs li{margin-bottom:6px}
+
+.note{background:var(--mist);padding:16px 18px;font-size:13.5px;color:var(--slate);margin:24px 0 0;border-left:3px solid var(--slate)}
+footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:#87918a}
+
+@media (max-width:640px){.vs{grid-template-columns:1fr}.vs > div:first-child{border-right:0;border-bottom:1px solid var(--line)}.bar{grid-template-columns:70px 1fr 38px}}
+@media (prefers-reduced-motion:no-preference){
+  section{animation:rise .5s ease both;animation-timeline:view();animation-range:entry 0% entry 32%}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <svg viewBox="0 0 1200 320" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="none" stroke="#8aa593" stroke-width="1">
+      <path d="M0 306 Q190 262 370 276 T750 240 T1200 266"/>
+      <path d="M0 278 Q200 226 390 244 T770 200 T1200 232"/>
+      <path d="M0 250 Q210 190 410 212 T790 160 T1200 198"/>
+      <path d="M0 222 Q220 154 430 180 T810 120 T1200 164"/>
+      <path d="M0 194 Q230 118 450 148 T830 80 T1200 130"/>
+      <path d="M0 166 Q240 82 470 116 T850 40 T1200 96"/>
+      <path d="M0 138 Q250 46 490 84 T870 0 T1200 62"/>
+    </g>
+  </svg>
+  <div class="inner">
+    <p class="eyebrow">호갱노노 이야기 전수 분석 · 강북구 미아동 1354</p>
+    <h1>벽산라이브파크,<br>살아본 사람들이 <em>실제로</em> 한 말</h1>
+    <p class="sub">매매가·호가 글은 걷어내고 실거주 장단점과 인테리어 정보만 추렸습니다. 게시판 전체 1,376건 중 1,375건을 수집해 분류했습니다.</p>
+    <div class="counts">
+      <div><b>1,375</b><span>수집한 이야기</span></div>
+      <div><b>141</b><span>인테리어 관련</span></div>
+      <div><b>222</b><span>언덕 언급</span></div>
+      <div><b>256</b><span>공원·둘레길 언급</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section>
+  <h2>단지 기본값 <span class="alt">Baseline</span></h2>
+  <p class="lede">게시판에서 입주민이 직접 정리한 수치 위주로 옮겼습니다.</p>
+  <table>
+    <tr><th>항목</th><th>내용</th></tr>
+    <tr><td>준공</td><td>2004년 8월 (23년차)</td></tr>
+    <tr><td>세대수</td><td>총 2,075세대 · 임대 제외 <b>1,585세대</b> / 19개동</td></tr>
+    <tr><td>용적률·건폐율</td><td>231% / 16% <span style="color:var(--slate)">(옆 SK북한산시티는 271%)</span></td></tr>
+    <tr><td>평형 구성</td><td>23·24평, 31·32평, 40·41평 — <b>전용 59㎡부터 방3·화장실2</b></td></tr>
+    <tr><td>주차</td><td>세대당 약 1.18대 · 전기차 충전 약 38대 · <b>일부 동 제외하고 지하주차장↔엘리베이터 직결</b></td></tr>
+    <tr><td>학교</td><td>미양초 배정(병설유치원 있음), 솔샘중 배정 · 단지 내 솔샘유치원</td></tr>
+    <tr><td>경비</td><td>ADT 캡스 위탁 → 관리비 절감 요인으로 자주 언급</td></tr>
+  </table>
+  <p class="note"><b>평수 표기 주의</b> — 호갱노노·네이버에 <b>22평으로 등록된 타입이 실제로는 24평</b>이라며 입주민들이 직접 수정 절차를 진행 중이라는 글이 있습니다. 매물 비교하실 때 표기 평수만 믿지 마시고 전용면적(59·60㎡)으로 보셔야 합니다.</p>
+</section>
+
+<section>
+  <h2>무엇이 가장 많이 언급되나 <span class="alt">Frequency</span></h2>
+  <p class="lede">전체 1,375건에서 키워드가 등장한 글 수.</p>
+  <div class="bars">
+    <div class="bar"><span class="t">교통</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">306</span></div>
+    <div class="bar"><span class="t">공원·둘레길</span><span class="track"><span class="fill" style="width:84%"></span></span><span class="n">256</span></div>
+    <div class="bar"><span class="t">언덕·경사</span><span class="track"><span class="fill" style="width:73%"></span></span><span class="n">222</span></div>
+    <div class="bar"><span class="t">상가·마트</span><span class="track"><span class="fill" style="width:57%"></span></span><span class="n">174</span></div>
+    <div class="bar"><span class="t">주차</span><span class="track"><span class="fill" style="width:49%"></span></span><span class="n">149</span></div>
+    <div class="bar"><span class="t">조망·향</span><span class="track"><span class="fill" style="width:42%"></span></span><span class="n">130</span></div>
+    <div class="bar"><span class="t">학군</span><span class="track"><span class="fill" style="width:36%"></span></span><span class="n">109</span></div>
+    <div class="bar"><span class="t">인테리어</span><span class="track"><span class="fill" style="width:25%"></span></span><span class="n">76</span></div>
+    <div class="bar"><span class="t">엘리베이터</span><span class="track"><span class="fill" style="width:19%"></span></span><span class="n">58</span></div>
+    <div class="bar"><span class="t">구조·타입</span><span class="track"><span class="fill" style="width:19%"></span></span><span class="n">58</span></div>
+    <div class="bar"><span class="t">커뮤니티</span><span class="track"><span class="fill" style="width:17%"></span></span><span class="n">52</span></div>
+    <div class="bar"><span class="t">소음</span><span class="track"><span class="fill" style="width:13%"></span></span><span class="n">39</span></div>
+    <div class="bar"><span class="t">화장실</span><span class="track"><span class="fill" style="width:9%"></span></span><span class="n">27</span></div>
+    <div class="bar"><span class="t">주방</span><span class="track"><span class="fill" style="width:6%"></span></span><span class="n">17</span></div>
+    <div class="bar"><span class="t">누수·배관</span><span class="track"><span class="fill" style="width:5%"></span></span><span class="n">16</span></div>
+    <div class="bar"><span class="t">관리비</span><span class="track"><span class="fill" style="width:5%"></span></span><span class="n">16</span></div>
+    <div class="bar"><span class="t">재건축·리모델링</span><span class="track"><span class="fill" style="width:5%"></span></span><span class="n">15</span></div>
+    <div class="bar"><span class="t">벌레</span><span class="track"><span class="fill" style="width:4%"></span></span><span class="n">13</span></div>
+    <div class="bar"><span class="t">수압</span><span class="track"><span class="fill" style="width:1%"></span></span><span class="n">4</span></div>
+  </div>
+  <p class="note">SK북한산시티와 결정적으로 다른 지점: 여기는 <b>공원·둘레길(256건)이 언덕(222건)보다 많이 언급됩니다.</b> SK는 언덕이 압도적 1~3위였습니다. 게시판 무게중심 자체가 "숲세권"에 있다는 뜻입니다. 다만 <b>학군 언급은 109건</b>으로 SK(469건)의 4분의 1도 안 됩니다. 학군 프리미엄으로 굴러가는 단지는 아닙니다.</p>
+</section>
+
+<section>
+  <h2>장점 <span class="alt">What residents like</span></h2>
+  <p class="lede">여러 글에서 반복적으로 겹치는 것만 추렸습니다.</p>
+
+  <div class="point plus">
+    <h4>상가 엘리베이터 — 이 단지의 진짜 무기<span class="tag moss">언덕 해법</span></h4>
+    <p>여기 게시판의 핵심 정보입니다. 솔샘역 출입구 앞 <b>벽산 상가 엘리베이터를 타고 올라가면 바로 평지</b>가 나오고, 거기서 여러 동으로 직접 들어갑니다. 언덕 얘기가 나올 때마다 이 답이 붙습니다.</p>
+    <blockquote>
+      <p>상가 엘리베이터 타고 나오면 작은 정원 같은 공간이 나옵니다. 여긴 평평한 평지이고 주변 아파트들로 바로 들어갈 수 있습니다. 벤치와 정자, 그늘 만드는 나무들이 있습니다.</p>
+      <p>경사를 별로 좋아하지 않아서, 주로 지하 3층 연결된 엘베로 주출입구 상가로 나와 버스나 전철을 이용했습니다.</p>
+    </blockquote>
+  </div>
+
+  <div class="point plus">
+    <h4>지하주차장 ↔ 동 엘리베이터 직결<span class="tag moss">구조적 우위</span></h4>
+    <p>SK북한산시티에서 가장 큰 구조적 불만이었던 항목이 여기서는 장점으로 나옵니다. <b>일부 동을 제외하면 지하 2·3·4층과 엘리베이터가 연결</b>됩니다. 비 오는 날, 마트 짐 많은 날, 유모차 이동에서 체감이 크다는 후기 다수.</p>
+    <blockquote><p>101동은 지하 4층까지 있는데 지하 3층까지 엘리베이터가 연결되어 있음 — 구축 아파트에서는 누리기 힘든 큰 장점.</p></blockquote>
+  </div>
+
+  <div class="point plus">
+    <h4>전용 59㎡부터 방3·화장실2<span class="tag moss">평면 효율</span></h4>
+    <p>20평대에도 방 3개 화장실 2개가 나오고 판상형입니다. "작은 평수도 다른 아파트보다 넓다", "20평대라도 4인 가족 가능"이라는 평이 반복됩니다. 20평대 타입 구분:</p>
+    <table>
+      <tr><th>타입</th><th>전용</th><th>구조</th><th>위치</th></tr>
+      <tr><td>A</td><td>59㎡</td><td>복도식(뒷베란다 없음) — 작은방 창이 엘베쪽 복도로 남. <b>외풍은 없음</b></td><td>가운데 2세대</td></tr>
+      <tr><td>B</td><td>60㎡</td><td>계단식(뒷베란다 있음) → 서비스면적 차이로 가격 소폭 높음</td><td>양 사이드 2세대</td></tr>
+    </table>
+    <p style="margin-top:8px">둘 다 방3·화장실2 판상형으로 동일하고, 차이는 뒷베란다 유무와 현관·주방 위치뿐. 한 층에 4세대, 동 출입은 비밀번호 방식.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>북한산 둘레길이 단지에서 바로 연결<span class="tag moss">256건</span></h4>
+    <p>생태공원·자락길·잣나무숲으로 이어집니다. 창문 열면 산바람이 들어와 에어컨을 덜 튼다는 후기가 반복되고, 노원 살 때 아이 아토피가 심했는데 이사 후 좋아졌다는 글도 있습니다. 벚꽃철 언급도 여러 건.</p>
+    <blockquote><p>북적북적한 도시 속에서 설악산에 휴가 온 느낌으로 살고 있습니다.</p><span class="who">11년 거주</span></blockquote>
+  </div>
+
+  <div class="point plus">
+    <h4>솔샘역 도보 3~5분 · 동간거리 넓음</h4>
+    <p>횡단보도 하나 건너 5분이라는 후기. 우이신설선 배차가 짧아 "놓쳐도 뛰지 않는다"는 표현. 정문 상가 앞 버스정류장으로 미아역·미아사거리·수유역·보문역 접근. 도보 기준 소요시간:</p>
+    <table>
+      <tr><th>목적지</th><th>지하철 기준</th></tr>
+      <tr><td>대학로</td><td>15분</td></tr>
+      <tr><td>신당동</td><td>18분</td></tr>
+      <tr><td>을지로</td><td>22분</td></tr>
+      <tr><td>서울역</td><td>25분</td></tr>
+      <tr><td>이태원</td><td>28분</td></tr>
+      <tr><td>성수동</td><td>30분</td></tr>
+      <tr><td>압구정로데오 / 홍대</td><td>35분</td></tr>
+      <tr><td>삼성역</td><td>50분</td></tr>
+    </table>
+    <p style="margin-top:8px;font-size:13.5px;color:var(--slate)">→ CBD·도심은 강점, 강남은 약점. 이게 이 단지 교통의 요약입니다.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>관리비 저렴 · 물가 싼 동네<span class="tag moss">캡스 경비</span></h4>
+    <p>ADT 캡스 위탁 경비로 관리비가 저렴하다는 언급이 여러 건. 단지 내 독서실이 하루종일 이용해도 3,000원. 동북마트·SK마트·한살림으로 간단한 장보기, 단지 내 장터도 열립니다. 동네 물가가 저렴하다는 평이 반복됩니다.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>2020년대 들어 대대적 환경개선 완료<span class="tag amber">현재진행</span></h4>
+    <p>주차 차단기 전면 교체, 아스팔트·보도블럭 교체, 지하주차장 및 옥상 방수공사 등이 마무리 단계라는 글. 젊은 세대 유입으로 리모델링해서 들어오는 세대가 늘고 단지 분위기가 빠르게 바뀌고 있다는 후기가 많습니다.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>주변 호재<span class="tag amber">호재</span></h4>
+    <p>미아뉴타운 2·3·4구역 재개발(미아3구역 사업시행인가), 강북횡단선 정릉역 통과 예정, 삼양사거리 대형 학원가 조성 지구단위계획, 강북구 종합체육문화예술센터, 2종 7층 고도제한 해제, 우이신설선 왕십리 연장 주민동의 추진 — 게시판에서 반복 언급되는 항목들입니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>단점 <span class="alt">What residents complain about</span></h2>
+  <p class="lede">방어성 글이 많은 게시판이라, 실제 불만이 적힌 문장만 골라냈습니다.</p>
+
+  <div class="point split">
+    <h4>언덕 — 존재하지만 상가 엘베로 상당 부분 우회<span class="tag brick">222건</span></h4>
+    <p>"단점이라면 평지가 아닌 것" 정도로 인정하는 톤이 대세입니다. 동별 편차가 있고, 입구 근처 동(102동, 119동 등)이 편하다는 언급. 다만 아래 문장이 솔직한 쪽입니다.</p>
+    <blockquote>
+      <p>어렸을 때는 언덕도 싫었고 어쨌고 했지만…</p>
+      <p>언덕이어서 처음에는 힘들었지만 이제는 익숙해져서 별 불편을 못 느낍니다.</p>
+      <p>평지 생활을 중요하게 생각하시는 분이라면 직접 단지와 주변을 걸어보시는 것을 추천합니다.</p>
+      <span class="who">4년 거주 후기 결론부</span>
+    </blockquote>
+  </div>
+
+  <div class="point minus">
+    <h4>우이신설선 2량 혼잡 — 출퇴근 시간엔 붐빔<span class="tag brick">구조적</span></h4>
+    <blockquote>
+      <p>경전철은 2량뿐이어서 출퇴근 시간에는 많이 붐빕니다. 차량 수를 늘릴 수 있다면 좋을 텐데 초기 수요예측이 잘못되었던 것 같습니다.</p>
+      <p>자차 출퇴근은 아리랑고개 넘는 길이 꽤 막힙니다.</p>
+    </blockquote>
+    <p style="font-size:13.5px;color:var(--slate)">→ 강남 출퇴근은 50분급. 도심 직장이면 강점, 강남 직장이면 감점 요인입니다.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>대형마트는 차가 필수<span class="tag brick">상권</span></h4>
+    <p>단지 상가에 큰 편의점과 커피숍·미용실·태권도·스터디카페·크린토피아·약국 정도가 있지만, 롯데마트·이마트급은 차로 나가야 합니다(약 10분). 다양한 음식점은 수유역·미아사거리·성신여대로 나가야 합니다. <b>예전에 있던 김포공항행 버스가 없어진 게 아쉽다</b>는 언급도 있습니다.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>단지 내 커뮤니티 시설 부족<span class="tag brick">명시적 단점</span></h4>
+    <p>여러 정리글에서 "단지 내 커뮤니티 부족은 단점"으로 명시됩니다. 독서실은 있고 저렴하지만 헬스·수영 등은 외부 의존. 근처 체육센터 완공으로 보완 기대.</p>
+    <p style="font-size:13.5px;color:var(--slate)">기타 아쉬움: 놀이터 시설 노후, 주차 자동인식 차단기 미비(차단기가 자주 고장나 캡스 직원이 수동 통제했다는 시기 언급 — 최근 전면 교체됨).</p>
+  </div>
+
+  <div class="point minus">
+    <h4>A타입 복도식은 환기 동선이 불편<span class="tag brick">구조</span></h4>
+    <blockquote>
+      <p>구조를 보면 알겠지만 환기가 잘 안 되는 구조입니다. 화장실에 곰팡이가 잘 생겨요.</p>
+      <p>복도식이라 환기가 불편하긴 하나 공기가 좋아요.</p>
+    </blockquote>
+    <p style="font-size:13.5px;color:var(--slate)">→ 해법 댓글: 현관문 + 복도창 + 베란다창을 함께 열면 맞바람이 통한다는 팁. 즉 <b>현관문을 열어야 환기가 되는 구조</b>라는 뜻입니다.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>층간소음 — 세대 편차, 판단은 각자</h4>
+    <p>"층간소음 거의 없다", "유해충 없고 층간소음 없어 살기 좋다"는 글과 "층간소음은 어쩔 수 없다, 뛰어 올라오시는 분도 계셨다"는 글이 공존합니다. 2004년 구축의 일반적 편차로 보는 게 맞습니다.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>배관 노후 이슈 — 역류·냄새 사례 있음<span class="tag brick">16건</span></h4>
+    <blockquote>
+      <p>변기 역류 현상이 일주일째 — 업체 말로는 메인배관 물 빠짐 문제로 공기 역류가 있을 수 있다고. 관리사무소 문의 권장.</p>
+      <p>화장실 하수구와 싱크대에서 냄새가 심하게 올라옴 → 싱크대 관 교체 필요.</p>
+    </blockquote>
+    <p style="font-size:13.5px;color:var(--slate)">→ 반면 <b>동파는 거의 없다</b>는 답변이 여러 건이고, <b>수압은 물탱크가 위에 있어 고층도 괜찮다</b>는 답변이 있습니다. 수압 언급이 4건뿐인 것도 같은 방향.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>임대세대 혼합 · 재건축 사업성</h4>
+    <p>총 2,075세대 중 임대 제외 1,585세대로, 임대가 섞인 단지입니다. 용적률 231%로 SK보다는 여유가 있어 <b>리모델링 논의가 게시판에서 막 시작된 단계</b>입니다. 다만 확정된 사안은 아니고, 실거주 만족도로 접근하는 글이 압도적입니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>인테리어 — 여기가 알맹이 <span class="alt">Renovation intel</span></h2>
+  <p class="lede">이 단지 특유의 시공 이슈만 뽑았습니다. 일반적인 인테리어 상식은 뺐습니다.</p>
+
+  <h3>이 단지 최대 특이점: 거실과 방 사이 단차</h3>
+  <p>다른 단지에서는 거의 안 나오는 이슈인데, 여기선 반복 등장합니다.</p>
+  <blockquote>
+    <p>한 업체에서 벽산라이브파크는 거실이랑 방 높이 차이가 많이 나서 장판이 불가능하고 무조건 강마루를 시공해야 한다고 하는데 사실인가요?</p>
+    <p>거실이랑 방에 단차가 있던데 다른 집들도 단차가 있나요? → 인테리어 할 때 단차 없애고 마루 깔았어요.</p>
+  </blockquote>
+  <p style="margin-top:10px">→ 정리: <b>단차는 실재하고, 시공 시 단차를 없애고 마루를 깔는 게 이 단지 표준 해법</b>입니다. 예산이 빠듯하면 "요즘 두꺼운 장판이 잘 나온다"며 장판으로 가는 조언도 있습니다.</p>
+
+  <h3>온수배관 — SK보다는 온도가 낮지만 여전히 필수 후보</h3>
+  <blockquote>
+    <p>필수로 해야 할 시공? → 온수배관, 샤시, 바닥은 두꺼운 장판.</p>
+    <p>온수관 교체는 거실·바닥 전체를 뜯어 호스를 바꾸는 게 아니라, 방과 방·부엌과 방 <b>경계면(이음새)의 관 교체</b>입니다. 사람이 살면서는 부분 교체만 가능하고, 집을 비우면 전체 교체도 가능합니다.</p>
+  </blockquote>
+  <p style="margin-top:10px;font-size:13.5px;color:var(--slate)">→ 세입자 거주 중 "누수 시공했다"는 매물은 부분 보수일 가능성이 높다는 뜻입니다. 이 논리는 매물 협상 카드로도 쓸 수 있습니다.</p>
+
+  <h3>확장 · 샷시 — 우레탄 단열이 정답으로 나옴</h3>
+  <blockquote>
+    <p>거실 확장 만족합니다. 단열을 우레탄으로 했더니 진짜 바람 하나 안 들어와요.</p>
+    <p>폴딩도어 추천해요. 확장 안 해도 거실 넓더라구요.</p>
+    <p>비용 아껴야 하는데 샷시 안 하면 단열이? → <b>부엌 단창을 이중창으로만이라도.</b> 겨울에 들어오던 한기가 잡혔어요.</p>
+    <p>단열 공사는 굳이 안 했고, 보일러 교체를 고려하는 게 좋겠습니다.</p>
+  </blockquote>
+  <p style="margin-top:10px">→ 우선순위 정리: <b>부엌 단창 이중창화 → 우레탄 단열 확장 → 전체 샷시</b> 순으로 예산을 쪼개는 게 게시판 합의입니다.</p>
+
+  <h3>비용 감각</h3>
+  <table>
+    <tr><th>범위</th><th>게시판 수치</th></tr>
+    <tr><td>20평대 전체</td><td>2천 후반 ~ 3천만원 수준</td></tr>
+    <tr><td>59타입 올수리</td><td>확장·샷시 제외 <b>약 2,500만원</b></td></tr>
+    <tr><td>견적 받는 법</td><td>피터팬에서 전체 열린 견적 / 숨고·오늘의집 병행 권장</td></tr>
+  </table>
+  <p style="margin-top:10px;font-size:13.5px;color:var(--slate)">거명된 업체: <b>SK 주상가 "야베스"</b>가 복수 추천됩니다("sk상가 야00"도 같은 곳으로 보임). 실측이 어려운 상황이면 <b>벽산 경험 있는 업체에 맡기면 실측 없이도 견적 산출이 가능</b>하다는 답변이 있습니다.</p>
+
+  <h3>평형별 실전 팁</h3>
+  <table>
+    <tr><th>이슈</th><th>내용</th></tr>
+    <tr><td>31평 시스템에어컨</td><td><b>중저층은 단내림 필수.</b> 천장 여유가 없습니다.</td></tr>
+    <tr><td>22B / 74B 세탁실</td><td>워시타워 넣으려면 <b>계량기 높이를 올려야</b> 합니다. 주방 옆 뒷발코니 설치가 정석.</td></tr>
+    <tr><td>22B 아일랜드</td><td>냉장고와 동시에는 무리. 냉장고를 부엌 쪽 방으로 빼면 아일랜드를 식탁 겸용으로 가능. <b>베란다에 냉장고는 불가</b>(세탁기+분리수거로 이미 꽉 참).</td></tr>
+    <tr><td>31평 주방 구조변경</td><td>가스레인지 자리로 냉장고장 옮기려면 가스관 공사 문제로 <b>인덕션 전환 권장</b>. 후드 배관은 냉장고장 위쪽으로 숨겨 연결한 사례.</td></tr>
+    <tr><td>ㄷ자 주방</td><td>비추천 의견. 좁아 보인다는 이유로 실제로 안 한 세대가 있습니다.</td></tr>
+    <tr><td>59A 창호 실측</td><td>안방 창 가로 180 × 높이 200 / 거실 천장까지 230 / 작은방 140 × 120 (커튼은 안방 210, 작은방 150 주문 사례). <b>참고치이며 실측 권장.</b></td></tr>
+    <tr><td>창문형 에어컨</td><td>샷시 구조에 따라 불가한 집이 있음. 제조사에 샷시 사진 보내 확인이 가장 빠름.</td></tr>
+    <tr><td>안방 화장실</td><td>변기를 빼고 파우더룸으로 바꾸는 걸 고민한 글 → <b>없앴으면 아찔했을 것</b>이라는 만류 답변. 대신 세면대를 작은 걸로 하라는 조언.</td></tr>
+    <tr><td>욕조 vs 파티션</td><td>파티션 시공 후 "욕조 생각난다"는 후회 후기 있음. 아이 계획 있으면 욕조 유지 쪽.</td></tr>
+    <tr><td>중문</td><td>기본 분양에 중문 없음. <b>소음 차단 효과로 강력 추천</b> 항목. 주방 아일랜드·하부장 수납도 꼭 챙기라는 조언.</td></tr>
+    <tr><td>유리난간 샷시</td><td>관리사무소 허용 여부 질문 있으나 명확한 답 없음 → 사전 문의 필요.</td></tr>
+    <tr><td>이웃 인사</td><td>공사 전 인사 다니는 문화가 있고 서로 양해가 잘 되는 분위기라는 후기가 여럿.</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>SK북한산시티와 나란히 놓으면 <span class="alt">Head to head</span></h2>
+  <p class="lede">두 단지 게시판을 모두 전수 분석한 결과의 비교입니다. 같은 2004년, 같은 미아동, 붙어 있는 형제 단지인데 성격이 뚜렷하게 다릅니다.</p>
+  <div class="vs">
+    <div>
+      <h5>SK북한산시티</h5>
+      <ul>
+        <li>3,830세대 / 용적률 271%</li>
+        <li><b>학군이 엔진</b> — 삼각산초 100% 입주민 배정, 학군 언급 469건</li>
+        <li>주차 절대량 넉넉(지하 4,073대), 그러나 <b>지하↔동 엘베 연결 동이 소수</b> (20평대 4개, 30평대 2개)</li>
+        <li>언덕 언급 467건 — 게시판 최대 논쟁거리, 방어 여론 과열</li>
+        <li>온수배관 교체가 사실상 필수 (PVC 20년)</li>
+        <li>엘리베이터 교체 공사 진행 중 → 생활 불편 현재진행</li>
+        <li>커뮤니티: 헬스·골프·테니스·독서실 있으나 시설 수준 아쉬움</li>
+      </ul>
+    </div>
+    <div>
+      <h5>벽산라이브파크</h5>
+      <ul>
+        <li>2,075세대(임대 제외 1,585) / 용적률 231%</li>
+        <li><b>숲세권이 엔진</b> — 공원·둘레길 언급 256건 &gt; 언덕 222건</li>
+        <li><b>지하↔동 엘베 직결이 기본</b>(일부 동 제외) + 상가 엘베로 언덕 우회</li>
+        <li>전용 59㎡부터 방3·화장실2 — 소형 평면 효율 우위</li>
+        <li>단차 이슈로 강마루 시공이 표준</li>
+        <li>주차 차단기·아스팔트·방수 등 환경개선 완료 단계</li>
+        <li>커뮤니티는 명시적 단점, 학군 언급은 SK의 1/4 미만</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note" style="margin-top:20px"><b>형님용 한 줄</b> — 아이 학교로 가는 판단이면 SK, 언덕 스트레스와 지하주차장 동선이 우선이면 벽산입니다. 특히 <b>SK에서 30평대 지하 엘베 연결 동이 123·147 두 개뿐</b>이라는 제약이 벽산에서는 대체로 해소됩니다. 형님이 SK 건축물대장 파싱으로 동별 엘베 연결을 검증하고 계셨으니, 벽산도 같은 방식으로 "일부 동 제외"의 그 일부가 어디인지 뽑아두면 두 단지 비교 테이블이 완성됩니다.</p>
+</section>
+
+<footer>
+  출처: 호갱노노 벽산라이브파크 이야기 게시판 (2026년 8월 10일 수집). 총 1,376건 중 1,375건 수집·분류.
+  인용은 원문 요지를 옮긴 것으로, 개별 발언은 작성자 개인의 경험입니다. 실측치·비용은 모두 참고용이며 계약 전 현장 확인이 필요합니다.
+</footer>
+
+</div>
+</body>
+</html>

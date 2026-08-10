@@ -18,6 +18,25 @@
         { "label": "개 동", "value": "54" },
         { "label": "지하 직결", "value": "9개 동" }
       ]
+    },
+    {
+      "id": "byeoksan-livepark",
+      "name": "벽산라이브파크",
+      "file": "byeoksan-map.html",
+      "complexNo": "3099",
+      "region": "서울 강북구",
+      "address": "미아동 1354",
+      "built": "2004.08",
+      "households": 1585,
+      "buildings": 19,
+      "accent": "#c08a2e",
+      "tags": ["숲세권", "지하주차장 직결", "상가 엘리베이터 우회"],
+      "summary": "호갱노노 이야기 1,375건 전수 분석과 19개 동 평형별 배치도. SK북한산시티와 이웃한 형제 단지.",
+      "highlights": [
+        { "label": "총 세대수", "value": "1,585" },
+        { "label": "개 동", "value": "19" },
+        { "label": "혼합 동", "value": "1개" }
+      ]
     }
   ]
 }

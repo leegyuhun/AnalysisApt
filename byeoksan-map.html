@@ -2,74 +2,93 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>벽산라이브파크 · 입주민 이야기 1,375건 정리</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>벽산라이브파크 · 배치도와 입주민 이야기</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" href="assets/articles.css">
 <style>
+
 :root{
-  --ink:#1b2320;
-  --slate:#4d5a54;
-  --mist:#e6ece7;
-  --paper:#f7f6f2;
-  --moss:#3d6b52;        /* 둘레길 이끼 */
-  --brick:#9d4f3e;
-  --amber:#b8862c;
-  --line:#ccd4cd;
+  --granite:#20262b;
+  --slate:#4a5560;
+  --mist:#e8ebe6;
+  --paper:#f6f5f1;
+  --pine:#2f5d4f;
+  --clay:#a8563c;
+  --gold:#c08a2e;
+  --line:#cdd2c9;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:'IBM Plex Sans KR',sans-serif;line-height:1.75;font-size:15.5px;letter-spacing:-0.01em}
+body{
+  margin:0;background:var(--paper);color:var(--granite);
+  font-family:'IBM Plex Sans KR',sans-serif;font-weight:400;line-height:1.75;
+  font-size:15.5px;letter-spacing:-0.01em;
+}
 .wrap{max-width:940px;margin:0 auto;padding:0 22px 100px}
 
-header{position:relative;overflow:hidden;background:var(--ink);color:var(--mist);padding:70px 0 56px;margin-bottom:52px}
-header svg{position:absolute;inset:0;width:100%;height:100%;opacity:.26}
+/* ── 히어로 ── */
+header{position:relative;overflow:hidden;background:var(--granite);color:var(--mist);padding:70px 0 56px;margin-bottom:0}
+header svg{position:absolute;inset:0;width:100%;height:100%;opacity:.28}
 header .inner{position:relative;max-width:940px;margin:0 auto;padding:0 22px}
-.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin:0 0 16px;font-weight:500}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:500}
 h1{font-family:'Gowun Batang',serif;font-weight:700;font-size:clamp(30px,5.4vw,50px);line-height:1.2;margin:0 0 18px}
-h1 em{font-style:normal;color:var(--amber)}
-.sub{max-width:620px;color:#b3c0b7;font-size:14.5px;margin:0}
+h1 em{font-style:normal;color:var(--gold)}
+.sub{max-width:600px;color:#b9c2bd;font-size:14.5px;margin:0}
 .counts{display:flex;flex-wrap:wrap;gap:26px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15)}
+.counts div{min-width:88px}
 .counts b{display:block;font-family:'Gowun Batang',serif;font-size:27px;line-height:1.1;color:#fff}
-.counts span{font-size:11.5px;color:#8fa096;letter-spacing:.04em}
+.counts span{font-size:11.5px;color:#94a09a;letter-spacing:.04em}
 
-section{margin:0 0 60px}
-h2{font-family:'Gowun Batang',serif;font-size:25px;margin:0 0 6px;font-weight:700;display:flex;align-items:baseline;gap:12px}
-h2 .alt{font-family:'IBM Plex Sans KR';font-size:11.5px;font-weight:500;color:var(--slate);letter-spacing:.14em;text-transform:uppercase}
-.lede{color:var(--slate);font-size:14px;margin:0 0 24px;padding-bottom:18px;border-bottom:2px solid var(--ink)}
+/* ── 섹션 ── */
+section{margin:0 0 60px;scroll-margin-top:20px}
+h2{font-family:'Gowun Batang',serif;font-size:25px;margin:0 0 6px;font-weight:700;
+   display:flex;align-items:baseline;gap:12px}
+h2 .alt{font-family:'IBM Plex Sans KR';font-size:11.5px;font-weight:500;color:var(--slate);
+   letter-spacing:.14em;text-transform:uppercase}
+.lede{color:var(--slate);font-size:14px;margin:0 0 24px;padding-bottom:18px;border-bottom:2px solid var(--granite)}
+
 h3{font-size:16px;margin:32px 0 12px;font-weight:600;display:flex;align-items:center;gap:9px}
-h3::before{content:"";width:7px;height:7px;background:var(--brick);flex:none}
+h3::before{content:"";width:7px;height:7px;background:var(--clay);flex:none}
 
+/* ── 언급 빈도 바 ── */
 .bars{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:11px 26px;margin:8px 0 4px}
 .bar{display:grid;grid-template-columns:80px 1fr 44px;align-items:center;gap:10px;font-size:13px}
 .bar .t{color:var(--slate)}
 .bar .track{height:7px;background:var(--mist);position:relative}
-.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--moss)}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--pine)}
 .bar .n{text-align:right;font-variant-numeric:tabular-nums;font-size:12px;color:var(--slate)}
 
+/* ── 평가 카드 ── */
 .point{border-left:3px solid var(--line);padding:2px 0 2px 18px;margin:0 0 22px}
-.point.plus{border-left-color:var(--moss)}
-.point.minus{border-left-color:var(--brick)}
-.point.split{border-left-color:var(--amber)}
+.point.plus{border-left-color:var(--pine)}
+.point.minus{border-left-color:var(--clay)}
+.point.split{border-left-color:var(--gold)}
 .point h4{margin:0 0 6px;font-size:15px;font-weight:600}
 .point p{margin:0 0 8px;font-size:14.5px}
-.tag{display:inline-block;font-size:10.5px;letter-spacing:.1em;padding:2px 7px;margin-left:8px;vertical-align:2px;background:var(--mist);color:var(--slate);font-weight:500}
-.tag.moss{background:#dbe8de;color:var(--moss)}
-.tag.brick{background:#f0dfd9;color:var(--brick)}
-.tag.amber{background:#f2e9d1;color:#84611c}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.1em;padding:2px 7px;margin-left:8px;
+     vertical-align:2px;background:var(--mist);color:var(--slate);font-weight:500}
+.tag.pine{background:#dfe9e2;color:var(--pine)}
+.tag.clay{background:#f0e0d9;color:var(--clay)}
+.tag.gold{background:#f2e8d2;color:#8a6318}
 
-blockquote{margin:8px 0 0;padding:10px 0 10px 15px;border-left:2px solid var(--mist);font-family:'Gowun Batang',serif;font-size:14px;color:#333c37}
+blockquote{margin:8px 0 0;padding:10px 0 10px 15px;border-left:2px solid var(--mist);
+  font-family:'Gowun Batang',serif;font-size:14px;color:#3b444b}
 blockquote p{margin:0 0 6px}
 blockquote p:last-child{margin:0}
-blockquote .who{display:block;font-family:'IBM Plex Sans KR';font-size:11px;color:#87918a;margin-top:5px;letter-spacing:.03em}
+blockquote .who{display:block;font-family:'IBM Plex Sans KR';font-size:11px;color:#8b948d;margin-top:5px;letter-spacing:.03em}
 
-table{width:100%;border-collapse:collapse;margin:12px 0 4px;font-size:14px}
-th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:11.5px;letter-spacing:.1em;color:var(--slate);text-transform:uppercase;font-weight:600;border-bottom:1.5px solid var(--ink)}
-td:first-child{white-space:nowrap;font-weight:500;padding-right:20px}
+/* ── 동 배지 ── */
+.dongs{display:flex;flex-wrap:wrap;gap:20px;margin:14px 0 6px}
+.dongs > div{flex:1 1 180px}
+.dongs h5{margin:0 0 8px;font-size:12px;letter-spacing:.1em;color:var(--slate);font-weight:600}
+.chip{display:inline-block;font-family:'Gowun Batang',serif;font-size:15px;font-weight:700;
+  padding:5px 11px;margin:0 6px 6px 0;background:var(--granite);color:#fff}
 
+/* ── 나란히 비교 ── */
 .vs{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);margin:16px 0 4px}
 .vs > div{padding:18px}
 .vs > div:first-child{border-right:1px solid var(--line);background:#eef2ee}
@@ -77,44 +96,167 @@ td:first-child{white-space:nowrap;font-weight:500;padding-right:20px}
 .vs ul{margin:0;padding-left:17px;font-size:13.5px}
 .vs li{margin-bottom:6px}
 
-.note{background:var(--mist);padding:16px 18px;font-size:13.5px;color:var(--slate);margin:24px 0 0;border-left:3px solid var(--slate)}
-footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:#87918a}
+/* ── 표 ── */
+table{width:100%;border-collapse:collapse;margin:12px 0 4px;font-size:14px}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11.5px;letter-spacing:.1em;color:var(--slate);text-transform:uppercase;font-weight:600;
+   border-bottom:1.5px solid var(--granite)}
+td:first-child{white-space:nowrap;font-weight:500;padding-right:20px}
 
-@media (max-width:640px){.vs{grid-template-columns:1fr}.vs > div:first-child{border-right:0;border-bottom:1px solid var(--line)}.bar{grid-template-columns:70px 1fr 38px}}
+.note{background:var(--mist);padding:16px 18px;font-size:13.5px;color:var(--slate);margin:24px 0 0;border-left:3px solid var(--slate)}
+footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:#8b948d}
+
+@media (max-width:640px){.vs{grid-template-columns:1fr}.vs > div:first-child{border-right:0;border-bottom:1px solid var(--line)}}
+@media (max-width:600px){
+  .bar{grid-template-columns:66px 1fr 38px}
+  .counts{gap:18px}
+}
 @media (prefers-reduced-motion:no-preference){
   section{animation:rise .5s ease both;animation-timeline:view();animation-range:entry 0% entry 32%}
   @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 }
+
+
+/* ══ 탭 ══ */
+.tabs{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);
+  box-shadow:0 1px 0 rgba(32,38,43,.04)}
+.tabs .inner{max-width:940px;margin:0 auto;padding:0 22px;display:flex}
+.tabs button{background:none;border:none;border-bottom:2px solid transparent;padding:16px 2px 13px;
+  margin-right:30px;font-family:'IBM Plex Sans KR',sans-serif;font-size:14px;font-weight:600;
+  color:#8b948d;cursor:pointer;letter-spacing:-.01em;transition:color .15s}
+.tabs button:hover{color:var(--granite)}
+.tabs button[aria-selected="true"]{color:var(--granite);border-bottom-color:var(--clay)}
+.tabs button:focus-visible{outline:2px solid var(--granite);outline-offset:-3px}
+.tabs button .c{font-size:11px;color:#a2aba4;font-weight:500;margin-left:6px}
+.wrap{padding-top:44px}
+.panel[hidden]{display:none}
+
+/* ══ 배치도 ══ */
+.legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}
+.lg{border:1px solid var(--line);background:#fff;padding:7px 13px 7px 10px;
+  display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:13px;font-weight:500;color:var(--granite);cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.lg:hover{border-color:var(--slate)}
+.lg:focus-visible{outline:2px solid var(--granite);outline-offset:2px}
+.lg[aria-pressed="true"]{border-color:var(--granite);box-shadow:inset 0 0 0 1px var(--granite)}
+.lg .dot{width:13px;height:13px;flex:none}
+.lg .ring{width:15px;height:15px;flex:none;border-radius:50%;background:#fff;
+  box-shadow:0 0 0 2px var(--granite), inset 0 0 0 2px #fff, 0 0 0 3.5px #fff}
+.lg .n{font-size:11.5px;color:#8b948d;font-variant-numeric:tabular-nums}
+
+.mapbox{background:#fbfaf7;border:1px solid var(--line);padding:8px;overflow:hidden}
+.mapbox svg{display:block;width:100%;height:auto;touch-action:manipulation}
+.lm{font-size:11px;fill:#a6afa7;font-weight:500;font-family:'IBM Plex Sans KR',sans-serif}
+.pill{cursor:pointer;transition:opacity .2s}
+.pill.dim{opacity:.16}
+.pill text{font-family:'IBM Plex Sans KR',sans-serif;font-size:11.5px;font-weight:600;
+  text-anchor:middle;dominant-baseline:central;pointer-events:none;fill:#fff}
+.pill:focus{outline:none}
+.pill:focus-visible rect.fr{stroke:#20262b;stroke-width:3}
+rect.fr{fill:none;stroke:rgba(32,38,43,.28);stroke-width:1}
+
+.readout{margin:14px 0 0;padding:14px 16px;background:#fff;border:1px solid var(--line);min-height:52px}
+.readout .hd{font-family:'Gowun Batang',serif;font-size:17px;font-weight:700;color:var(--granite)}
+.readout .sub{display:block;font-size:13px;color:var(--slate);margin-top:4px}
+.readout .ev{display:inline-block;margin-top:7px;font-size:11.5px;letter-spacing:.08em;
+  padding:3px 9px;background:var(--granite);color:#fff;font-weight:500}
+
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sw{display:inline-block;width:10px;height:10px;margin-right:8px}
+.dlist{font-size:13px;line-height:1.9;color:var(--slate);font-variant-numeric:tabular-nums}
+@media (max-width:600px){
+  .tabs button{margin-right:20px;font-size:13px}
+  .wrap{padding-top:32px}
+}
+
 </style>
 </head>
 <body>
 
+<nav class="topbar">
+  <div class="inner">
+    <a href="index.html">← 후보 단지 목록</a>
+    <span class="sep">/</span>
+    <span class="cur">벽산라이브파크</span>
+  </div>
+</nav>
+
 <header>
   <svg viewBox="0 0 1200 320" preserveAspectRatio="none" aria-hidden="true">
-    <g fill="none" stroke="#8aa593" stroke-width="1">
-      <path d="M0 306 Q190 262 370 276 T750 240 T1200 266"/>
-      <path d="M0 278 Q200 226 390 244 T770 200 T1200 232"/>
-      <path d="M0 250 Q210 190 410 212 T790 160 T1200 198"/>
-      <path d="M0 222 Q220 154 430 180 T810 120 T1200 164"/>
-      <path d="M0 194 Q230 118 450 148 T830 80 T1200 130"/>
-      <path d="M0 166 Q240 82 470 116 T850 40 T1200 96"/>
-      <path d="M0 138 Q250 46 490 84 T870 0 T1200 62"/>
+    <g fill="none" stroke="#8fa79a" stroke-width="1">
+      <path d="M0 300 Q200 250 380 268 T760 232 T1200 258"/>
+      <path d="M0 272 Q210 214 400 236 T780 192 T1200 224"/>
+      <path d="M0 244 Q220 178 420 204 T800 152 T1200 190"/>
+      <path d="M0 216 Q230 142 440 172 T820 112 T1200 156"/>
+      <path d="M0 188 Q240 106 460 140 T840 72 T1200 122"/>
+      <path d="M0 160 Q250 70 480 108 T860 32 T1200 88"/>
+      <path d="M0 132 Q260 34 500 76 T880 -8 T1200 54"/>
     </g>
   </svg>
   <div class="inner">
-    <p class="eyebrow">호갱노노 이야기 전수 분석 · 강북구 미아동 1354</p>
-    <h1>벽산라이브파크,<br>살아본 사람들이 <em>실제로</em> 한 말</h1>
-    <p class="sub">매매가·호가 글은 걷어내고 실거주 장단점과 인테리어 정보만 추렸습니다. 게시판 전체 1,376건 중 1,375건을 수집해 분류했습니다.</p>
+    <p class="eyebrow">강북구 미아동 1354 · 2004.08 준공</p>
+    <h1>벽산라이브파크<br><em>배치도</em>와 <em>입주민 이야기</em></h1>
+    <p class="sub">평형별 동 배치도, 그리고 호갱노노 이야기 1,375건 전수 분석. 한 페이지에서 탭으로 오갑니다.</p>
     <div class="counts">
+      <div><b>1,585</b><span>총 세대수</span></div>
+      <div><b>19</b><span>개 동</span></div>
+      <div><b>1</b><span>혼합 동(101)</span></div>
       <div><b>1,375</b><span>수집한 이야기</span></div>
-      <div><b>141</b><span>인테리어 관련</span></div>
-      <div><b>222</b><span>언덕 언급</span></div>
-      <div><b>256</b><span>공원·둘레길 언급</span></div>
     </div>
   </div>
 </header>
 
+<nav class="tabs" id="tabs">
+  <div class="inner">
+    <button type="button" data-p="panel-map" aria-selected="true">동별 배치도<span class="c">19개 동</span></button>
+    <button type="button" data-p="panel-rev" aria-selected="false">입주민 이야기<span class="c">1,375건</span></button>
+    <button type="button" data-p="panel-price" aria-selected="false">매물 시세<span class="c" id="tab-price-c"></span></button>
+  </div>
+</nav>
+
 <div class="wrap">
+  <div class="panel" id="panel-map">
+
+<section>
+  <h2>동별 평형 배치도 <span class="alt">Floor plan</span></h2>
+  <p class="lede">19개 동 전체. 평형은 사용자 제공 자료 기준이며, 동별 세대수·층수·라인수는 별도 확인된 자료가 없어 싣지 않았습니다. 101동은 라인에 따라 평형이 갈리는 유일한 혼합 동입니다.</p>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="mapbox">
+    <svg id="map" viewBox="0 0 780 591" role="img" aria-label="벽산라이브파크 동별 평형 배치도">
+      <g id="landmarks"></g><g id="pills"></g>
+    </svg>
+  </div>
+
+  <div class="readout" id="readout">동을 탭하면 평형이 나옵니다.</div>
+
+  <h3>101동 — 유일한 혼합 동</h3>
+  <p style="margin:0 0 6px;font-size:14.5px">19개 동 중 유일하게 한 동 안에 두 평형이 섞여 있습니다. <b>1·2호 라인은 23·24평, 3·4호 라인은 40·41평</b>입니다. SK북한산시티의 147동(24평+33평 혼합)과 같은 구조입니다.</p>
+
+  <h3>평형별 동 목록</h3>
+  <table>
+    <thead><tr><th>평형</th><th>전용 / 공급</th><th>동</th><th class="num">동 수</th></tr></thead>
+    <tbody id="dbody"></tbody>
+  </table>
+
+  <div class="note">
+    <b>동별 세대수·층수는 아직 검증되지 않았습니다.</b> SK북한산시티 페이지처럼 건축물대장 전유부로 교차검증하기 전까지는
+    평형 배치만 참고하시고, 라인 수·세대수는 현장 확인을 권장합니다.
+    배치 좌표는 제공된 지도 캡처 기준 근사치이며, <b>112동과 115동은 원본에서 다른 표시(공부방·상호명 아이콘)에 라벨이 가려져
+    위치가 추정값</b>입니다.
+  </div>
+
+  <footer>
+    평형 구성: 네이버 부동산 단지 정보(complexNo 3099) 및 사용자 제공 동 목록.
+    동별 세대수·층수·라인수는 미확인 상태입니다.
+    배치 좌표는 제공된 지도 캡처 기준 근사치입니다.
+  </footer>
+</section>
+
+  </div>
+  <div class="panel" id="panel-rev" hidden>
+
 
 <section>
   <h2>단지 기본값 <span class="alt">Baseline</span></h2>
@@ -164,7 +306,7 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   <p class="lede">여러 글에서 반복적으로 겹치는 것만 추렸습니다.</p>
 
   <div class="point plus">
-    <h4>상가 엘리베이터 — 이 단지의 진짜 무기<span class="tag moss">언덕 해법</span></h4>
+    <h4>상가 엘리베이터 — 이 단지의 진짜 무기<span class="tag pine">언덕 해법</span></h4>
     <p>여기 게시판의 핵심 정보입니다. 솔샘역 출입구 앞 <b>벽산 상가 엘리베이터를 타고 올라가면 바로 평지</b>가 나오고, 거기서 여러 동으로 직접 들어갑니다. 언덕 얘기가 나올 때마다 이 답이 붙습니다.</p>
     <blockquote>
       <p>상가 엘리베이터 타고 나오면 작은 정원 같은 공간이 나옵니다. 여긴 평평한 평지이고 주변 아파트들로 바로 들어갈 수 있습니다. 벤치와 정자, 그늘 만드는 나무들이 있습니다.</p>
@@ -173,13 +315,13 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   </div>
 
   <div class="point plus">
-    <h4>지하주차장 ↔ 동 엘리베이터 직결<span class="tag moss">구조적 우위</span></h4>
+    <h4>지하주차장 ↔ 동 엘리베이터 직결<span class="tag pine">구조적 우위</span></h4>
     <p>SK북한산시티에서 가장 큰 구조적 불만이었던 항목이 여기서는 장점으로 나옵니다. <b>일부 동을 제외하면 지하 2·3·4층과 엘리베이터가 연결</b>됩니다. 비 오는 날, 마트 짐 많은 날, 유모차 이동에서 체감이 크다는 후기 다수.</p>
     <blockquote><p>101동은 지하 4층까지 있는데 지하 3층까지 엘리베이터가 연결되어 있음 — 구축 아파트에서는 누리기 힘든 큰 장점.</p></blockquote>
   </div>
 
   <div class="point plus">
-    <h4>전용 59㎡부터 방3·화장실2<span class="tag moss">평면 효율</span></h4>
+    <h4>전용 59㎡부터 방3·화장실2<span class="tag pine">평면 효율</span></h4>
     <p>20평대에도 방 3개 화장실 2개가 나오고 판상형입니다. "작은 평수도 다른 아파트보다 넓다", "20평대라도 4인 가족 가능"이라는 평이 반복됩니다. 20평대 타입 구분:</p>
     <table>
       <tr><th>타입</th><th>전용</th><th>구조</th><th>위치</th></tr>
@@ -190,7 +332,7 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   </div>
 
   <div class="point plus">
-    <h4>북한산 둘레길이 단지에서 바로 연결<span class="tag moss">256건</span></h4>
+    <h4>북한산 둘레길이 단지에서 바로 연결<span class="tag pine">256건</span></h4>
     <p>생태공원·자락길·잣나무숲으로 이어집니다. 창문 열면 산바람이 들어와 에어컨을 덜 튼다는 후기가 반복되고, 노원 살 때 아이 아토피가 심했는데 이사 후 좋아졌다는 글도 있습니다. 벚꽃철 언급도 여러 건.</p>
     <blockquote><p>북적북적한 도시 속에서 설악산에 휴가 온 느낌으로 살고 있습니다.</p><span class="who">11년 거주</span></blockquote>
   </div>
@@ -213,17 +355,17 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   </div>
 
   <div class="point plus">
-    <h4>관리비 저렴 · 물가 싼 동네<span class="tag moss">캡스 경비</span></h4>
+    <h4>관리비 저렴 · 물가 싼 동네<span class="tag pine">캡스 경비</span></h4>
     <p>ADT 캡스 위탁 경비로 관리비가 저렴하다는 언급이 여러 건. 단지 내 독서실이 하루종일 이용해도 3,000원. 동북마트·SK마트·한살림으로 간단한 장보기, 단지 내 장터도 열립니다. 동네 물가가 저렴하다는 평이 반복됩니다.</p>
   </div>
 
   <div class="point plus">
-    <h4>2020년대 들어 대대적 환경개선 완료<span class="tag amber">현재진행</span></h4>
+    <h4>2020년대 들어 대대적 환경개선 완료<span class="tag gold">현재진행</span></h4>
     <p>주차 차단기 전면 교체, 아스팔트·보도블럭 교체, 지하주차장 및 옥상 방수공사 등이 마무리 단계라는 글. 젊은 세대 유입으로 리모델링해서 들어오는 세대가 늘고 단지 분위기가 빠르게 바뀌고 있다는 후기가 많습니다.</p>
   </div>
 
   <div class="point plus">
-    <h4>주변 호재<span class="tag amber">호재</span></h4>
+    <h4>주변 호재<span class="tag gold">호재</span></h4>
     <p>미아뉴타운 2·3·4구역 재개발(미아3구역 사업시행인가), 강북횡단선 정릉역 통과 예정, 삼양사거리 대형 학원가 조성 지구단위계획, 강북구 종합체육문화예술센터, 2종 7층 고도제한 해제, 우이신설선 왕십리 연장 주민동의 추진 — 게시판에서 반복 언급되는 항목들입니다.</p>
   </div>
 </section>
@@ -233,7 +375,7 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   <p class="lede">방어성 글이 많은 게시판이라, 실제 불만이 적힌 문장만 골라냈습니다.</p>
 
   <div class="point split">
-    <h4>언덕 — 존재하지만 상가 엘베로 상당 부분 우회<span class="tag brick">222건</span></h4>
+    <h4>언덕 — 존재하지만 상가 엘베로 상당 부분 우회<span class="tag gold">222건</span></h4>
     <p>"단점이라면 평지가 아닌 것" 정도로 인정하는 톤이 대세입니다. 동별 편차가 있고, 입구 근처 동(102동, 119동 등)이 편하다는 언급. 다만 아래 문장이 솔직한 쪽입니다.</p>
     <blockquote>
       <p>어렸을 때는 언덕도 싫었고 어쨌고 했지만…</p>
@@ -244,7 +386,7 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   </div>
 
   <div class="point minus">
-    <h4>우이신설선 2량 혼잡 — 출퇴근 시간엔 붐빔<span class="tag brick">구조적</span></h4>
+    <h4>우이신설선 2량 혼잡 — 출퇴근 시간엔 붐빔<span class="tag clay">구조적</span></h4>
     <blockquote>
       <p>경전철은 2량뿐이어서 출퇴근 시간에는 많이 붐빕니다. 차량 수를 늘릴 수 있다면 좋을 텐데 초기 수요예측이 잘못되었던 것 같습니다.</p>
       <p>자차 출퇴근은 아리랑고개 넘는 길이 꽤 막힙니다.</p>
@@ -253,18 +395,18 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   </div>
 
   <div class="point minus">
-    <h4>대형마트는 차가 필수<span class="tag brick">상권</span></h4>
+    <h4>대형마트는 차가 필수<span class="tag clay">상권</span></h4>
     <p>단지 상가에 큰 편의점과 커피숍·미용실·태권도·스터디카페·크린토피아·약국 정도가 있지만, 롯데마트·이마트급은 차로 나가야 합니다(약 10분). 다양한 음식점은 수유역·미아사거리·성신여대로 나가야 합니다. <b>예전에 있던 김포공항행 버스가 없어진 게 아쉽다</b>는 언급도 있습니다.</p>
   </div>
 
   <div class="point minus">
-    <h4>단지 내 커뮤니티 시설 부족<span class="tag brick">명시적 단점</span></h4>
+    <h4>단지 내 커뮤니티 시설 부족<span class="tag clay">명시적 단점</span></h4>
     <p>여러 정리글에서 "단지 내 커뮤니티 부족은 단점"으로 명시됩니다. 독서실은 있고 저렴하지만 헬스·수영 등은 외부 의존. 근처 체육센터 완공으로 보완 기대.</p>
     <p style="font-size:13.5px;color:var(--slate)">기타 아쉬움: 놀이터 시설 노후, 주차 자동인식 차단기 미비(차단기가 자주 고장나 캡스 직원이 수동 통제했다는 시기 언급 — 최근 전면 교체됨).</p>
   </div>
 
   <div class="point minus">
-    <h4>A타입 복도식은 환기 동선이 불편<span class="tag brick">구조</span></h4>
+    <h4>A타입 복도식은 환기 동선이 불편<span class="tag clay">구조</span></h4>
     <blockquote>
       <p>구조를 보면 알겠지만 환기가 잘 안 되는 구조입니다. 화장실에 곰팡이가 잘 생겨요.</p>
       <p>복도식이라 환기가 불편하긴 하나 공기가 좋아요.</p>
@@ -278,7 +420,7 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   </div>
 
   <div class="point minus">
-    <h4>배관 노후 이슈 — 역류·냄새 사례 있음<span class="tag brick">16건</span></h4>
+    <h4>배관 노후 이슈 — 역류·냄새 사례 있음<span class="tag clay">16건</span></h4>
     <blockquote>
       <p>변기 역류 현상이 일주일째 — 업체 말로는 메인배관 물 빠짐 문제로 공기 역류가 있을 수 있다고. 관리사무소 문의 권장.</p>
       <p>화장실 하수구와 싱크대에서 냄새가 심하게 올라옴 → 싱크대 관 교체 필요.</p>
@@ -314,7 +456,7 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   <h3>확장 · 샷시 — 우레탄 단열이 정답으로 나옴</h3>
   <blockquote>
     <p>거실 확장 만족합니다. 단열을 우레탄으로 했더니 진짜 바람 하나 안 들어와요.</p>
-    <p>폴딩도어 추천해요. 확장 안 해도 거실 넓더라구요.</p>
+    <p>폴딩도어도 추천해요. 확장 안 해도 거실 넓더라구요.</p>
     <p>비용 아껴야 하는데 샷시 안 하면 단열이? → <b>부엌 단창을 이중창으로만이라도.</b> 겨울에 들어오던 한기가 잡혔어요.</p>
     <p>단열 공사는 굳이 안 했고, 보일러 교체를 고려하는 게 좋겠습니다.</p>
   </blockquote>
@@ -376,7 +518,7 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
       </ul>
     </div>
   </div>
-  <p class="note" style="margin-top:20px"><b>형님용 한 줄</b> — 아이 학교로 가는 판단이면 SK, 언덕 스트레스와 지하주차장 동선이 우선이면 벽산입니다. 특히 <b>SK에서 30평대 지하 엘베 연결 동이 123·147 두 개뿐</b>이라는 제약이 벽산에서는 대체로 해소됩니다. 형님이 SK 건축물대장 파싱으로 동별 엘베 연결을 검증하고 계셨으니, 벽산도 같은 방식으로 "일부 동 제외"의 그 일부가 어디인지 뽑아두면 두 단지 비교 테이블이 완성됩니다.</p>
+  <p class="note" style="margin-top:20px"><b>형님용 한 줄</b> — 아이 학교로 가는 판단이면 SK, 언덕 스트레스와 지하주차장 동선이 우선이면 벽산입니다. 특히 <b>SK에서 30평대 지하 엘베 연결 동이 123·147 두 개뿐</b>이라는 제약이 벽산에서는 대체로 해소됩니다.</p>
 </section>
 
 <footer>
@@ -384,6 +526,163 @@ footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-si
   인용은 원문 요지를 옮긴 것으로, 개별 발언은 작성자 개인의 경험입니다. 실측치·비용은 모두 참고용이며 계약 전 현장 확인이 필요합니다.
 </footer>
 
+
+  </div>
+  <div class="panel" id="panel-price" hidden>
+
+<section>
+  <h2>매물 시세 <span class="alt">Listings</span></h2>
+  <p class="lede">네이버 부동산에 올라온 이 단지 매물을 전수 수집해 거래유형별로 정리했습니다. 가격대는 0.5억 단위 절대 구간이라 다른 단지와 같은 눈금으로 비교됩니다. 실시간이 아니라 아래 표시된 시점의 스냅샷입니다.</p>
+
+  <div id="articles"></div>
+
+  <div class="note">
+    23·24평(전용 59·60㎡) 기준으로 보실 거면 <b>평형별 가격</b>의 중앙값을, 협상 여지를 보려면 <b>가격대 분포</b>에서 같은 평형이 어느 구간에 몰려 있는지를 보시면 됩니다.
+    목록을 펼치면 동·층·향까지 나오니, <b>배치도 탭의 동 위치와 겹쳐 보면 어느 평형 라인인지 바로 확인</b>됩니다.
+  </div>
+
+  <footer>
+    출처: 네이버 부동산 단지 매물(complexNo 3099) 수집 스냅샷. 동일매물 묶음 기준이라 같은 물건을 여러 중개사가 올린 건은 1건으로 집계됩니다.
+    호가이며 실거래가가 아닙니다. 갱신은 저장소에서 <code>npm run scrape</code> 실행 후 커밋.
+  </footer>
+</section>
+
+  </div>
 </div>
+
+<script src="assets/articles.js"></script>
+<script>
+// 전용면적 → 이 단지에서 통용되는 평형 표기 (배치도 탭과 용어를 맞춘다)
+AptArticles.mount('#articles', {
+  complexNo: '3099',
+  pyeongAlias: { 59: '23평', 60: '24평', 84: '32평', 114: '41평' }
+}).then(snap => {
+  if (snap) document.getElementById('tab-price-c').textContent = snap.totalCount + '건';
+});
+</script>
+
+<script>
+
+const T={
+  t23:{label:"23·24평",area:"전용 59~60 / 공급 74㎡",hex:"#2f5d4f"},
+  t32:{label:"31·32평",area:"전용 84 / 공급 102㎡",hex:"#c08a2e"},
+  t41:{label:"40·41평",area:"전용 114 / 공급 133㎡",hex:"#a8563c"}
+};
+const ORDER=["t23","t32","t41"];
+
+// 좌표는 사용자 제공 캡처 기준 근사치. 112·115동은 지도상 다른 라벨(공부방·상호명)에
+// 가려 정확한 위치가 확인되지 않아 인접 동 배치를 참고해 추정했다.
+const D={
+  101:[337,449,"MIX"],
+  102:[307,352,"t32"], 103:[361,320,"t23"], 104:[433,365,"t32"], 105:[504,289,"t32"],
+  106:[350,257,"t32"], 107:[418,257,"t23"], 108:[441,199,"t32"], 109:[495,232,"t23"],
+  110:[541,200,"t32"], 111:[224,328,"t41"], 112:[243,236,"t41"], 113:[315,146,"t41"],
+  114:[410, 86,"t41"], 115:[528,114,"t32"], 116:[586, 89,"t23"], 117:[646,149,"t32"],
+  118:[177,422,"t23"], 119:[237,436,"t23"]
+};
+const LM=[
+  {x:722,y:404,t:"솔샘역 (우이신설선)",a:"middle"},
+  {x:619,y:96, t:"인수봉로",a:"middle"},
+  {x:330,y:58, t:"테니스장",a:"middle"},
+  {x:404,y:452,t:"부동산코리아 공인중개사사무소",a:"middle"},
+  {x:649,y:446,t:"NH농협은행",a:"middle"}
+];
+
+/* ── 탭 ── */
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  document.querySelectorAll("#tabs button").forEach(x=>x.setAttribute("aria-selected",x===b));
+  document.querySelectorAll(".panel").forEach(p=>p.hidden = p.id!==b.dataset.p);
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+
+/* ── 지도 ── */
+const NS="http://www.w3.org/2000/svg";
+const pg=document.getElementById("pills"), lgg=document.getElementById("landmarks"), nodes={};
+let filter=null;
+
+LM.forEach(l=>{const t=document.createElementNS(NS,"text");
+  t.setAttribute("x",l.x);t.setAttribute("y",l.y);t.setAttribute("text-anchor",l.a);
+  t.setAttribute("class","lm");t.textContent=l.t;lgg.appendChild(t);});
+
+function rect(x,y,w,h,fill){const r=document.createElementNS(NS,"rect");
+  r.setAttribute("x",x);r.setAttribute("y",y);r.setAttribute("width",w);r.setAttribute("height",h);
+  if(fill)r.setAttribute("fill",fill);return r;}
+
+Object.keys(D).forEach(k=>{
+  const d=+k,[x,y,ty]=D[k];
+  const g=document.createElementNS(NS,"g");
+  g.setAttribute("class","pill");g.setAttribute("tabindex","0");g.setAttribute("role","button");
+  g.setAttribute("aria-label",`${d}동 ${ty==="MIX"?"23·24평·40·41평 혼합":T[ty].label}`);
+
+  if(ty==="MIX"){
+    const gc=document.createElementNS(NS,"g");
+    gc.appendChild(rect(x-18,y-11,18,22,T.t23.hex));
+    gc.appendChild(rect(x,y-11,18,22,T.t41.hex));
+    g.appendChild(gc);
+  } else { g.appendChild(rect(x-18,y-11,36,22,T[ty].hex)); }
+
+  const fr=rect(x-18,y-11,36,22,null); fr.setAttribute("class","fr"); g.appendChild(fr);
+
+  const t=document.createElementNS(NS,"text");
+  t.setAttribute("x",x);t.setAttribute("y",y+0.5);t.textContent=d;
+  g.appendChild(t); pg.appendChild(g); nodes[d]=g;
+
+  const act=()=>show(d);
+  g.addEventListener("click",act);
+  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();act();}});
+});
+
+function dongsOf(k){return Object.keys(D).filter(kk=>{const ty=D[kk][2];
+  return ty===k||ty==="MIX";}).map(Number).sort((a,b)=>a-b);}
+
+function applyFilter(){
+  Object.keys(D).forEach(kk=>{
+    const d=+kk, ty=D[kk][2];
+    let hit=true;
+    if(filter) hit = ty===filter || ty==="MIX";
+    nodes[d].classList.toggle("dim",!hit);
+  });
+}
+
+const lgd=document.getElementById("legend");
+ORDER.forEach(k=>{
+  const b=document.createElement("button");
+  b.className="lg";b.type="button";b.dataset.k=k;b.setAttribute("aria-pressed","false");
+  b.innerHTML=`<span class="dot" style="background:${T[k].hex}"></span>${T[k].label}<span class="n">${dongsOf(k).length}개 동</span>`;
+  lgd.appendChild(b);
+});
+
+lgd.addEventListener("click",e=>{
+  const b=e.target.closest(".lg"); if(!b) return;
+  filter = filter===b.dataset.k ? null : b.dataset.k;
+  [...lgd.children].forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===filter));
+  applyFilter();
+});
+
+const db=document.getElementById("dbody");
+ORDER.forEach(k=>{const list=dongsOf(k),tr=document.createElement("tr");
+  tr.innerHTML=`<td><span class="sw" style="background:${T[k].hex}"></span>${T[k].label}</td>`+
+    `<td style="font-size:13px;color:var(--slate)">${T[k].area}</td>`+
+    `<td class="dlist">${list.map(d=>D[d][2]==="MIX"?"<b>"+d+"</b>*":d).join(" · ")}</td>`+
+    `<td class="num">${list.length}</td>`;
+  db.appendChild(tr);});
+const legend=document.createElement("tr");
+legend.innerHTML=`<td colspan="4" style="font-size:12px;color:#8b948d;border-bottom:none">굵은 동 = 라인별 혼합 동(101동, 1·2호 라인 / 3·4호 라인)</td>`;
+db.appendChild(legend);
+
+function show(d){
+  const [,,ty]=D[d], ro=document.getElementById("readout");
+  if(ty==="MIX"){
+    ro.innerHTML=`<span class="hd">101동 — 23·24평 · 40·41평 혼합</span>`+
+      `<span class="sub">1·2호 라인: ${T.t23.label}(${T.t23.area}) / 3·4호 라인: ${T.t41.label}(${T.t41.area})</span>`+
+      `<span class="ev">유일한 혼합 동</span>`;
+  }else{
+    ro.innerHTML=`<span class="hd">${d}동 — ${T[ty].label}</span>`+
+      `<span class="sub">${T[ty].area}</span>`;
+  }
+}
+
+</script>
 </body>
 </html>

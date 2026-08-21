@@ -56,6 +56,25 @@
         { "label": "개 동", "value": "20" },
         { "label": "평형 종류", "value": "3개" }
       ]
+    },
+    {
+      "id": "sinnae-udian1",
+      "name": "신내우디안1단지",
+      "file": "sinnae-udian1-map.html",
+      "complexNo": "108142",
+      "region": "서울 중랑구",
+      "address": "신내동 816 · 신내역로1길 85",
+      "built": "2014.06",
+      "households": 1402,
+      "buildings": 16,
+      "accent": "#345b7a",
+      "tags": ["6호선·경춘선 더블역세권", "버스 종점", "기둥식 구조"],
+      "summary": "동 배치도와 호갱노노 이야기 표본 분석. 버스 종점이라는 교통 편의와 기둥식 구조가 핵심 소구점.",
+      "highlights": [
+        { "label": "총 세대수", "value": "1,402" },
+        { "label": "개 동", "value": "16" },
+        { "label": "평형 종류", "value": "4개" }
+      ]
     }
   ]
 }

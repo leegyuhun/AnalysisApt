@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>신내우디안1단지 · 배치도와 입주민 이야기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" href="assets/articles.css">
+<style>
+
+:root{
+  --granite:#23262b;
+  --slate:#4d5560;
+  --mist:#e9ebe7;
+  --paper:#f6f5f1;
+  --pine:#345b7a;
+  --clay:#8a4a3a;
+  --gold:#a67c3d;
+  --forest:#4a6b52;
+  --line:#cdd2c9;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--granite);
+  font-family:'IBM Plex Sans KR',sans-serif;font-weight:400;line-height:1.75;
+  font-size:15.5px;letter-spacing:-0.01em;
+}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px 100px}
+
+/* ── 히어로 ── */
+header{position:relative;overflow:hidden;background:var(--granite);color:var(--mist);padding:70px 0 56px;margin-bottom:0}
+header svg{position:absolute;inset:0;width:100%;height:100%;opacity:.28}
+header .inner{position:relative;max-width:940px;margin:0 auto;padding:0 22px}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:500}
+h1{font-family:'Gowun Batang',serif;font-weight:700;font-size:clamp(30px,5.4vw,50px);line-height:1.2;margin:0 0 18px}
+h1 em{font-style:normal;color:var(--gold)}
+.sub{max-width:600px;color:#b9c2bd;font-size:14.5px;margin:0}
+.counts{display:flex;flex-wrap:wrap;gap:26px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15)}
+.counts div{min-width:88px}
+.counts b{display:block;font-family:'Gowun Batang',serif;font-size:27px;line-height:1.1;color:#fff}
+.counts span{font-size:11.5px;color:#94a09a;letter-spacing:.04em}
+
+/* ── 섹션 ── */
+section{margin:0 0 60px;scroll-margin-top:20px}
+h2{font-family:'Gowun Batang',serif;font-size:25px;margin:0 0 6px;font-weight:700;
+   display:flex;align-items:baseline;gap:12px}
+h2 .alt{font-family:'IBM Plex Sans KR';font-size:11.5px;font-weight:500;color:var(--slate);
+   letter-spacing:.14em;text-transform:uppercase}
+.lede{color:var(--slate);font-size:14px;margin:0 0 24px;padding-bottom:18px;border-bottom:2px solid var(--granite)}
+
+h3{font-size:16px;margin:32px 0 12px;font-weight:600;display:flex;align-items:center;gap:9px}
+h3::before{content:"";width:7px;height:7px;background:var(--clay);flex:none}
+
+/* ── 언급 빈도 바 ── */
+.bars{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:11px 26px;margin:8px 0 4px}
+.bar{display:grid;grid-template-columns:88px 1fr 44px;align-items:center;gap:10px;font-size:13px}
+.bar .t{color:var(--slate)}
+.bar .track{height:7px;background:var(--mist);position:relative}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--pine)}
+.bar .n{text-align:right;font-variant-numeric:tabular-nums;font-size:12px;color:var(--slate)}
+
+/* ── 평가 카드 ── */
+.point{border-left:3px solid var(--line);padding:2px 0 2px 18px;margin:0 0 22px}
+.point.plus{border-left-color:var(--pine)}
+.point.minus{border-left-color:var(--clay)}
+.point.split{border-left-color:var(--gold)}
+.point h4{margin:0 0 6px;font-size:15px;font-weight:600}
+.point p{margin:0 0 8px;font-size:14.5px}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.1em;padding:2px 7px;margin-left:8px;
+     vertical-align:2px;background:var(--mist);color:var(--slate);font-weight:500}
+.tag.pine{background:#dde5ea;color:var(--pine)}
+.tag.clay{background:#f0e0d9;color:var(--clay)}
+.tag.gold{background:#f1e6d5;color:#7a5a29}
+
+blockquote{margin:8px 0 0;padding:10px 0 10px 15px;border-left:2px solid var(--mist);
+  font-family:'Gowun Batang',serif;font-size:14px;color:#3b444b}
+blockquote p{margin:0 0 6px}
+blockquote p:last-child{margin:0}
+blockquote .who{display:block;font-family:'IBM Plex Sans KR';font-size:11px;color:#8b948d;margin-top:5px;letter-spacing:.03em}
+
+/* ── 표 ── */
+table{width:100%;border-collapse:collapse;margin:12px 0 4px;font-size:14px}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11.5px;letter-spacing:.1em;color:var(--slate);text-transform:uppercase;font-weight:600;
+   border-bottom:1.5px solid var(--granite)}
+td:first-child{white-space:nowrap;font-weight:500;padding-right:20px}
+
+.note{background:var(--mist);padding:16px 18px;font-size:13.5px;color:var(--slate);margin:24px 0 0;border-left:3px solid var(--slate)}
+footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:#8b948d}
+
+@media (max-width:600px){
+  .bar{grid-template-columns:70px 1fr 38px}
+  .counts{gap:18px}
+}
+@media (prefers-reduced-motion:no-preference){
+  section{animation:rise .5s ease both;animation-timeline:view();animation-range:entry 0% entry 32%}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+
+
+/* ══ 탭 ══ */
+.tabs{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);
+  box-shadow:0 1px 0 rgba(32,38,43,.04)}
+.tabs .inner{max-width:940px;margin:0 auto;padding:0 22px;display:flex}
+.tabs button{background:none;border:none;border-bottom:2px solid transparent;padding:16px 2px 13px;
+  margin-right:30px;font-family:'IBM Plex Sans KR',sans-serif;font-size:14px;font-weight:600;
+  color:#8b948d;cursor:pointer;letter-spacing:-.01em;transition:color .15s}
+.tabs button:hover{color:var(--granite)}
+.tabs button[aria-selected="true"]{color:var(--granite);border-bottom-color:var(--clay)}
+.tabs button:focus-visible{outline:2px solid var(--granite);outline-offset:-3px}
+.tabs button .c{font-size:11px;color:#a2aba4;font-weight:500;margin-left:6px}
+.wrap{padding-top:44px}
+.panel[hidden]{display:none}
+
+/* ══ 배치도 ══ */
+.legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px}
+.lg{border:1px solid var(--line);background:#fff;padding:7px 13px 7px 10px;
+  display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Sans KR',sans-serif;
+  font-size:13px;font-weight:500;color:var(--granite);cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.lg:hover{border-color:var(--slate)}
+.lg:focus-visible{outline:2px solid var(--granite);outline-offset:2px}
+.lg[aria-pressed="true"]{border-color:var(--granite);box-shadow:inset 0 0 0 1px var(--granite)}
+.lg .dot{width:13px;height:13px;flex:none}
+.lg .n{font-size:11.5px;color:#8b948d;font-variant-numeric:tabular-nums}
+
+.mapbox{background:#fbfaf7;border:1px solid var(--line);padding:8px;overflow:hidden}
+.mapbox svg{display:block;width:100%;height:auto;touch-action:manipulation}
+.lm{font-size:11px;fill:#a6afa7;font-weight:500;font-family:'IBM Plex Sans KR',sans-serif}
+.pill{cursor:pointer;transition:opacity .2s}
+.pill.dim{opacity:.16}
+.pill.unknown rect:first-child{fill:#b9bfba}
+.pill text{font-family:'IBM Plex Sans KR',sans-serif;font-size:11.5px;font-weight:600;
+  text-anchor:middle;dominant-baseline:central;pointer-events:none;fill:#fff}
+.pill:focus{outline:none}
+.pill:focus-visible rect.fr{stroke:#20262b;stroke-width:3}
+rect.fr{fill:none;stroke:rgba(32,38,43,.28);stroke-width:1}
+
+.readout{margin:14px 0 0;padding:14px 16px;background:#fff;border:1px solid var(--line);min-height:52px}
+.readout .hd{font-family:'Gowun Batang',serif;font-size:17px;font-weight:700;color:var(--granite)}
+.readout .sub{display:block;font-size:13px;color:var(--slate);margin-top:4px}
+
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sw{display:inline-block;width:10px;height:10px;margin-right:8px}
+.dlist{font-size:13px;line-height:1.9;color:var(--slate);font-variant-numeric:tabular-nums}
+@media (max-width:600px){
+  .tabs button{margin-right:20px;font-size:13px}
+  .wrap{padding-top:32px}
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="inner">
+    <a href="index.html">← 후보 단지 목록</a>
+    <span class="sep">/</span>
+    <span class="cur">신내우디안1단지</span>
+  </div>
+</nav>
+
+<header>
+  <svg viewBox="0 0 1200 320" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="none" stroke="#7a93a6" stroke-width="1">
+      <path d="M0 300 Q200 250 380 268 T760 232 T1200 258"/>
+      <path d="M0 272 Q210 214 400 236 T780 192 T1200 224"/>
+      <path d="M0 244 Q220 178 420 204 T800 152 T1200 190"/>
+      <path d="M0 216 Q230 142 440 172 T820 112 T1200 156"/>
+      <path d="M0 188 Q240 106 460 140 T840 72 T1200 122"/>
+      <path d="M0 160 Q250 70 480 108 T860 32 T1200 88"/>
+      <path d="M0 132 Q260 34 500 76 T880 -8 T1200 54"/>
+    </g>
+  </svg>
+  <div class="inner">
+    <p class="eyebrow">중랑구 신내동 816 · 신내역로1길 85 · 2014.06 준공</p>
+    <h1>신내우디안1단지<br><em>배치도</em>와 <em>입주민 이야기</em></h1>
+    <p class="sub">동별 배치도, 그리고 호갱노노 이야기 게시판 표본 분석. 한 페이지에서 탭으로 오갑니다.</p>
+    <div class="counts">
+      <div><b>1,402</b><span>총 세대수</span></div>
+      <div><b>16</b><span>개 동</span></div>
+      <div><b>4</b><span>평형 종류</span></div>
+      <div><b>15+</b><span>표본 이야기</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <div class="inner">
+    <button type="button" data-p="panel-map" aria-selected="true">동별 배치도<span class="c">16개 동</span></button>
+    <button type="button" data-p="panel-rev" aria-selected="false">입주민 이야기<span class="c">표본 분석</span></button>
+    <button type="button" data-p="panel-price" aria-selected="false">매물 시세<span class="c" id="tab-price-c"></span></button>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="panel" id="panel-map">
+
+<section>
+  <h2>동별 배치도 <span class="alt">Floor plan</span></h2>
+  <p class="lede">16개 동 전체. 이 단지는 벽산·삼각산과 달리 <b>한 동 안에 여러 평형이 층별로 섞여</b> 있어(예: 102동에 26·36·43평이 함께),
+  동 하나를 평형 하나로 색칠할 수 없습니다. 그래서 아래 배치도는 동 위치 확인용이고, 평형별 세대수는 별도 표로 뒀습니다.</p>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="mapbox">
+    <svg id="map" viewBox="0 0 640 700" role="img" aria-label="신내우디안1단지 동 배치도">
+      <g id="landmarks"></g><g id="pills"></g>
+    </svg>
+  </div>
+
+  <div class="readout" id="readout">동을 탭하면 확인된 평형·층수가 나옵니다.</div>
+
+  <h3>평형별 세대수</h3>
+  <table>
+    <thead><tr><th>평형</th><th>전용 / 공급</th><th class="num">세대수</th><th>확인된 동</th></tr></thead>
+    <tbody id="dbody"></tbody>
+  </table>
+
+  <div class="note">
+    <b>세대수 합계(843)가 단지 총 세대수(1,402)보다 적습니다.</b> 호갱노노 평형 선택 메뉴에는 25·26·36·43평 네 가지만
+    나오는데 합이 559세대 모자랍니다. 네이버 부동산 단지 정보도 총 1,402세대·16개동으로 호갱노노와 정확히 일치해서
+    분양분/임대분 차이로 보이지도 않습니다 — 표기 안 된 서브타입이 더 있을 가능성이 높지만 정확한 사유는 확인하지 못했습니다.<br><br>
+    <b>101·103·105·106동은 평형이 확정되지 않았습니다.</b> 101·103동은 네이버 매물 스냅샷에서 36평(전용 84㎡) 매물이
+    한두 건 확인됐지만, 105·106동은 이번 표본 수집 범위에서 매물도 호갱노노 평형별 동 목록도 잡히지 않아 배치도에
+    회색으로 표시했습니다. 계약 검토 시 해당 동은 직접 확인이 필요합니다.<br><br>
+    <b>배치 좌표는 지도 캡처 기준 근사치입니다.</b>
+  </div>
+
+  <footer>
+    평형·동: 네이버 부동산 단지 매물(complexNo 108142) 및 호갱노노 단지 지도·평형 선택 메뉴 교차 확인(2026년 8월 기준).
+    세대수: 호갱노노 평형 선택 메뉴(25평 198·26평 51·36평 504·43평 90세대). 배치 좌표는 지도 캡처 기준 근사치입니다.
+  </footer>
+</section>
+
+  </div>
+  <div class="panel" id="panel-rev" hidden>
+
+
+<section>
+  <h2>단지 기본값 <span class="alt">Baseline</span></h2>
+  <p class="lede">네이버 부동산과 호갱노노 단지 정보를 교차 확인해 정리했습니다.</p>
+  <table>
+    <tr><th>항목</th><th>내용</th></tr>
+    <tr><td>준공</td><td>2014년 6월(13년차) · 1,402세대 · 16개동 · 최고 24층</td></tr>
+    <tr><td>구조</td><td>계단식 · <b>기둥식</b>(무량판 아님, 리뷰에서 층간소음 관련 장점으로 반복 언급) · 개별난방 · 도시가스</td></tr>
+    <tr><td>안전</td><td>내진설계대상 · 단지/주변 약한 경사</td></tr>
+    <tr><td>평형 구성</td><td>25평(전용 59·공급 84~85㎡·198세대) · 26평(전용 59·공급 85㎡·51세대) · 36평(전용 84·공급 118~120㎡·504세대) · 43평(전용 101·공급 142~143㎡·90세대). 세대수 합계가 총 세대수보다 559세대 적은 이유는 확인하지 못했습니다 — 배치도 탭 참고.</td></tr>
+    <tr><td>주차</td><td>지하 1,559대 · 지상 12대(세대당 1.2대 수준)</td></tr>
+    <tr><td>관리비</td><td>2026년 8월 기준 평형별 22만·25만·22만원대(호갱노노 표기)</td></tr>
+    <tr><td>교통</td><td>6호선·경춘선 신내역 더블 역세권(도보 9분, 609~622m). 버스는 <b>중랑공영차고지·신내역 종점</b>이라 좌석 여유. 간선 262·260·241, 지선 다수. 구리선(6호선 연장)·면목선·GTX-E 신내역이 개발호재로 예정</td></tr>
+    <tr><td>학군</td><td>서울새솔초등학교 통학구역(단지에서 가장 가까움, 411m)</td></tr>
+    <tr><td>생활 인프라</td><td>단지 내 우디안마트, 인근 서울의료원(904m)·홈플러스 신내점(1.1km)·이마트24·능말공원(축구장 2.7배)</td></tr>
+  </table>
+  <p class="note">
+    <b>이 페이지의 한계</b> — 호갱노노 이야기 게시판에는 총 <b>401건</b>이 쌓여 있습니다. 이 페이지는 로그인 후 최신순으로
+    스크롤해 확인한 <b>표본 약 15건</b>(+ 사이트 자체 AI요약 카테고리 교차 확인)을 정리한 것으로, SK북한산시티·벽산라이브파크
+    페이지 수준의 전수 분석이 아닙니다. 파이프라인 테스트 목적으로 만든 페이지라 표본이 특히 작습니다.
+  </p>
+</section>
+
+<section>
+  <h2>무엇이 가장 많이 언급되나 <span class="alt">Frequency</span></h2>
+  <p class="lede">표본(로그인 후 최신순 약 15건) + 호갱노노 자체 AI 리뷰 요약 카테고리를 함께 참고했습니다. 전체 401건 전수 집계가 아닙니다.</p>
+  <div class="bars">
+    <div class="bar"><span class="t">교통·버스종점</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">6</span></div>
+    <div class="bar"><span class="t">동간격·주차</span><span class="track"><span class="fill" style="width:67%"></span></span><span class="n">4</span></div>
+    <div class="bar"><span class="t">조용함·유해시설없음</span><span class="track"><span class="fill" style="width:67%"></span></span><span class="n">4</span></div>
+    <div class="bar"><span class="t">자연환경·조경</span><span class="track"><span class="fill" style="width:50%"></span></span><span class="n">3</span></div>
+    <div class="bar"><span class="t">구조(기둥식)</span><span class="track"><span class="fill" style="width:33%"></span></span><span class="n">2</span></div>
+    <div class="bar"><span class="t">상권부족</span><span class="track"><span class="fill" style="width:33%"></span></span><span class="n">2</span></div>
+    <div class="bar"><span class="t">개발호재</span><span class="track"><span class="fill" style="width:33%"></span></span><span class="n">2</span></div>
+  </div>
+  <p class="note">호갱노노 AI요약이 잡아둔 카테고리(소음·교통·주변개발호재·생활인프라·주변자연환경·학군·주차·커뮤니티시설)와
+  실제로 읽은 표본의 내용이 대체로 겹칩니다 — 교차검증용으로 참고할 만합니다.</p>
+</section>
+
+<section>
+  <h2>장점 <span class="alt">What residents like</span></h2>
+  <p class="lede">표본에서 반복적으로 겹치는 것만 추렸습니다.</p>
+
+  <div class="point plus">
+    <h4>버스 종점이라 좌석 여유 + 더블 역세권<span class="tag pine">최다 언급</span></h4>
+    <p>"한적하다, 버스 종점이라 앉아가기 편하고 버스도 많다", "버스 종착점, 역세권, 대단지 모든게 좋아요"처럼 교통 관련
+    호평이 가장 많이 반복됩니다. 중랑공영차고지·신내역이 종점이라 출퇴근 시간에도 자리가 나고, 6호선·경춘선 더블
+    역세권이라는 점이 겹쳐 언급됩니다. 다만 역까지는 도보 9분이라 "지하철은 상대적으로 잘 안 타게 된다"는 후기도 있어
+    체감 편의는 버스 쪽이 더 큰 것으로 보입니다.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>넓은 동간격 + 지상 차 없는 단지<span class="tag pine">3년 이상 거주자 후기</span></h4>
+    <p>"동간 간격이 넓다, 주차 스트레스 없다, 지상차량금지라 보행자가 편하다"는 3년 반 거주자의 후기가 구체적입니다.
+    매일 분리수거가 가능하다는 점도 대단지 장점으로 반복됩니다.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>기둥식 구조 — 무량판 아님<span class="tag pine">구조 관련</span></h4>
+    <p>"요즘 아파트 구조가 이슈인데, 서울에는 드문 기둥식 신축급 아파트", "기둥식으로 층간소음 걱정없는 잘 지은 아파트"라는
+    언급이 있습니다. 2014년 준공 단지 중 기둥식 구조라는 점을 장점으로 꼽는 후기가 눈에 띕니다.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>조용하고 유해시설 없음<span class="tag pine">육아 세대 후기</span></h4>
+    <p>"유해시설이 없어 조용하고 쾌적하다", "늦은 시간까지 모여 있는 청소년들도 보지 못해 안심"이라는 후기, 벚꽃·단풍
+    등 조경에 대한 만족도 반복적으로 나옵니다. 앞에 경찰서가 있어 든든하다는 언급도 있습니다.</p>
+  </div>
+
+  <div class="point plus">
+    <h4>봉화산·구리선 등 개발호재 기대감<span class="tag pine">시황</span></h4>
+    <p>"봉화산쪽 재개발 이야기가 나오고 있어서 앞으로 주변 환경이 점점 더 좋아질 것"이라는 기대와 함께, 실제로 구리선
+    (6호선 연장)·면목선·GTX-E 신내역이 개발호재 목록에 올라 있습니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>단점 <span class="alt">What residents complain about</span></h2>
+  <p class="lede">표본이 작아 통계적 의미보다는 참고용으로 봐주세요.</p>
+
+  <div class="point minus">
+    <h4>상권 부족 · 역과 거리는 애매함<span class="tag clay">2건</span></h4>
+    <p>"장점: 한적하다 / 단점: 상권부족, 역과 거리가 애매함"처럼 교통 편의와 짝을 이루는 형태로 상권 부족이 언급됩니다.
+    단지 내 우디안마트 정도가 있고, 대형마트는 인근 홈플러스 신내점을 이용하는 구조입니다.</p>
+  </div>
+
+  <div class="point minus">
+    <h4>1단지·2단지 시세차 원인이 불명확<span class="tag clay">질문형</span></h4>
+    <p>"1단지와 2단지가 매매가가 차이가 나는 이유가 뭘까요?"라는 질문에 "매매할 땐 우디안이 조금 더 높았고, 인테리어 등
+    프리미엄 붙은 매물이 나가면 그때만 차이나는 것처럼 보인다"는 입주민 답변이 달렸습니다 — 구조적 차이라기보다
+    개별 매물 상황에 따른 일시적 차이로 보는 시각입니다.</p>
+  </div>
+
+  <div class="point split">
+    <h4>게스트하우스가 부실하다는 의견<span class="tag gold">생활 편의</span></h4>
+    <p>"게스트하우스에 침대·냉장고·에어컨이 있냐"는 질문에 "1박 3만원 받는데 침대는 없다, 가격을 올리더라도 침대는
+    갖춰야 할 것 같다"는 댓글이 달렸습니다. 단지 공용 게스트하우스를 활용할 계획이면 미리 확인이 필요합니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>인테리어 — 확인된 것만 <span class="alt">Renovation intel</span></h2>
+  <p class="lede">표본 범위 안에서 확인된 구조·시공 관련 언급입니다. 표본이 작아 SK·벽산 페이지 수준의 깊이는 아닙니다.</p>
+  <p>일부 1층 매물은 <b>필로티 구조 + 테라스</b>가 딸려 있다는 질문·답변이 있어, 테라스 있는 매물을 볼 때 층수·필로티
+  여부를 함께 확인하는 게 좋습니다. 그 외 샷시·수납 등 구체적인 시공 비용 언급은 이번 표본에서는 확인되지 않았습니다 —
+  표본을 넓히면 추가될 가능성이 있습니다.</p>
+
+  <div class="note">
+    <b>이 항목이 특히 표본 부족합니다.</b> 인테리어 비용 감각은 리뷰 401건 중 최신 15건 표본만으로는 충분히 확인되지
+    않았습니다. 실제 시공 견적·비용은 계약 전 직접 확인을 권장합니다.
+  </div>
+</section>
+
+<section>
+  <h2>형님용 한 줄 판단 <span class="alt">Bottom line</span></h2>
+  <div class="point split">
+    <p><b>버스 종점 + 더블 역세권을 사는 구조</b>입니다. 신내역(6호선·경춘선)까지 도보 9분으로 가깝진 않지만, 중랑공영
+    차고지·신내역이 다수 버스 노선의 종점이라 좌석 여유가 큰 게 반복해서 나오는 실제 체감 장점입니다. 기둥식 구조,
+    넓은 동간격, 지상 차 없는 단지 설계도 육아 세대 후기에서 꾸준히 나옵니다.</p>
+    <p style="margin-top:10px">다만 상권은 약해 대형마트·다양한 음식점은 차량이나 인근 단지 상권에 의존해야 하고,
+    <b>동마다 25~43평이 섞여 있어</b> 벽산·삼각산처럼 "이 동=이 평형"으로 단순하게 볼 수 없습니다. 매물을 볼 때는
+    배치도 탭에서 동 위치를 확인하고, 그 동에 어떤 평형이 있는지는 매물 시세 탭의 동·층 정보와 같이 봐야 합니다.
+    101·103·105·106동은 이번 표본에서 평형이 충분히 확인되지 않았으니 특히 직접 문의가 필요합니다.</p>
+  </div>
+</section>
+
+<footer>
+  출처: 호갱노노 신내우디안1단지 이야기 게시판(2026년 8월 21일, 로그인 후 최신순 표본 약 15건 확인, 전체 401건).
+  전수 분석이 아니므로 참고용입니다. 인용은 원문 요지를 옮긴 것으로, 개별 발언은 작성자 개인의 경험입니다.
+</footer>
+
+
+  </div>
+  <div class="panel" id="panel-price" hidden>
+
+<section>
+  <h2>매물 시세 <span class="alt">Listings</span></h2>
+  <p class="lede">네이버 부동산에 올라온 이 단지 매물을 전수 수집해 거래유형별로 정리했습니다. 가격대는 0.5억 단위 절대 구간이라 다른 단지와 같은 눈금으로 비교됩니다. 실시간이 아니라 아래 표시된 시점의 스냅샷입니다.</p>
+
+  <div id="articles"></div>
+
+  <div class="note">
+    이 단지는 동마다 여러 평형이 섞여 있어, 목록을 펼쳐 나오는 동·층·향을 <b>배치도 탭의 동 위치</b>와 같이 보는 게
+    특히 중요합니다. 25평(전용 59㎡)과 26평은 전용면적이 같아 이 스냅샷에서는 표기가 하나로 합쳐집니다.
+  </div>
+
+  <footer>
+    출처: 네이버 부동산 단지 매물(complexNo 108142) 수집 스냅샷. 동일매물 묶음 기준이라 같은 물건을 여러 중개사가 올린 건은 1건으로 집계됩니다.
+    호가이며 실거래가가 아닙니다. 갱신은 저장소에서 <code>npm run scrape</code> 실행 후 커밋.
+  </footer>
+</section>
+
+  </div>
+</div>
+
+<script src="assets/articles.js"></script>
+<script>
+// 전용면적 → 이 단지에서 통용되는 평형 표기 (25·26평은 전용면적이 같아 하나로 합쳐짐)
+AptArticles.mount('#articles', {
+  complexNo: '108142',
+  pyeongAlias: { 59: '25평', 84: '36평', 101: '43평' }
+}).then(snap => {
+  if (snap) document.getElementById('tab-price-c').textContent = snap.totalCount + '건';
+});
+</script>
+
+<script>
+
+const T={
+  p25:{label:"25평",area:"전용 59 / 공급 84~85㎡",hex:"#345b7a",target:198},
+  p26:{label:"26평",area:"전용 59 / 공급 85㎡",hex:"#a67c3d",target:51},
+  p36:{label:"36평",area:"전용 84 / 공급 118~120㎡",hex:"#8a4a3a",target:504},
+  p43:{label:"43평",area:"전용 101 / 공급 142~143㎡",hex:"#4a6b52",target:90}
+};
+const ORDER=["p25","p26","p36","p43"];
+
+// 좌표는 호갱노노 지도 캡처 기준 근사치. types가 빈 배열인 동(105·106)은
+// 이번 표본 수집 범위에서 평형이 확인되지 않아 회색으로 표시했다.
+// [x, y, 층수(null=미확인), types[]]
+const D={
+  114:[380, 60, 21,["p26","p36"]],
+  115:[340,105, 21,["p26","p36"]],
+  116:[290,150, 22,["p36"]],
+  113:[430,140, 21,["p36"]],
+  112:[400,195, 22,["p26","p36","p43"]],
+  101:[250,180,null,["p36"]],
+  102:[330,235, 24,["p26","p36","p43"]],
+  103:[270,260,null,["p36"]],
+  104:[300,305, 20,["p36"]],
+  111:[480,260, 19,["p43"]],
+  110:[430,310, 21,["p25"]],
+  109:[380,355, 22,["p25"]],
+  105:[260,340,null,[]],
+  108:[330,400, 22,["p25"]],
+  106:[220,390,null,[]],
+  107:[290,450, 14,["p25"]]
+};
+const LM=[
+  {x:60, y:30, t:"서울의료원 방면",a:"start"},
+  {x:600,y:110,t:"신내역(6호선·경춘선)",a:"end"},
+  {x:600,y:230,t:"카페브릭·구룡공원",a:"end"},
+  {x:330,y:15, t:"빅파크프라자",a:"middle"},
+  {x:330,y:495,t:"입구(정문)",a:"middle"},
+  {x:280,y:600,t:"우디안마트",a:"middle"}
+];
+
+/* ── 탭 ── */
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  document.querySelectorAll("#tabs button").forEach(x=>x.setAttribute("aria-selected",x===b));
+  document.querySelectorAll(".panel").forEach(p=>p.hidden = p.id!==b.dataset.p);
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+
+/* ── 지도 ── */
+const NS="http://www.w3.org/2000/svg";
+const pg=document.getElementById("pills"), lgg=document.getElementById("landmarks"), nodes={};
+let filter=null;
+
+LM.forEach(l=>{const t=document.createElementNS(NS,"text");
+  t.setAttribute("x",l.x);t.setAttribute("y",l.y);t.setAttribute("text-anchor",l.a);
+  t.setAttribute("class","lm");t.textContent=l.t;lgg.appendChild(t);});
+
+function rect(x,y,w,h,fill){const r=document.createElementNS(NS,"rect");
+  r.setAttribute("x",x);r.setAttribute("y",y);r.setAttribute("width",w);r.setAttribute("height",h);
+  if(fill)r.setAttribute("fill",fill);return r;}
+
+Object.keys(D).forEach(k=>{
+  const d=+k,[x,y,fl,tys]=D[k];
+  const g=document.createElementNS(NS,"g");
+  g.setAttribute("class","pill"+(tys.length?"":" unknown"));g.setAttribute("tabindex","0");g.setAttribute("role","button");
+  const label=tys.length?tys.map(t=>T[t].label).join("·"):"평형 미확인";
+  g.setAttribute("aria-label",`${d}동 ${label}${fl?" "+fl+"층":""}`);
+
+  g.appendChild(rect(x-18,y-11,36,22,tys.length?"var(--pine)":null));
+  const fr=rect(x-18,y-11,36,22,null); fr.setAttribute("class","fr"); g.appendChild(fr);
+
+  const t=document.createElementNS(NS,"text");
+  t.setAttribute("x",x);t.setAttribute("y",y+0.5);t.textContent=d;
+  g.appendChild(t); pg.appendChild(g); nodes[d]=g;
+
+  const act=()=>show(d);
+  g.addEventListener("click",act);
+  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();act();}});
+});
+
+function dongsOf(k){return Object.keys(D).filter(kk=>D[kk][3].includes(k)).map(Number).sort((a,b)=>a-b);}
+
+function applyFilter(){
+  Object.keys(D).forEach(kk=>{
+    const d=+kk, tys=D[kk][3];
+    const hit = !filter || tys.includes(filter);
+    nodes[d].classList.toggle("dim",!hit);
+  });
+}
+
+const lgd=document.getElementById("legend");
+ORDER.forEach(k=>{
+  const b=document.createElement("button");
+  b.className="lg";b.type="button";b.dataset.k=k;b.setAttribute("aria-pressed","false");
+  b.innerHTML=`<span class="dot" style="background:${T[k].hex}"></span>${T[k].label}<span class="n">${T[k].target.toLocaleString()}세대</span>`;
+  lgd.appendChild(b);
+});
+
+lgd.addEventListener("click",e=>{
+  const b=e.target.closest(".lg"); if(!b) return;
+  filter = filter===b.dataset.k ? null : b.dataset.k;
+  [...lgd.children].forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===filter));
+  applyFilter();
+});
+
+const db=document.getElementById("dbody");
+ORDER.forEach(k=>{const list=dongsOf(k),tr=document.createElement("tr");
+  tr.innerHTML=`<td><span class="sw" style="background:${T[k].hex}"></span>${T[k].label}</td>`+
+    `<td style="font-size:13px;color:var(--slate)">${T[k].area}</td>`+
+    `<td class="num">${T[k].target.toLocaleString()}</td>`+
+    `<td class="dlist">${list.join(" · ")}</td>`;
+  db.appendChild(tr);});
+const totalHH=ORDER.reduce((s,k)=>s+T[k].target,0);
+const sumRow=document.createElement("tr");
+sumRow.innerHTML=`<td><b>합계</b></td><td></td><td class="num"><b>${totalHH.toLocaleString()}</b></td><td style="color:var(--slate);font-size:13px">단지 총 세대수 1,402 대비 559세대 부족 — 위 note 참고</td>`;
+db.appendChild(sumRow);
+
+function show(d){
+  const [,,fl,tys]=D[d], ro=document.getElementById("readout");
+  const label=tys.length?tys.map(t=>T[t].label).join(" · "):"평형 미확인(표본 범위 밖)";
+  ro.innerHTML=`<span class="hd">${d}동 — ${label}</span>`+
+    `<span class="sub">${fl?"지상 "+fl+"층":"층수 미확인"}</span>`;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,485 @@
+{
+  "complexNo": "108142",
+  "complexName": "신내우디안1단지",
+  "scrapedAt": "2026-08-21T13:45:09.580Z",
+  "totalCount": 23,
+  "detail": {
+    "address": "서울시 중랑구 신내동",
+    "totalHouseHold": 1402,
+    "totalDong": 16,
+    "useApproveYmd": "20140618",
+    "highFloor": 24,
+    "lowFloor": 10,
+    "parkingPerHousehold": 1.12,
+    "floorAreaRatio": "184",
+    "buildingCoverageRatio": "19"
+  },
+  "byTradeType": [
+    {
+      "tradeType": "매매",
+      "total": 23,
+      "minPrice": 76000,
+      "maxPrice": 120000,
+      "priceBands": [
+        {
+          "lo": 75000,
+          "hi": 80000,
+          "label": "7.5억"
+        },
+        {
+          "lo": 80000,
+          "hi": 85000,
+          "label": "8억"
+        },
+        {
+          "lo": 85000,
+          "hi": 90000,
+          "label": "8.5억"
+        },
+        {
+          "lo": 90000,
+          "hi": 95000,
+          "label": "9억"
+        },
+        {
+          "lo": 95000,
+          "hi": 100000,
+          "label": "9.5억"
+        },
+        {
+          "lo": 100000,
+          "hi": 105000,
+          "label": "10억"
+        },
+        {
+          "lo": 105000,
+          "hi": 110000,
+          "label": "10.5억"
+        },
+        {
+          "lo": 110000,
+          "hi": 115000,
+          "label": "11억"
+        },
+        {
+          "lo": 115000,
+          "hi": 120000,
+          "label": "11.5억"
+        },
+        {
+          "lo": 120000,
+          "hi": 125000,
+          "label": "12억"
+        }
+      ],
+      "areas": [
+        {
+          "exclusiveM2": 59,
+          "supplyM2": 84,
+          "pyeong": 25,
+          "count": 4,
+          "min": 79000,
+          "max": 86000,
+          "median": 81000
+        },
+        {
+          "exclusiveM2": 84,
+          "supplyM2": 118,
+          "pyeong": 36,
+          "count": 10,
+          "min": 76000,
+          "max": 90000,
+          "median": 89000
+        },
+        {
+          "exclusiveM2": 101,
+          "supplyM2": 142,
+          "pyeong": 43,
+          "count": 9,
+          "min": 92000,
+          "max": 120000,
+          "median": 100000
+        }
+      ],
+      "matrix": [
+        [
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          2,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          2,
+          3,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "rowTotals": [
+        4,
+        10,
+        9
+      ],
+      "colTotals": [
+        3,
+        3,
+        3,
+        7,
+        2,
+        3,
+        1,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "articleNo": "2640198977",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 143,
+      "price": 120000,
+      "rent": 0,
+      "floor": "고/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20260727",
+      "feature": "복층 막힘없는 전망 깨끗하고 환해요 산이보이는 전망 입주협의가능 관리비짱",
+      "realtor": "우디안공인중개사사무소"
+    },
+    {
+      "articleNo": "2640208506",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 120,
+      "price": 90000,
+      "rent": 0,
+      "floor": "고/24",
+      "direction": "남서향",
+      "building": "102동",
+      "confirmYmd": "20260727",
+      "feature": "전망굿, 수납공간 많은타입, 로얄동, 로얄층, 입주협의",
+      "realtor": "우디안 탑 공인중개사사무소"
+    },
+    {
+      "articleNo": "2640339832",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 105000,
+      "rent": 0,
+      "floor": "중/24",
+      "direction": "남동향",
+      "building": "102동",
+      "confirmYmd": "20260727",
+      "feature": "내부 집상태 깔끔하고 전망 좋음",
+      "realtor": "엘지공인중개사사무소"
+    },
+    {
+      "articleNo": "2641149870",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 120,
+      "price": 90000,
+      "rent": 0,
+      "floor": "고/24",
+      "direction": "남서향",
+      "building": "102동",
+      "confirmYmd": "20260731",
+      "feature": "조망굿, 수납공간 많은타입, 로얄동, 입주협의",
+      "realtor": "우디안탑 공인중개사사무소"
+    },
+    {
+      "articleNo": "2641151696",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 118,
+      "price": 76000,
+      "rent": 0,
+      "floor": "저/20",
+      "direction": "남서향",
+      "building": "104동",
+      "confirmYmd": "20260731",
+      "feature": "28년2월입주 전세4.46세안고 수납공간좋은인기타입 신내역버스정류인접",
+      "realtor": "우디안탑 공인중개사사무소"
+    },
+    {
+      "articleNo": "2641485199",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 118,
+      "price": 90000,
+      "rent": 0,
+      "floor": "12/15",
+      "direction": "남서향",
+      "building": "101동",
+      "confirmYmd": "20260803",
+      "feature": "인테리어 전철역 가까움 드레스룸이 방처럼 넓어요 주차편리 버스정류장3분",
+      "realtor": "우디안공인중개사사무소"
+    },
+    {
+      "articleNo": "2642335456",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 98000,
+      "rent": 0,
+      "floor": "저/24",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260807",
+      "feature": "남향,포베이,방4,욕실2,전망굿,중문,베란다장",
+      "realtor": "우디안샛별부동산공인중개사사무소"
+    },
+    {
+      "articleNo": "2642396393",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 100000,
+      "rent": 0,
+      "floor": "중/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20260807",
+      "feature": "정남향 중문 주인거주 포베이 뻥뷰 깔끔한 관리 상태",
+      "realtor": "우디안시티 공인중개사사무소"
+    },
+    {
+      "articleNo": "2642523608",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 119,
+      "price": 88000,
+      "rent": 0,
+      "floor": "20/24",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260808",
+      "feature": "남향 단독세대 주방거실선호타입 전철역마트 가까움 입주협의가능 관리비저렴",
+      "realtor": "우디안공인중개사사무소"
+    },
+    {
+      "articleNo": "2642912832",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 118,
+      "price": 90000,
+      "rent": 0,
+      "floor": "고/14",
+      "direction": "남서향",
+      "building": "103동",
+      "confirmYmd": "20260810",
+      "feature": "막힘없는 전망 전철역 가까움 선호타입 드레스룸이 방처럼 넓어요 깨끗해요",
+      "realtor": "우디안공인중개사사무소"
+    },
+    {
+      "articleNo": "2642928248",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 100000,
+      "rent": 0,
+      "floor": "중/24",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260810",
+      "feature": "남향 전철역마트 가까움 시원하고 환해요 관리비저렴 쾌적한 환경 관리비저렴",
+      "realtor": "우디안공인중개사사무소"
+    },
+    {
+      "articleNo": "2643332500",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 118,
+      "price": 80000,
+      "rent": 0,
+      "floor": "중/14",
+      "direction": "남향",
+      "building": "103동",
+      "confirmYmd": "20260812",
+      "feature": "포베이  전세안고매매 거실넓고 드레스룸넓은구조  전망짱",
+      "realtor": "우디안시티 공인중개사사무소"
+    },
+    {
+      "articleNo": "2643348726",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 84,
+      "price": 86000,
+      "rent": 0,
+      "floor": "1/24",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260812",
+      "feature": "하시입주가능한 리모델링 마친 테라스정원있는  이쁜집입니다",
+      "realtor": "봉화산역 공인중개사사무소"
+    },
+    {
+      "articleNo": "2643489251",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 85,
+      "price": 80000,
+      "rent": 0,
+      "floor": "4/21",
+      "direction": "남서향",
+      "building": "110동",
+      "confirmYmd": "20260813",
+      "feature": "전망굿 욕실2개 관리상태  좋아요 로얄동  입주날짜 협의",
+      "realtor": "우디안시티 공인중개사사무소"
+    },
+    {
+      "articleNo": "2643644976",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 104000,
+      "rent": 0,
+      "floor": "저/24",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260813",
+      "feature": "정남향 포베이  도배와 내부 깨끗해요 세안고 매매",
+      "realtor": "우디안시티 공인중개사사무소"
+    },
+    {
+      "articleNo": "2644233210",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 93000,
+      "rent": 0,
+      "floor": "13/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20260818",
+      "feature": "시원한뷰. 채광좋은남향. 4bay구조. 주인거주하여깨끗. 입주가",
+      "realtor": "우디안샛별부동산공인중개사사무소"
+    },
+    {
+      "articleNo": "2644237765",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 95000,
+      "rent": 0,
+      "floor": "중/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20260818",
+      "feature": "채광좋은남향. 선호하는4bay구조. 주인거주하여깔끔",
+      "realtor": "우디안샛별부동산공인중개사사무소"
+    },
+    {
+      "articleNo": "2644238057",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 92000,
+      "rent": 0,
+      "floor": "저/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20260818",
+      "feature": "채광좋은남향. 안방한샘붙박이장. 중문. 줄눈시공. 주인거주. 입주가",
+      "realtor": "우디안샛별부동산공인중개사사무소"
+    },
+    {
+      "articleNo": "2644315013",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 84,
+      "price": 82000,
+      "rent": 0,
+      "floor": "2/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20260818",
+      "feature": "귀한테리스형 남향 새솔초,정문,후문,버스정류장가까운로얄동 층간소음걱정없",
+      "realtor": "우디안 탑 공인중개사사무소"
+    },
+    {
+      "articleNo": "2644524161",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 85,
+      "price": 79000,
+      "rent": 0,
+      "floor": "저/21",
+      "direction": "남서향",
+      "building": "115동",
+      "confirmYmd": "20260819",
+      "feature": "방3화2, 귀한평형, 조망굿, 생활편리, 27년1월13일 입주가능",
+      "realtor": "우디안 탑 공인중개사사무소"
+    },
+    {
+      "articleNo": "2644527334",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 120,
+      "price": 76000,
+      "rent": 0,
+      "floor": "3/20",
+      "direction": "남서향",
+      "building": "104동",
+      "confirmYmd": "20260819",
+      "feature": "28년2월입주전세안고매매 수납공간좋은인기타입 어린이집동 신내역버스정류인접",
+      "realtor": "우디안 탑 공인중개사사무소"
+    },
+    {
+      "articleNo": "2644717302",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 118,
+      "price": 88000,
+      "rent": 0,
+      "floor": "22/24",
+      "direction": "남서향",
+      "building": "102동",
+      "confirmYmd": "20260820",
+      "feature": "인테리어되어 있는집. 채광좋은향. 4bay구조. 로얄동. 뻥뷰. 입주가",
+      "realtor": "우디안샛별부동산공인중개사사무소"
+    },
+    {
+      "articleNo": "2645098132",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 120,
+      "price": 90000,
+      "rent": 0,
+      "floor": "중/20",
+      "direction": "남서향",
+      "building": "104동",
+      "confirmYmd": "20260821",
+      "feature": "확장형 작은방넓고수납공간좋은인기타입 밝고환한며바람길탁월 집주인거주깔",
+      "realtor": "우디안 탑 공인중개사사무소"
+    }
+  ]
+}

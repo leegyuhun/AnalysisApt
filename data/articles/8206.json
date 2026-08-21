@@ -1,7 +1,7 @@
 {
   "complexNo": "8206",
   "complexName": "삼각산아이원",
-  "scrapedAt": "2026-08-19T14:06:42.643Z",
+  "scrapedAt": "2026-08-21T11:20:33.112Z",
   "totalCount": 29,
   "detail": {
     "address": "서울시 강북구 미아동",
@@ -86,8 +86,8 @@
           0,
           3,
           6,
-          2,
-          2
+          1,
+          3
         ]
       ],
       "rowTotals": [
@@ -99,8 +99,8 @@
         3,
         6,
         9,
-        2,
-        2
+        1,
+        3
       ]
     },
     {
@@ -218,20 +218,6 @@
   ],
   "articles": [
     {
-      "articleNo": "2640365606",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 137,
-      "price": 95000,
-      "rent": 0,
-      "floor": "중/20",
-      "direction": "남서향",
-      "building": "117동",
-      "confirmYmd": "20260727",
-      "feature": "전세안고 무주택자 가능 조정가 27년9월 입주 예전 올수리 기본형",
-      "realtor": "테라스(02-980-2777)공인중개사사무소"
-    },
-    {
       "articleNo": "2640682864",
       "tradeType": "매매",
       "exclusiveM2": 84,
@@ -344,20 +330,6 @@
       "realtor": "행운부동산공인중개사사무소"
     },
     {
-      "articleNo": "2643199490",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 137,
-      "price": 105000,
-      "rent": 0,
-      "floor": "저/18",
-      "direction": "남서향",
-      "building": "115동",
-      "confirmYmd": "20260811",
-      "feature": "기본형으로 전망, 일조권 좋은집으로 깨끗해요",
-      "realtor": "행운부동산공인중개사사무소"
-    },
-    {
       "articleNo": "2643374029",
       "tradeType": "단기임대",
       "exclusiveM2": 84,
@@ -369,20 +341,6 @@
       "building": "101동",
       "confirmYmd": "20260812",
       "feature": "올확장 올수리 풀옵션",
-      "realtor": "단지내월드(9833400)공인중개사사무소"
-    },
-    {
-      "articleNo": "2643405193",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 105,
-      "price": 94000,
-      "rent": 0,
-      "floor": "중/11",
-      "direction": "남서향",
-      "building": "119동",
-      "confirmYmd": "20260812",
-      "feature": "방확장 폴딩도어등  완전 올수리  앞뒤로 시원한 뷰",
       "realtor": "단지내월드(9833400)공인중개사사무소"
     },
     {
@@ -400,20 +358,6 @@
       "realtor": "행운부동산공인중개사사무소"
     },
     {
-      "articleNo": "2643969209",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 137,
-      "price": 110000,
-      "rent": 0,
-      "floor": "1/25",
-      "direction": "남향",
-      "building": "109동",
-      "confirmYmd": "20260818",
-      "feature": "남향 거실 작은방확장  샷시포함 전체 올 수리",
-      "realtor": "래미안 공인중개사사무소"
-    },
-    {
       "articleNo": "2643998702",
       "tradeType": "매매",
       "exclusiveM2": 114,
@@ -428,34 +372,6 @@
       "realtor": "행운부동산공인중개사사무소"
     },
     {
-      "articleNo": "2644045032",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 105,
-      "price": 85000,
-      "rent": 0,
-      "floor": "고/23",
-      "direction": "남서향",
-      "building": "102동",
-      "confirmYmd": "20260817",
-      "feature": "세안고.매도인대출가능, 입구동, 집상태깨끗, 길음초배정, 조망 채광",
-      "realtor": "한성부동산(02-980-0080)공인중개사사무소"
-    },
-    {
-      "articleNo": "2644278038",
-      "tradeType": "월세",
-      "exclusiveM2": 84,
-      "supplyM2": 105,
-      "price": 10000,
-      "rent": 200,
-      "floor": "10/24",
-      "direction": "남서향",
-      "building": "111동",
-      "confirmYmd": "20260818",
-      "feature": " 숲조망 채광좋은집 2억에 160가능 깨끗한기본형 로얄동",
-      "realtor": "삼각산아이원(단지02-985-3344)공인중개사사무소"
-    },
-    {
       "articleNo": "2644294521",
       "tradeType": "매매",
       "exclusiveM2": 114,
@@ -468,20 +384,6 @@
       "confirmYmd": "20260818",
       "feature": "올확장, 한샘싱크대, 부분수리됨, 화이트톤, 채광좋고 전망멋진집",
       "realtor": "삼각산아이원(단지02-985-3344)공인중개사사무소"
-    },
-    {
-      "articleNo": "2644315317",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 105,
-      "price": 95000,
-      "rent": 0,
-      "floor": "16/19",
-      "direction": "남동향",
-      "building": "108동",
-      "confirmYmd": "20260818",
-      "feature": "강추,로얄동,베란다있는기본,내부상태깨끗.트인전망,입주협의가능해요",
-      "realtor": "단지내가나(02-980-0049)공인중개사사무소"
     },
     {
       "articleNo": "2644368169",
@@ -540,20 +442,6 @@
       "realtor": "유해숙공인중개사사무소"
     },
     {
-      "articleNo": "2644433721",
-      "tradeType": "전세",
-      "exclusiveM2": 84,
-      "supplyM2": 105,
-      "price": 65000,
-      "rent": 0,
-      "floor": "중/24",
-      "direction": "남서향",
-      "building": "111동",
-      "confirmYmd": "20260819",
-      "feature": "베란다있는기본집 내부상태 깨끗 입주하시 로얄동",
-      "realtor": "딸기공인중개사사무소"
-    },
-    {
       "articleNo": "2644472112",
       "tradeType": "매매",
       "exclusiveM2": 84,
@@ -580,6 +468,20 @@
       "confirmYmd": "20260819",
       "feature": "전세승계 27년8월입주, 올수리, 방2확장, 채광좋음, 생활편리동 ",
       "realtor": "삼각산아이원(단지02-985-3344)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644510749",
+      "tradeType": "월세",
+      "exclusiveM2": 84,
+      "supplyM2": 105,
+      "price": 10000,
+      "rent": 200,
+      "floor": "10/24",
+      "direction": "남서향",
+      "building": "111동",
+      "confirmYmd": "20260819",
+      "feature": "기본,하시입주,2억에160",
+      "realtor": "부동산코리아(02-982-5656)공인중개사사무소"
     },
     {
       "articleNo": "2644548713",
@@ -622,6 +524,104 @@
       "confirmYmd": "20260819",
       "feature": "숲전망굿,입주협의,씽크대,화장실2,도배 거실 방,바닥교체 예정,복받은집.",
       "realtor": "부동산코리아(02-982-5656)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644761855",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 105,
+      "price": 95000,
+      "rent": 0,
+      "floor": "16/19",
+      "direction": "남동향",
+      "building": "108동",
+      "confirmYmd": "20260820",
+      "feature": "추천매물, 입구동, 생활및 교통편리, 깨끗한 내부, 시원한조망",
+      "realtor": "삼각산아이원(단지02-985-3344)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644796857",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 105,
+      "price": 94000,
+      "rent": 0,
+      "floor": "중/11",
+      "direction": "남서향",
+      "building": "119동",
+      "confirmYmd": "20260820",
+      "feature": "방확장 폴딩도어등  완전 올수리  앞뒤로 시원한 뷰",
+      "realtor": "단지내월드(9833400)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644797265",
+      "tradeType": "전세",
+      "exclusiveM2": 84,
+      "supplyM2": 105,
+      "price": 65000,
+      "rent": 0,
+      "floor": "중/24",
+      "direction": "남서향",
+      "building": "111동",
+      "confirmYmd": "20260820",
+      "feature": "로얄동 로얄층 채광 통풍 굿 초록뷰  길음초 학세권 하시입주",
+      "realtor": "단지내월드(9833400)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644918170",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 137,
+      "price": 110000,
+      "rent": 0,
+      "floor": "1/25",
+      "direction": "남서향",
+      "building": "109동",
+      "confirmYmd": "20260821",
+      "feature": "거실과방1 확장, 리모델링1억이상 온수배과샷시포함, 주인거주, 필로티1층",
+      "realtor": "으뜸(단지내02-988-3001)공인중개사사무소"
+    },
+    {
+      "articleNo": "2645014441",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 137,
+      "price": 95000,
+      "rent": 0,
+      "floor": "중/20",
+      "direction": "남서향",
+      "building": "117동",
+      "confirmYmd": "20260821",
+      "feature": "전세안고 무주택자 가능 조정가 27년9월 입주 예전 올수리 기본형",
+      "realtor": "테라스(02-980-2777)공인중개사사무소"
+    },
+    {
+      "articleNo": "2645074698",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 105,
+      "price": 85000,
+      "rent": 0,
+      "floor": "고/23",
+      "direction": "남서향",
+      "building": "102동",
+      "confirmYmd": "20260821",
+      "feature": "세안고,매도인대출가능, 입구동, 기본, 길음초배정, 조망 채광 좋음,",
+      "realtor": "한성부동산(02-980-0080)공인중개사사무소"
+    },
+    {
+      "articleNo": "2645141537",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 137,
+      "price": 110000,
+      "rent": 0,
+      "floor": "저/18",
+      "direction": "남서향",
+      "building": "115동",
+      "confirmYmd": "20260821",
+      "feature": "길음초앞,앞이탁트인전망,기본,관리잘된집",
+      "realtor": "삼각산풍림공인중개사사무소"
     }
   ]
 }

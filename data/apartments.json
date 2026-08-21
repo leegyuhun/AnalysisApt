@@ -37,6 +37,25 @@
         { "label": "개 동", "value": "19" },
         { "label": "혼합 동", "value": "1개" }
       ]
+    },
+    {
+      "id": "samgaksan-ione",
+      "name": "삼각산아이원",
+      "file": "samgaksan-map.html",
+      "complexNo": "8206",
+      "region": "서울 강북구",
+      "address": "미아동 1357 · 삼양로19길 113",
+      "built": "2003.12",
+      "households": 1344,
+      "buildings": 20,
+      "accent": "#3a6b8a",
+      "tags": ["초품아(길음초 100%)", "단지 내 완전 평탄화", "3개 평형"],
+      "summary": "동별 평형 배치도와 호갱노노 이야기 표본 분석. 길음초 100% 배정과 단지 내 평탄화가 핵심 소구점.",
+      "highlights": [
+        { "label": "총 세대수", "value": "1,344" },
+        { "label": "개 동", "value": "20" },
+        { "label": "평형 종류", "value": "3개" }
+      ]
     }
   ]
 }

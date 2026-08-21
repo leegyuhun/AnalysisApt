@@ -45,9 +45,14 @@ scripts/scrape.mjs  →  data/articles/{complexNo}.json  →  assets/articles.js
 각 단지의 `complexNo`로 스냅샷을 추가로 fetch해 카드 하단 시세 요약을 붙인다.
 스냅샷이 없으면 그 부분만 조용히 생략된다.
 
-단지 페이지(`sk-map.html` 등)는 각자 독립된 HTML이고 자체 스타일을 인라인으로 갖는다.
-공유하는 것은 `assets/`의 셋뿐이다 — `base.css`(팔레트·복귀바), `articles.css`, `articles.js`.
+단지 페이지(`sk-map.html`, `byeoksan-map.html` 등)는 각자 독립된 HTML이고 자체 스타일을 인라인으로
+갖는다. 공유하는 것은 `assets/`의 셋뿐이다 — `base.css`(팔레트·복귀바), `articles.css`, `articles.js`.
 새 단지를 추가하는 절차는 README에 정리돼 있다.
+
+각 단지 페이지의 "동별 배치도" 탭은 인라인 JS로 좌표를 찍어 그리는 손수 제작 SVG이고,
+"입주민 이야기" 탭은 호갱노노 등에서 수집해 수작업으로 요약·분류한 정적 텍스트다. 둘 다
+스크립트 산출물이 아니라 페이지에 직접 박아 넣은 콘텐츠이므로, 새 단지를 추가할 때 자동
+생성해주는 도구는 없다 — 기존 페이지를 참고해 그대로 손으로 만든다.
 
 ### 왜 스냅샷 방식인가
 

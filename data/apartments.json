@@ -75,6 +75,63 @@
         { "label": "개 동", "value": "16" },
         { "label": "평형 종류", "value": "4개" }
       ]
+    },
+    {
+      "id": "jeongneung-poongrim",
+      "name": "정릉풍림아이원",
+      "file": "jeongneung-map.html",
+      "complexNo": "3426",
+      "region": "서울 성북구",
+      "address": "정릉동 239 · 솔샘로25길 28",
+      "built": "2005.12",
+      "households": 1971,
+      "buildings": 28,
+      "accent": "#2e5266",
+      "tags": ["전 동 지하주차장 직결", "북한산 둘레길 직결", "정릉초 도보 7분"],
+      "summary": "동별 평형 배치도와 호갱노노 이야기 1,280건 카테고리 요약 분석. 언덕을 버스망과 지하주차장으로 상쇄한 대단지.",
+      "highlights": [
+        { "label": "총 세대수", "value": "1,971" },
+        { "label": "개 동", "value": "28" },
+        { "label": "평형 종류", "value": "4개" }
+      ]
+    },
+    {
+      "id": "jeongneung-hillstate3",
+      "name": "정릉힐스테이트3차",
+      "file": "hillstate3-map.html",
+      "complexNo": "23779",
+      "region": "서울 성북구",
+      "address": "정릉동 1031",
+      "built": "2008.06",
+      "households": 522,
+      "buildings": 19,
+      "accent": "#2c4a52",
+      "tags": ["임대세대 없는 순수 분양", "저층 타운하우스 감성(최고 10층)", "우이신설선 도보 5분"],
+      "summary": "동별 평형 배치도와 호갱노노 이야기 320건 카테고리 요약 분석. 저층 소단지 특유의 조용함과 임대세대 없는 순수 분양이 핵심 소구점.",
+      "highlights": [
+        { "label": "총 세대수", "value": "522" },
+        { "label": "개 동", "value": "19" },
+        { "label": "최고 층수", "value": "10층" }
+      ]
+    },
+    {
+      "id": "dusan-treasium",
+      "name": "두산위브트레지움",
+      "file": "dusan-treasium-map.html",
+      "complexNo": "27413",
+      "region": "서울 강북구",
+      "address": "미아동 811 · 삼양로27길 95",
+      "built": "2011.10",
+      "households": 1370,
+      "buildings": 24,
+      "accent": "#a1462b",
+      "tags": ["미아뉴타운 최근 신축(2011)", "우이신설선 더블역세권", "단지 내 보차분리"],
+      "summary": "동별 평형 배치도와 호갱노노 이야기 표본 분석. 형제 단지들보다 늦게 지어진 신축 프리미엄과 더블역세권이 핵심 소구점.",
+      "highlights": [
+        { "label": "총 세대수", "value": "1,370" },
+        { "label": "개 동", "value": "24" },
+        { "label": "평형 종류", "value": "5개" }
+      ]
     }
   ]
 }

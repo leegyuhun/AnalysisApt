@@ -31,48 +31,42 @@ h1 em{font-style:normal;color:var(--gold)}
   letter-spacing:.14em;text-transform:uppercase}
 .lede{color:var(--slate);font-size:14px;margin:0 0 26px;padding-bottom:18px;border-bottom:2px solid var(--granite)}
 
-/* ── 카드 그리드 ── */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(296px,1fr));gap:18px}
-.card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
-  text-decoration:none;color:inherit;position:relative;overflow:hidden;
-  transition:border-color .18s,box-shadow .18s,transform .18s}
-.card::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--accent,var(--pine))}
-.card:hover{border-color:var(--slate);box-shadow:0 6px 22px rgba(32,38,43,.09);transform:translateY(-2px)}
-.card:focus-visible{outline:2px solid var(--granite);outline-offset:2px}
+/* ── 후보 단지 목록 ── */
+.list{border-top:1px solid var(--granite)}
+.row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1.1fr) 18px;
+  align-items:center;gap:18px;padding:15px 6px;text-decoration:none;color:inherit;
+  position:relative;border-bottom:1px solid var(--line);transition:background .15s}
+.row::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--accent,var(--pine))}
+.row:hover{background:#fbfaf7}
+.row:focus-visible{outline:2px solid var(--granite);outline-offset:-2px}
 
-.card .hd{padding:20px 20px 0 22px}
-.region{font-size:11px;letter-spacing:.14em;color:var(--accent,var(--pine));font-weight:600;text-transform:uppercase}
-.card h3{font-family:'Gowun Batang',serif;font-size:22px;font-weight:700;margin:6px 0 4px;line-height:1.25}
-.addr{font-size:12.5px;color:var(--dim);margin:0}
+.row .id{min-width:0}
+.row .region{font-size:10.5px;letter-spacing:.13em;color:var(--accent,var(--pine));font-weight:600;text-transform:uppercase}
+.row h3{font-family:'Gowun Batang',serif;font-size:17px;font-weight:700;margin:2px 0 2px;line-height:1.25;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .addr{font-size:12px;color:var(--dim);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
-.specs{display:flex;gap:18px;padding:16px 20px 0 22px;flex-wrap:wrap}
-.specs div{min-width:52px}
-.specs b{display:block;font-size:16px;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums}
-.specs span{font-size:10.5px;color:var(--dim);letter-spacing:.03em}
+.row .specs{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--slate)}
+.row .specs b{font-weight:600;color:var(--granite);font-variant-numeric:tabular-nums}
+.row .specs span{color:var(--dim);font-size:10.5px;margin-left:2px}
 
-.summary{padding:14px 20px 0 22px;margin:0;font-size:13.5px;color:var(--slate);line-height:1.7}
+.row .market{display:flex;flex-direction:column;gap:2px;font-size:12.5px}
+.row .mrow{display:flex;gap:6px;align-items:baseline;white-space:nowrap}
+.row .mrow .tt{font-weight:600;font-size:11px;min-width:26px}
+.row .mrow .tt[data-t="매매"]{color:var(--clay)}
+.row .mrow .tt[data-t="전세"]{color:var(--pine)}
+.row .mrow .tt[data-t="월세"]{color:var(--gold)}
+.row .mrow .rng{font-variant-numeric:tabular-nums;color:var(--slate)}
+.row .market .none,.row .market .when{font-size:11px;color:var(--dim)}
 
-.tags{display:flex;flex-wrap:wrap;gap:5px;padding:14px 20px 0 22px}
-.tags span{font-size:10.5px;letter-spacing:.04em;padding:3px 8px;background:var(--mist);color:var(--slate);font-weight:500}
+.row .arw{color:var(--dim);transition:transform .15s,color .15s;justify-self:end}
+.row:hover .arw{transform:translateX(3px);color:var(--granite)}
 
-/* ── 카드 내 매물 요약 ── */
-.market{margin:16px 0 0;padding:13px 20px 14px 22px;background:#fbfaf7;border-top:1px solid var(--line)}
-.market .mhd{font-size:10.5px;letter-spacing:.13em;color:var(--dim);text-transform:uppercase;margin-bottom:8px;
-  display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.market .mhd .when{letter-spacing:0;text-transform:none;font-size:10.5px}
-.mrow{display:grid;grid-template-columns:38px 44px 1fr;align-items:baseline;gap:8px;font-size:13px;padding:2px 0}
-.mrow .tt{font-weight:600;font-size:12px}
-.mrow .tt[data-t="매매"]{color:var(--clay)}
-.mrow .tt[data-t="전세"]{color:var(--pine)}
-.mrow .tt[data-t="월세"]{color:var(--gold)}
-.mrow .cnt{font-size:11.5px;color:var(--dim);font-variant-numeric:tabular-nums}
-.mrow .rng{font-variant-numeric:tabular-nums;font-weight:500}
-.market .none{font-size:12px;color:var(--dim)}
-
-.go{margin-top:auto;padding:14px 20px 16px 22px;font-size:12.5px;font-weight:600;color:var(--granite);
-  display:flex;align-items:center;gap:6px}
-.card:hover .go .arw{transform:translateX(3px)}
-.go .arw{transition:transform .18s}
+@media (max-width:720px){
+  .row{grid-template-columns:1fr 16px;row-gap:6px}
+  .row .specs,.row .market{grid-column:1}
+  .row .arw{grid-row:1;align-self:start}
+}
 
 /* ── 상태 ── */
 .state{border:1px dashed var(--line);background:#fff;padding:30px 24px;text-align:center;color:var(--slate);font-size:14px}
@@ -85,11 +79,10 @@ footer p{margin:0 0 6px}
 
 @media (max-width:600px){
   .counts{gap:18px}
-  .grid{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:no-preference){
-  .card{animation:rise .45s ease both;animation-timeline:view();animation-range:entry 0% entry 30%}
-  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  .row{animation:rise .4s ease both;animation-timeline:view();animation-range:entry 0% entry 40%}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 }
 </style>
 </head>
@@ -119,7 +112,7 @@ footer p{margin:0 0 6px}
   </div>
   <p class="lede">분석이 끝난 단지만 올라옵니다. 매물 시세는 네이버 부동산에서 수집한 스냅샷이며, 카드에는 거래유형별 건수와 가격 범위만 요약해 보여줍니다.</p>
 
-  <div id="grid" class="grid"></div>
+  <div id="grid" class="list"></div>
 
   <footer>
     <p>단지 분석: 국토교통부 건축물대장 · 호갱노노 게시판 등 공개 자료 기반.</p>
@@ -142,38 +135,34 @@ function sinceText(iso) {
   return Math.floor(h / 24) + '일 전 수집';
 }
 
-// 카드 하단 매물 요약: 거래유형별 건수와 최저~최고가만
+// 매물 시세 요약: 거래유형별 최저~최고가만, 최대 2줄
 function marketHtml(snap) {
-  if (!snap) return '';
-  const rows = (snap.byTradeType || []).map(g => `
+  if (!snap) return '<div class="market"></div>';
+  const rows = (snap.byTradeType || []).slice(0, 2).map(g => `
     <div class="mrow">
       <span class="tt" data-t="${g.tradeType}">${g.tradeType}</span>
-      <span class="cnt">${g.total}건</span>
-      <span class="rng">${eok(g.minPrice)}${g.minPrice === g.maxPrice ? '' : ' ~ ' + eok(g.maxPrice)}</span>
+      <span class="rng">${eok(g.minPrice)}${g.minPrice === g.maxPrice ? '' : '~' + eok(g.maxPrice)}</span>
     </div>`).join('');
   return `
     <div class="market">
-      <div class="mhd"><span>매물 시세</span><span class="when">${sinceText(snap.scrapedAt)}</span></div>
-      ${rows || '<div class="none">등록된 매물이 없습니다.</div>'}
+      ${rows || '<div class="none">등록된 매물 없음</div>'}
+      <div class="when">${sinceText(snap.scrapedAt)}</div>
     </div>`;
 }
 
-function cardHtml(apt, snap) {
+function rowHtml(apt, snap) {
   const specs = (apt.highlights || []).map(h =>
-    `<div><b>${h.value}</b><span>${h.label}</span></div>`).join('');
-  const tags = (apt.tags || []).map(t => `<span>${t}</span>`).join('');
+    `<span><b>${h.value}</b><span>${h.label}</span></span>`).join('');
   return `
-    <a class="card" href="${apt.file}" style="--accent:${apt.accent || 'var(--pine)'}">
-      <div class="hd">
+    <a class="row" href="${apt.file}" style="--accent:${apt.accent || 'var(--pine)'}">
+      <div class="id">
         <div class="region">${apt.region || ''}</div>
         <h3>${apt.name}</h3>
         <p class="addr">${apt.address || ''}${apt.built ? ' · ' + apt.built + ' 준공' : ''}</p>
       </div>
-      ${specs ? `<div class="specs">${specs}</div>` : ''}
-      ${apt.summary ? `<p class="summary">${apt.summary}</p>` : ''}
-      ${tags ? `<div class="tags">${tags}</div>` : ''}
+      <div class="specs">${specs}</div>
       ${marketHtml(snap)}
-      <div class="go">자세히 보기 <span class="arw">→</span></div>
+      <span class="arw">→</span>
     </a>`;
 }
 
@@ -207,7 +196,7 @@ async function main() {
       : Promise.resolve(null)
   ));
 
-  grid.innerHTML = apts.map((a, i) => cardHtml(a, snaps[i])).join('');
+  grid.innerHTML = apts.map((a, i) => rowHtml(a, snaps[i])).join('');
 
   const totalArticles = snaps.reduce((s, x) => s + (x?.totalCount || 0), 0);
   const latest = snaps.filter(Boolean).map(x => new Date(x.scrapedAt).getTime()).sort((a, b) => b - a)[0];

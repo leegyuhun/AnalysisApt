@@ -1,0 +1,175 @@
+{
+  "complexNo": "23779",
+  "complexName": "정릉힐스테이트3차",
+  "scrapedAt": "2026-08-21T14:54:52.858Z",
+  "totalCount": 5,
+  "detail": {
+    "address": "서울시 성북구 정릉동",
+    "totalHouseHold": 522,
+    "totalDong": 19,
+    "useApproveYmd": "20080609",
+    "highFloor": 10,
+    "lowFloor": 5,
+    "parkingPerHousehold": 1.15,
+    "floorAreaRatio": "179",
+    "buildingCoverageRatio": "23"
+  },
+  "byTradeType": [
+    {
+      "tradeType": "매매",
+      "total": 4,
+      "minPrice": 87000,
+      "maxPrice": 95000,
+      "priceBands": [
+        {
+          "lo": 85000,
+          "hi": 90000,
+          "label": "8.5억"
+        },
+        {
+          "lo": 90000,
+          "hi": 95000,
+          "label": "9억"
+        },
+        {
+          "lo": 95000,
+          "hi": 100000,
+          "label": "9.5억"
+        }
+      ],
+      "areas": [
+        {
+          "exclusiveM2": 84,
+          "supplyM2": 110,
+          "pyeong": 33,
+          "count": 4,
+          "min": 87000,
+          "max": 95000,
+          "median": 90500
+        }
+      ],
+      "matrix": [
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "rowTotals": [
+        4
+      ],
+      "colTotals": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "tradeType": "월세",
+      "total": 1,
+      "minPrice": 35000,
+      "maxPrice": 35000,
+      "priceBands": [
+        {
+          "lo": 35000,
+          "hi": 40000,
+          "label": "3.5억"
+        }
+      ],
+      "areas": [
+        {
+          "exclusiveM2": 59,
+          "supplyM2": 86,
+          "pyeong": 26,
+          "count": 1,
+          "min": 35000,
+          "max": 35000,
+          "median": 35000
+        }
+      ],
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "rowTotals": [
+        1
+      ],
+      "colTotals": [
+        1
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "articleNo": "2644749636",
+      "tradeType": "월세",
+      "exclusiveM2": 59,
+      "supplyM2": 86,
+      "price": 35000,
+      "rent": 60,
+      "floor": "중/10",
+      "direction": "남향",
+      "building": "301동",
+      "confirmYmd": "20260820",
+      "feature": "입주협의 올확장 깔끔하게 관리되어 쾌적한 주거환경으로 추천 반전세",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644928581",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 110,
+      "price": 90000,
+      "rent": 0,
+      "floor": "저/10",
+      "direction": "남향",
+      "building": "310동",
+      "confirmYmd": "20260821",
+      "feature": "전자계약 가능. 남향 작은방 2확장 올마루 깨끗 세안고 매매입니다.",
+      "realtor": "삼성(02-915-0020)공인중개사사무소"
+    },
+    {
+      "articleNo": "2645115360",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 110,
+      "price": 91000,
+      "rent": 0,
+      "floor": "1/10",
+      "direction": "동향",
+      "building": "309동",
+      "confirmYmd": "20260821",
+      "feature": "필로티1층 층간소음 걱정없음 올확장세대 상태 깨끗",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2645115600",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 110,
+      "price": 95000,
+      "rent": 0,
+      "floor": "9/10",
+      "direction": "남향",
+      "building": "308동",
+      "confirmYmd": "20260821",
+      "feature": "올확장 부분 수리 된 집으로 추천드리는 귀한 매물",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2645142462",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 110,
+      "price": 87000,
+      "rent": 0,
+      "floor": "저/10",
+      "direction": "남향",
+      "building": "308동",
+      "confirmYmd": "20260821",
+      "feature": "전자계약 가능합니다. 남향 작은방2확장형 상태 최상급입니다.",
+      "realtor": "삼성(02-915-0020)공인중개사사무소"
+    }
+  ]
+}

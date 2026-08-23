@@ -1,0 +1,460 @@
+{
+  "complexNo": "3426",
+  "complexName": "정릉풍림아이원",
+  "scrapedAt": "2026-08-21T14:22:09.722Z",
+  "totalCount": 20,
+  "detail": {
+    "address": "서울시 성북구 정릉동",
+    "totalHouseHold": 1971,
+    "totalDong": 28,
+    "useApproveYmd": "20051228",
+    "highFloor": 20,
+    "lowFloor": 13,
+    "parkingPerHousehold": 1.2,
+    "floorAreaRatio": "256",
+    "buildingCoverageRatio": "22"
+  },
+  "byTradeType": [
+    {
+      "tradeType": "매매",
+      "total": 19,
+      "minPrice": 66000,
+      "maxPrice": 93000,
+      "priceBands": [
+        {
+          "lo": 65000,
+          "hi": 70000,
+          "label": "6.5억"
+        },
+        {
+          "lo": 70000,
+          "hi": 75000,
+          "label": "7억"
+        },
+        {
+          "lo": 75000,
+          "hi": 80000,
+          "label": "7.5억"
+        },
+        {
+          "lo": 80000,
+          "hi": 85000,
+          "label": "8억"
+        },
+        {
+          "lo": 85000,
+          "hi": 90000,
+          "label": "8.5억"
+        },
+        {
+          "lo": 90000,
+          "hi": 95000,
+          "label": "9억"
+        }
+      ],
+      "areas": [
+        {
+          "exclusiveM2": 59,
+          "supplyM2": 81,
+          "pyeong": 25,
+          "count": 3,
+          "min": 66000,
+          "max": 69000,
+          "median": 66000
+        },
+        {
+          "exclusiveM2": 60,
+          "supplyM2": 79,
+          "pyeong": 24,
+          "count": 2,
+          "min": 74000,
+          "max": 78000,
+          "median": 76000
+        },
+        {
+          "exclusiveM2": 84,
+          "supplyM2": 108,
+          "pyeong": 33,
+          "count": 7,
+          "min": 75000,
+          "max": 80000,
+          "median": 75000
+        },
+        {
+          "exclusiveM2": 114,
+          "supplyM2": 141,
+          "pyeong": 43,
+          "count": 7,
+          "min": 79000,
+          "max": 93000,
+          "median": 85000
+        }
+      ],
+      "matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2,
+          3,
+          1
+        ]
+      ],
+      "rowTotals": [
+        3,
+        2,
+        7,
+        7
+      ],
+      "colTotals": [
+        3,
+        1,
+        8,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "tradeType": "월세",
+      "total": 1,
+      "minPrice": 10000,
+      "maxPrice": 10000,
+      "priceBands": [
+        {
+          "lo": 10000,
+          "hi": 15000,
+          "label": "1억"
+        }
+      ],
+      "areas": [
+        {
+          "exclusiveM2": 60,
+          "supplyM2": 81,
+          "pyeong": 25,
+          "count": 1,
+          "min": 10000,
+          "max": 10000,
+          "median": 10000
+        }
+      ],
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "rowTotals": [
+        1
+      ],
+      "colTotals": [
+        1
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "articleNo": "2639943221",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 141,
+      "price": 93000,
+      "rent": 0,
+      "floor": "고/18",
+      "direction": "남향",
+      "building": "116동",
+      "confirmYmd": "20260725",
+      "feature": "무주택자 주목. 남향 샷시포함 올수리 올확장 세안고 진행되는 매물입니다.",
+      "realtor": "삼성(02-915-0020)공인중개사사무소"
+    },
+    {
+      "articleNo": "2640534121",
+      "tradeType": "매매",
+      "exclusiveM2": 60,
+      "supplyM2": 79,
+      "price": 78000,
+      "rent": 0,
+      "floor": "중/14",
+      "direction": "동향",
+      "building": "128동",
+      "confirmYmd": "20260728",
+      "feature": "북한산둘레길인접,정릉초인접,뻥뷰,아이키우기좋아요",
+      "realtor": "굿모닝(02-942-1004)공인중개사사무소"
+    },
+    {
+      "articleNo": "2640675631",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 105,
+      "price": 75000,
+      "rent": 0,
+      "floor": "중/13",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260729",
+      "feature": "버스정류장 초등학교 바로옆 전망좋은 정남향의 관리잘 된 집",
+      "realtor": "풍림(02-909-8249)공인중개사사무소"
+    },
+    {
+      "articleNo": "2641703464",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 141,
+      "price": 83000,
+      "rent": 0,
+      "floor": "고/18",
+      "direction": "남향",
+      "building": "113동",
+      "confirmYmd": "20260804",
+      "feature": "확장없는 기본형,정남향 채광밝고  따뜻함, 입주협의 됨",
+      "realtor": "탑부동산공인중개사사무소"
+    },
+    {
+      "articleNo": "2642753033",
+      "tradeType": "월세",
+      "exclusiveM2": 60,
+      "supplyM2": 81,
+      "price": 10000,
+      "rent": 140,
+      "floor": "중/20",
+      "direction": "남향",
+      "building": "122동",
+      "confirmYmd": "20260810",
+      "feature": "정남향의 조망권 확보된 집 내부상태 깨끗합니다.",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2643748016",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 77000,
+      "rent": 0,
+      "floor": "고/20",
+      "direction": "동향",
+      "building": "112동",
+      "confirmYmd": "20260814",
+      "feature": "탁트인 최상의 전망권  올확장 올수리된 집으로 신혼부부 내집마련기회",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644110640",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 75000,
+      "rent": 0,
+      "floor": "고/19",
+      "direction": "동향",
+      "building": "120동",
+      "confirmYmd": "20260817",
+      "feature": "생활편리한동 부분수리. 상태깨끗한 집입니다",
+      "realtor": "월드(단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644316883",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 81,
+      "price": 66000,
+      "rent": 0,
+      "floor": "저/18",
+      "direction": "동향",
+      "building": "124동",
+      "confirmYmd": "20260818",
+      "feature": "생활 편리한 동 수리된 집 세인수조건 전자계약가능",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644660365",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 81,
+      "price": 69000,
+      "rent": 0,
+      "floor": "15/15",
+      "direction": "동향",
+      "building": "125동",
+      "confirmYmd": "20260820",
+      "feature": "세안고.대출가능.샷시포함. 특올수리. 올마루. 올확장",
+      "realtor": "미스터홈즈부동산중개성북정릉센터"
+    },
+    {
+      "articleNo": "2644927968",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 139,
+      "price": 79000,
+      "rent": 0,
+      "floor": "3/15",
+      "direction": "남향",
+      "building": "106동",
+      "confirmYmd": "20260821",
+      "feature": "남향 중문설치 정릉초 인근동으로 편리하고 쾌적합니다. 전자계약 가능합니다",
+      "realtor": "삼성(02-915-0020)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644954774",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 139,
+      "price": 85000,
+      "rent": 0,
+      "floor": "저/15",
+      "direction": "남향",
+      "building": "106동",
+      "confirmYmd": "20260821",
+      "feature": "확장형 채광 좋은 남향으로 화장실 수리 된 집입니다",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644955120",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 141,
+      "price": 85000,
+      "rent": 0,
+      "floor": "저/18",
+      "direction": "남향",
+      "building": "116동",
+      "confirmYmd": "20260821",
+      "feature": "올인테리어 되어있고 거실확장 방2 확장 된 집으로 로얄동 매물입니다",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644955820",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 139,
+      "price": 86000,
+      "rent": 0,
+      "floor": "중/15",
+      "direction": "동향",
+      "building": "105동",
+      "confirmYmd": "20260821",
+      "feature": "숲세권 초등학교 인근 동 올확장형 늦은 입주 가능",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644958762",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 85,
+      "price": 66000,
+      "rent": 0,
+      "floor": "저/15",
+      "direction": "동향",
+      "building": "126동",
+      "confirmYmd": "20260821",
+      "feature": "생활편리한 동 올수리된 집으로 입주 협의 가능",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2644984231",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 80000,
+      "rent": 0,
+      "floor": "중/20",
+      "direction": "동향",
+      "building": "112동",
+      "confirmYmd": "20260821",
+      "feature": "최상의 전망 로얄층 확장세대 올수리 된 집으로 빠른입주도 가능",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2645021178",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 75000,
+      "rent": 0,
+      "floor": "고/18",
+      "direction": "동향",
+      "building": "119동",
+      "confirmYmd": "20260821",
+      "feature": "로얄동 로얄층 정상입주 생활편리하고 깔끔한집",
+      "realtor": "OK공인중개사사무소"
+    },
+    {
+      "articleNo": "2645021186",
+      "tradeType": "매매",
+      "exclusiveM2": 60,
+      "supplyM2": 79,
+      "price": 74000,
+      "rent": 0,
+      "floor": "중/14",
+      "direction": "동향",
+      "building": "128동",
+      "confirmYmd": "20260821",
+      "feature": "계단식 채광좋고 깔끔한집 11월 중순이후 입주가",
+      "realtor": "OK공인중개사사무소"
+    },
+    {
+      "articleNo": "2645021200",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 105,
+      "price": 75000,
+      "rent": 0,
+      "floor": "고/13",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260821",
+      "feature": "남향 올확장 화장실 싱크대등 수리 깔끔 추천",
+      "realtor": "OK공인중개사사무소"
+    },
+    {
+      "articleNo": "2645021206",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 141,
+      "price": 80000,
+      "rent": 0,
+      "floor": "18/18",
+      "direction": "남향",
+      "building": "108동",
+      "confirmYmd": "20260821",
+      "feature": "남향 깔끔하고 깨끗한 집 채광굿 정상입주",
+      "realtor": "OK공인중개사사무소"
+    },
+    {
+      "articleNo": "2645036540",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 75000,
+      "rent": 0,
+      "floor": "7/19",
+      "direction": "동향",
+      "building": "120동",
+      "confirmYmd": "20260821",
+      "feature": "생활편리한동 주인거주 기본형  깨끗한 집입니다",
+      "realtor": "월드(단지내)공인중개사사무소"
+    }
+  ]
+}

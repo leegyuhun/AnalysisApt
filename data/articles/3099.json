@@ -1,8 +1,8 @@
 {
   "complexNo": "3099",
   "complexName": "벽산라이브파크",
-  "scrapedAt": "2026-08-21T11:20:31.031Z",
-  "totalCount": 37,
+  "scrapedAt": "2026-08-29T14:02:56.758Z",
+  "totalCount": 41,
   "detail": {
     "address": "서울시 강북구 미아동",
     "totalHouseHold": 1585,
@@ -17,15 +17,10 @@
   "byTradeType": [
     {
       "tradeType": "매매",
-      "total": 26,
-      "minPrice": 69000,
-      "maxPrice": 95000,
+      "total": 29,
+      "minPrice": 70000,
+      "maxPrice": 100000,
       "priceBands": [
-        {
-          "lo": 65000,
-          "hi": 70000,
-          "label": "6.5억"
-        },
         {
           "lo": 70000,
           "hi": 75000,
@@ -55,6 +50,11 @@
           "lo": 95000,
           "hi": 100000,
           "label": "9.5억"
+        },
+        {
+          "lo": 100000,
+          "hi": 105000,
+          "label": "10억"
         }
       ],
       "areas": [
@@ -62,10 +62,10 @@
           "exclusiveM2": 59,
           "supplyM2": 74,
           "pyeong": 22,
-          "count": 2,
-          "min": 69000,
+          "count": 1,
+          "min": 70000,
           "max": 70000,
-          "median": 69500
+          "median": 70000
         },
         {
           "exclusiveM2": 60,
@@ -80,25 +80,34 @@
           "exclusiveM2": 84,
           "supplyM2": 102,
           "pyeong": 31,
-          "count": 10,
-          "min": 69000,
+          "count": 13,
+          "min": 71000,
           "max": 85000,
-          "median": 81500
+          "median": 81000
         },
         {
           "exclusiveM2": 114,
           "supplyM2": 133,
           "pyeong": 40,
-          "count": 10,
+          "count": 11,
           "min": 77000,
-          "max": 95000,
-          "median": 84000
+          "max": 100000,
+          "median": 83000
         }
       ],
       "matrix": [
         [
           1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
           0,
           0,
           0,
@@ -106,46 +115,37 @@
           0
         ],
         [
-          0,
           2,
           2,
-          0,
+          6,
+          3,
           0,
           0,
           0
         ],
         [
-          1,
-          2,
-          1,
-          3,
-          3,
           0,
-          0
-        ],
-        [
-          0,
-          0,
-          3,
-          2,
           4,
+          3,
+          2,
           0,
+          1,
           1
         ]
       ],
       "rowTotals": [
-        2,
+        1,
         4,
-        10,
-        10
+        13,
+        11
       ],
       "colTotals": [
-        2,
         5,
-        6,
+        8,
+        9,
         5,
-        7,
         0,
+        1,
         1
       ]
     },
@@ -248,9 +248,9 @@
     },
     {
       "tradeType": "월세",
-      "total": 3,
+      "total": 4,
       "minPrice": 15000,
-      "maxPrice": 25000,
+      "maxPrice": 34000,
       "priceBands": [
         {
           "lo": 15000,
@@ -266,9 +266,23 @@
           "lo": 25000,
           "hi": 30000,
           "label": "2.5억"
+        },
+        {
+          "lo": 30000,
+          "hi": 35000,
+          "label": "3억"
         }
       ],
       "areas": [
+        {
+          "exclusiveM2": 84,
+          "supplyM2": 102,
+          "pyeong": 31,
+          "count": 1,
+          "min": 34000,
+          "max": 34000,
+          "median": 34000
+        },
         {
           "exclusiveM2": 114,
           "supplyM2": 133,
@@ -281,15 +295,24 @@
       ],
       "matrix": [
         [
-          1,
-          1,
+          0,
+          0,
+          0,
           1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
         ]
       ],
       "rowTotals": [
+        1,
         3
       ],
       "colTotals": [
+        1,
         1,
         1,
         1
@@ -297,20 +320,6 @@
     }
   ],
   "articles": [
-    {
-      "articleNo": "2640542198",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 133,
-      "price": 89000,
-      "rent": 0,
-      "floor": "중/22",
-      "direction": "남서향",
-      "building": "113동",
-      "confirmYmd": "20260728",
-      "feature": "확트인산전망 올수리되어 깔끔합니다 주인거주",
-      "realtor": "부자공인중개사사무소"
-    },
     {
       "articleNo": "2642772114",
       "tradeType": "매매",
@@ -326,20 +335,6 @@
       "realtor": "우대빵프라임공인중개사사무소"
     },
     {
-      "articleNo": "2643005689",
-      "tradeType": "매매",
-      "exclusiveM2": 59,
-      "supplyM2": 74,
-      "price": 69000,
-      "rent": 0,
-      "floor": "17/18",
-      "direction": "남향",
-      "building": "118동",
-      "confirmYmd": "20260811",
-      "feature": "세안고. 남향이라 일조권 아주 좋으며 생활하기 편한동입니다",
-      "realtor": "삼양공인중개사사무소"
-    },
-    {
       "articleNo": "2643383963",
       "tradeType": "전세",
       "exclusiveM2": 114,
@@ -352,20 +347,6 @@
       "confirmYmd": "20260812",
       "feature": "채광및조망이좋고,방2확장 전체화이트톤올수리 붙박이장 빠른입주.주인거주\r\n",
       "realtor": "유해숙공인중개사사무소"
-    },
-    {
-      "articleNo": "2643652457",
-      "tradeType": "매매",
-      "exclusiveM2": 59,
-      "supplyM2": 74,
-      "price": 70000,
-      "rent": 0,
-      "floor": "저/25",
-      "direction": "남향",
-      "building": "109동",
-      "confirmYmd": "20260813",
-      "feature": "최근 올수리로 완전깨끗  남향  로얄동 상가  경전철 이용편리한 동",
-      "realtor": "예원(010-4901-9035)공인중개사사무소"
     },
     {
       "articleNo": "2643963985",
@@ -394,62 +375,6 @@
       "confirmYmd": "20260815",
       "feature": "로얄동,남향.샷시제외올수리.기본,온수배관교체.입주협의가능",
       "realtor": "단지내가나(02-980-0049)공인중개사사무소"
-    },
-    {
-      "articleNo": "2643979776",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 133,
-      "price": 79000,
-      "rent": 0,
-      "floor": "1/17",
-      "direction": "남향",
-      "building": "111동",
-      "confirmYmd": "20260818",
-      "feature": "입구앞 로얄동 솔샘역 서울 내집장만 주변호재 미래가치 아이키우기좋은",
-      "realtor": "김프로공인중개사사무소"
-    },
-    {
-      "articleNo": "2644222700",
-      "tradeType": "매매",
-      "exclusiveM2": 60,
-      "supplyM2": 74,
-      "price": 75000,
-      "rent": 0,
-      "floor": "중/22",
-      "direction": "남향",
-      "building": "101동",
-      "confirmYmd": "20260818",
-      "feature": "거실 작은방확장.씽크대 화장실2수리된 깨끗한 남향.입구동.",
-      "realtor": "시티(980-0004)공인중개사사무소"
-    },
-    {
-      "articleNo": "2644368373",
-      "tradeType": "전세",
-      "exclusiveM2": 84,
-      "supplyM2": 102,
-      "price": 60000,
-      "rent": 0,
-      "floor": "4/25",
-      "direction": "남향",
-      "building": "102동",
-      "confirmYmd": "20260818",
-      "feature": "강추,정남향,올수리,베란다있는기본,내부상태깨끗,입주협의가능",
-      "realtor": "단지내가나(02-980-0049)공인중개사사무소"
-    },
-    {
-      "articleNo": "2644426955",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 133,
-      "price": 85000,
-      "rent": 0,
-      "floor": "저/22",
-      "direction": "남서향",
-      "building": "114동",
-      "confirmYmd": "20260818",
-      "feature": "올수리된집,전망굿,1층아님,입주협의.",
-      "realtor": "부동산코리아(02-982-5656)공인중개사사무소"
     },
     {
       "articleNo": "2644427664",
@@ -508,48 +433,6 @@
       "realtor": "부동산코리아(02-982-5656)공인중개사사무소"
     },
     {
-      "articleNo": "2644516533",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 102,
-      "price": 69000,
-      "rent": 0,
-      "floor": "저/19",
-      "direction": "남향",
-      "building": "104동",
-      "confirmYmd": "20260819",
-      "feature": "초.중학교 경전철  가까운동  올  수리 거실 작은방확장",
-      "realtor": "21세기공인중개사"
-    },
-    {
-      "articleNo": "2644516692",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 102,
-      "price": 70000,
-      "rent": 0,
-      "floor": "고/5",
-      "direction": "남동향",
-      "building": "117동",
-      "confirmYmd": "20260819",
-      "feature": "기본형,초등학교 인근 동,정상 입주 가능",
-      "realtor": "두산위브공인중개사사무소"
-    },
-    {
-      "articleNo": "2644582534",
-      "tradeType": "월세",
-      "exclusiveM2": 114,
-      "supplyM2": 133,
-      "price": 15000,
-      "rent": 170,
-      "floor": "5/22",
-      "direction": "남향",
-      "building": "112동",
-      "confirmYmd": "20260819",
-      "feature": "출입구인근 채광조망권확보 입주전 올수리 해 드립니다",
-      "realtor": "부동산뱅크공인중개사사무소"
-    },
-    {
       "articleNo": "2644731785",
       "tradeType": "월세",
       "exclusiveM2": 114,
@@ -562,48 +445,6 @@
       "confirmYmd": "20260820",
       "feature": "도배장판씽크조명 수리해드려요",
       "realtor": "벽산공인중개사사무소"
-    },
-    {
-      "articleNo": "2644752917",
-      "tradeType": "전세",
-      "exclusiveM2": 84,
-      "supplyM2": 102,
-      "price": 65000,
-      "rent": 0,
-      "floor": "3/19",
-      "direction": "남향",
-      "building": "104동",
-      "confirmYmd": "20260820",
-      "feature": "남향이며  초.중.고 출퇴근이  용이한동  경전철 가까운동",
-      "realtor": "21세기 공인중개사 사무소"
-    },
-    {
-      "articleNo": "2644898983",
-      "tradeType": "매매",
-      "exclusiveM2": 60,
-      "supplyM2": 74,
-      "price": 75000,
-      "rent": 0,
-      "floor": "10/20",
-      "direction": "동향",
-      "building": "116동",
-      "confirmYmd": "20260820",
-      "feature": "초.중고   경전철    가까운동 집깨끗   전망이 좋습니다",
-      "realtor": "21세기 공인중개사 사무소"
-    },
-    {
-      "articleNo": "2644933920",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 102,
-      "price": 80000,
-      "rent": 0,
-      "floor": "중/19",
-      "direction": "남향",
-      "building": "104동",
-      "confirmYmd": "20260821",
-      "feature": "남향이라 일조권 아주 좋으며 생활하기 편한동이라 선호합니다",
-      "realtor": "삼양공인중개사사무소"
     },
     {
       "articleNo": "2644936676",
@@ -620,90 +461,6 @@
       "realtor": "삼양공인중개사사무소"
     },
     {
-      "articleNo": "2644986452",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 102,
-      "price": 85000,
-      "rent": 0,
-      "floor": "고/25",
-      "direction": "남향",
-      "building": "106동",
-      "confirmYmd": "20260821",
-      "feature": "올확장  수리  남향  앞뒤 전망이좋습니다",
-      "realtor": "21세기 공인중개사 사무소"
-    },
-    {
-      "articleNo": "2644986824",
-      "tradeType": "매매",
-      "exclusiveM2": 60,
-      "supplyM2": 74,
-      "price": 73000,
-      "rent": 0,
-      "floor": "3/25",
-      "direction": "남향",
-      "building": "109동",
-      "confirmYmd": "20260821",
-      "feature": "남향이며  초.중.고 출퇴근이  용이한동  작은방확장",
-      "realtor": "21세기 공인중개사 사무소"
-    },
-    {
-      "articleNo": "2644989592",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 133,
-      "price": 83000,
-      "rent": 0,
-      "floor": "20/22",
-      "direction": "남서향",
-      "building": "112동",
-      "confirmYmd": "20260821",
-      "feature": "북힌산뷰가 좋고  확장  화장실 교체",
-      "realtor": "21세기 공인중개사 사무소"
-    },
-    {
-      "articleNo": "2644995185",
-      "tradeType": "전세",
-      "exclusiveM2": 60,
-      "supplyM2": 74,
-      "price": 48000,
-      "rent": 0,
-      "floor": "중/20",
-      "direction": "동향",
-      "building": "116동",
-      "confirmYmd": "20260821",
-      "feature": "초중 고 학교 경전철히  가까워 출퇴근 등하교가  편리한동",
-      "realtor": "21세기공인중개사"
-    },
-    {
-      "articleNo": "2644995685",
-      "tradeType": "매매",
-      "exclusiveM2": 60,
-      "supplyM2": 74,
-      "price": 70000,
-      "rent": 0,
-      "floor": "저/22",
-      "direction": "남향",
-      "building": "101동",
-      "confirmYmd": "20260821",
-      "feature": "초.중학교 경전철  조용한동 남향",
-      "realtor": "21세기공인중개사"
-    },
-    {
-      "articleNo": "2644996099",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 102,
-      "price": 75000,
-      "rent": 0,
-      "floor": "3/19",
-      "direction": "남향",
-      "building": "104동",
-      "confirmYmd": "20260821",
-      "feature": "초.중학교 경전철  조용한동 남향",
-      "realtor": "21세기공인중개사"
-    },
-    {
       "articleNo": "2645067030",
       "tradeType": "매매",
       "exclusiveM2": 114,
@@ -718,21 +475,119 @@
       "realtor": "삼성공인중개사사무소"
     },
     {
-      "articleNo": "2645070090",
+      "articleNo": "2645281431",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 81000,
+      "rent": 0,
+      "floor": "8/19",
+      "direction": "남향",
+      "building": "104동",
+      "confirmYmd": "20260822",
+      "feature": "",
+      "realtor": "삼성공인중개사사무소"
+    },
+    {
+      "articleNo": "2645464190",
       "tradeType": "매매",
       "exclusiveM2": 114,
       "supplyM2": 133,
-      "price": 77000,
+      "price": 79000,
       "rent": 0,
-      "floor": "4/22",
-      "direction": "남서향",
-      "building": "113동",
-      "confirmYmd": "20260821",
-      "feature": "조용하고 쾌적한 동 올확장 부분수리 주인거주",
-      "realtor": "부동산뱅크공인중개사사무소"
+      "floor": "저/17",
+      "direction": "남향",
+      "building": "111동",
+      "confirmYmd": "20260824",
+      "feature": "출입구 가까운동 부분수리된 저렴한 매물입니다.",
+      "realtor": "ok공인중개사사무소"
     },
     {
-      "articleNo": "2645080660",
+      "articleNo": "2645645023",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 71000,
+      "rent": 0,
+      "floor": "고/5",
+      "direction": "남동향",
+      "building": "117동",
+      "confirmYmd": "20260825",
+      "feature": "기본형,초등학교 인근 동,정상 입주 가능",
+      "realtor": "두산위브공인중개사사무소"
+    },
+    {
+      "articleNo": "2645771545",
+      "tradeType": "전세",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 60000,
+      "rent": 0,
+      "floor": "4/25",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260825",
+      "feature": "강추,로얄동,남향,올수리,베란다있는기본,내부상태깨끗,입주협의가능",
+      "realtor": "단지내가나(02-980-0049)공인중개사사무소"
+    },
+    {
+      "articleNo": "2645840485",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 75000,
+      "rent": 0,
+      "floor": "3/19",
+      "direction": "남향",
+      "building": "104동",
+      "confirmYmd": "20260826",
+      "feature": "남향이라 일조권 좋으며 생활하기 편한동이라 선호합니다",
+      "realtor": "삼양공인중개사사무소"
+    },
+    {
+      "articleNo": "2645913978",
+      "tradeType": "매매",
+      "exclusiveM2": 60,
+      "supplyM2": 74,
+      "price": 75000,
+      "rent": 0,
+      "floor": "10/20",
+      "direction": "동향",
+      "building": "116동",
+      "confirmYmd": "20260826",
+      "feature": "초.중고   경전철    가까운동 집깨끗   전망이 좋습니다",
+      "realtor": "21세기 공인중개사 사무소"
+    },
+    {
+      "articleNo": "2645982198",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 74,
+      "price": 70000,
+      "rent": 0,
+      "floor": "저/25",
+      "direction": "남향",
+      "building": "109동",
+      "confirmYmd": "20260826",
+      "feature": "최근 올수리로 완전깨끗  남향  로얄동 상가  경전철 이용편리한 동",
+      "realtor": "예원(010-4901-9035)공인중개사사무소"
+    },
+    {
+      "articleNo": "2646002787",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 75000,
+      "rent": 0,
+      "floor": "중/25",
+      "direction": "남서향",
+      "building": "108동",
+      "confirmYmd": "20260827",
+      "feature": "착한 가격의 매매 기본 상태이며 조용한동입ㅂ니다",
+      "realtor": "삼양공인중개사사무소"
+    },
+    {
+      "articleNo": "2646290046",
       "tradeType": "전세",
       "exclusiveM2": 114,
       "supplyM2": 133,
@@ -741,54 +596,40 @@
       "floor": "7/22",
       "direction": "남서향",
       "building": "113동",
-      "confirmYmd": "20260821",
-      "feature": "작은방확장 싱크대화장실교체 주인거주",
-      "realtor": "부동산뱅크공인중개사사무소"
+      "confirmYmd": "20260828",
+      "feature": "최근 수리하여 깨끗하며 일조권 좋으며 조용한동입니다",
+      "realtor": "삼양공인중개사사무소"
     },
     {
-      "articleNo": "2645088214",
+      "articleNo": "2646376193",
       "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 102,
-      "price": 85000,
+      "exclusiveM2": 60,
+      "supplyM2": 74,
+      "price": 70000,
       "rent": 0,
-      "floor": "고/25",
+      "floor": "저/22",
       "direction": "남향",
-      "building": "102동",
-      "confirmYmd": "20260821",
-      "feature": "88추천 정남향  채광 전망우수 거실확장  내부올수리 주인거주 협의가",
-      "realtor": "88(팔팔02-988-4988)공인중개사사무소"
+      "building": "101동",
+      "confirmYmd": "20260828",
+      "feature": "남향 경전철 가까워 출.퇴근이 용이한동",
+      "realtor": "21세기 공인중개사 사무소"
     },
     {
-      "articleNo": "2645106217",
-      "tradeType": "월세",
-      "exclusiveM2": 114,
-      "supplyM2": 133,
-      "price": 20000,
-      "rent": 140,
-      "floor": "13/22",
-      "direction": "남서향",
-      "building": "113동",
-      "confirmYmd": "20260821",
-      "feature": "북한산 둘레길이 보이며 일조권 아주 좋으며 조용한동입니다",
-      "realtor": "삼양공인중개사사무소"
-    },
-    {
-      "articleNo": "2645106823",
-      "tradeType": "매매",
+      "articleNo": "2646376762",
+      "tradeType": "전세",
       "exclusiveM2": 84,
       "supplyM2": 102,
-      "price": 71000,
+      "price": 65000,
       "rent": 0,
-      "floor": "10/25",
-      "direction": "남서향",
-      "building": "108동",
-      "confirmYmd": "20260821",
-      "feature": "기본시설이며 조용한동입니다",
-      "realtor": "삼양공인중개사사무소"
+      "floor": "3/19",
+      "direction": "남향",
+      "building": "104동",
+      "confirmYmd": "20260828",
+      "feature": "남향이며  초.중.고 출퇴근이  용이한동  경전철 가까운동",
+      "realtor": "21세기 공인중개사 사무소"
     },
     {
-      "articleNo": "2645110322",
+      "articleNo": "2646377682",
       "tradeType": "매매",
       "exclusiveM2": 84,
       "supplyM2": 102,
@@ -797,12 +638,96 @@
       "floor": "4/25",
       "direction": "남향",
       "building": "102동",
-      "confirmYmd": "20260821",
-      "feature": "입구동, 남향, 올수리화장실포함, 입주협의",
-      "realtor": "한성부동산(02-980-0080)공인중개사사무소"
+      "confirmYmd": "20260828",
+      "feature": "남향  완전올수리  입구동",
+      "realtor": "21세기 공인중개사 사무소"
     },
     {
-      "articleNo": "2645129491",
+      "articleNo": "2646439134",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 85000,
+      "rent": 0,
+      "floor": "22/25",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260828",
+      "feature": "",
+      "realtor": "부동산코리아(02-982-5656)공인중개사사무소"
+    },
+    {
+      "articleNo": "2646466295",
+      "tradeType": "월세",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 34000,
+      "rent": 75,
+      "floor": "고/25",
+      "direction": "남향",
+      "building": "115동",
+      "confirmYmd": "20260828",
+      "feature": "남향. 종일 밝고 환하며 싱크대.화장실수리 해줄 예정.",
+      "realtor": "서울공인중개사사무소"
+    },
+    {
+      "articleNo": "2646484341",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 133,
+      "price": 77000,
+      "rent": 0,
+      "floor": "1/22",
+      "direction": "남서향",
+      "building": "114동",
+      "confirmYmd": "20260829",
+      "feature": "정상 방4화2 숲세권 솔샘역세권5분 조용하고 공기좋고 뛰어놀기 좋아요",
+      "realtor": "한양공인중개사사무소"
+    },
+    {
+      "articleNo": "2646486362",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 133,
+      "price": 83000,
+      "rent": 0,
+      "floor": "20/22",
+      "direction": "남서향",
+      "building": "112동",
+      "confirmYmd": "20260829",
+      "feature": "올확장 25년화장실교체 채광조망 아주 좋음",
+      "realtor": "부동산뱅크공인중개사사무소"
+    },
+    {
+      "articleNo": "2646507918",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 133,
+      "price": 100000,
+      "rent": 0,
+      "floor": "중/22",
+      "direction": "동향",
+      "building": "112동",
+      "confirmYmd": "20260829",
+      "feature": "테스트 매물입니다. 실제 매물이 아닙니다.",
+      "realtor": "MW테스트"
+    },
+    {
+      "articleNo": "2646553449",
+      "tradeType": "전세",
+      "exclusiveM2": 60,
+      "supplyM2": 74,
+      "price": 48000,
+      "rent": 0,
+      "floor": "중/20",
+      "direction": "동향",
+      "building": "116동",
+      "confirmYmd": "20260829",
+      "feature": "초중 고 학교 경전철히  가까워 출퇴근 등하교가  편리한동",
+      "realtor": "21세기공인중개사"
+    },
+    {
+      "articleNo": "2646563351",
       "tradeType": "전세",
       "exclusiveM2": 84,
       "supplyM2": 102,
@@ -811,9 +736,163 @@
       "floor": "9/19",
       "direction": "남향",
       "building": "104동",
-      "confirmYmd": "20260821",
+      "confirmYmd": "20260829",
       "feature": "남향, 일부수리되어 상가 전철역 가까워요",
       "realtor": "벽산공인중개사사무소"
+    },
+    {
+      "articleNo": "2646563481",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 85000,
+      "rent": 0,
+      "floor": "고/25",
+      "direction": "남향",
+      "building": "106동",
+      "confirmYmd": "20260829",
+      "feature": "올확장  올수리 남향  북한산뷰가  좋아요",
+      "realtor": "21세기공인중개사"
+    },
+    {
+      "articleNo": "2646563661",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 72000,
+      "rent": 0,
+      "floor": "10/25",
+      "direction": "남서향",
+      "building": "108동",
+      "confirmYmd": "20260829",
+      "feature": "초.중고교 경전철이 가까운동",
+      "realtor": "21세기공인중개사"
+    },
+    {
+      "articleNo": "2646564034",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 133,
+      "price": 83000,
+      "rent": 0,
+      "floor": "20/22",
+      "direction": "남서향",
+      "building": "112동",
+      "confirmYmd": "20260829",
+      "feature": "올확장 북한산뷰  전망이  좋아요",
+      "realtor": "21세기공인중개사"
+    },
+    {
+      "articleNo": "2646564184",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 80000,
+      "rent": 0,
+      "floor": "12/19",
+      "direction": "남향",
+      "building": "104동",
+      "confirmYmd": "20260829",
+      "feature": "남향  경전철 출퇴근이 용이한동",
+      "realtor": "21세기공인중개사"
+    },
+    {
+      "articleNo": "2646569587",
+      "tradeType": "매매",
+      "exclusiveM2": 60,
+      "supplyM2": 74,
+      "price": 75000,
+      "rent": 0,
+      "floor": "중/22",
+      "direction": "남향",
+      "building": "101동",
+      "confirmYmd": "20260829",
+      "feature": "거실 작은방확장.씽크대 화장실2수리된 깨끗한 남향.입구동.",
+      "realtor": "시티(980-0004)공인중개사사무소"
+    },
+    {
+      "articleNo": "2646574819",
+      "tradeType": "매매",
+      "exclusiveM2": 60,
+      "supplyM2": 74,
+      "price": 73000,
+      "rent": 0,
+      "floor": "3/25",
+      "direction": "남향",
+      "building": "109동",
+      "confirmYmd": "20260829",
+      "feature": "남향이며  초.중.고 출퇴근이  용이한동  작은방확장",
+      "realtor": "21세기 공인중개사 사무소"
+    },
+    {
+      "articleNo": "2646595062",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 83000,
+      "rent": 0,
+      "floor": "중/25",
+      "direction": "남향",
+      "building": "102동",
+      "confirmYmd": "20260829",
+      "feature": "남향  완전올수리  입구동 이라 출퇴근이 용이한동",
+      "realtor": "21세기 공인중개사 사무소"
+    },
+    {
+      "articleNo": "2646620035",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 133,
+      "price": 77000,
+      "rent": 0,
+      "floor": "4/22",
+      "direction": "남서향",
+      "building": "113동",
+      "confirmYmd": "20260829",
+      "feature": "조용하고 쾌적한 동 올확장 부분수리 주인거주",
+      "realtor": "부동산뱅크공인중개사사무소"
+    },
+    {
+      "articleNo": "2646620353",
+      "tradeType": "월세",
+      "exclusiveM2": 114,
+      "supplyM2": 133,
+      "price": 20000,
+      "rent": 140,
+      "floor": "13/22",
+      "direction": "남서향",
+      "building": "113동",
+      "confirmYmd": "20260829",
+      "feature": "채광 조망 아주 좋음 수리된집 즉시 입주가능",
+      "realtor": "부동산뱅크공인중개사사무소"
+    },
+    {
+      "articleNo": "2646636894",
+      "tradeType": "월세",
+      "exclusiveM2": 114,
+      "supplyM2": 133,
+      "price": 15000,
+      "rent": 170,
+      "floor": "5/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20260829",
+      "feature": "출입구인근 채광조망권확보 입주전 올수리 해 드립니다",
+      "realtor": "부동산뱅크공인중개사사무소"
+    },
+    {
+      "articleNo": "2646643871",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 102,
+      "price": 81000,
+      "rent": 0,
+      "floor": "중/19",
+      "direction": "남향",
+      "building": "104동",
+      "confirmYmd": "20260829",
+      "feature": "남향 경전철  초 중고교 가까운동",
+      "realtor": "21세기 공인중개사 사무소"
     }
   ]
 }

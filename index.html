@@ -63,9 +63,11 @@ h1 em{font-style:normal;color:var(--gold)}
 .row:hover .arw{transform:translateX(3px);color:var(--granite)}
 
 @media (max-width:720px){
-  .row{grid-template-columns:1fr 16px;row-gap:6px}
-  .row .specs,.row .market{grid-column:1}
-  .row .arw{grid-row:1;align-self:start}
+  .row{grid-template-columns:minmax(0,1fr) 16px;column-gap:12px;row-gap:8px}
+  .row .id,.row .specs,.row .market{grid-column:1}
+  .row .arw{grid-column:2;grid-row:1;align-self:start}
+  /* 좁은 화면에선 말줄임 대신 줄바꿈 — 단지명·주소가 잘리지 않게 */
+  .row h3,.row .addr{white-space:normal}
 }
 
 /* ── 상태 ── */

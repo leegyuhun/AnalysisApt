@@ -1,8 +1,8 @@
 {
   "complexNo": "3426",
   "complexName": "정릉풍림아이원",
-  "scrapedAt": "2026-10-16T00:53:51.592Z",
-  "totalCount": 43,
+  "scrapedAt": "2026-10-23T06:56:36.251Z",
+  "totalCount": 45,
   "detail": {
     "address": "서울시 성북구 정릉동",
     "totalHouseHold": 1971,
@@ -17,7 +17,7 @@
   "byTradeType": [
     {
       "tradeType": "매매",
-      "total": 41,
+      "total": 42,
       "minPrice": 67000,
       "maxPrice": 100000,
       "priceBands": [
@@ -76,17 +76,17 @@
           "exclusiveM2": 60,
           "supplyM2": 79,
           "pyeong": 24,
-          "count": 6,
+          "count": 5,
           "min": 71500,
           "max": 78000,
-          "median": 75000
+          "median": 78000
         },
         {
           "exclusiveM2": 84,
           "supplyM2": 108,
           "pyeong": 33,
-          "count": 9,
-          "min": 78000,
+          "count": 11,
+          "min": 80000,
           "max": 93000,
           "median": 80000
         },
@@ -113,7 +113,7 @@
         ],
         [
           0,
-          3,
+          2,
           3,
           0,
           0,
@@ -124,8 +124,8 @@
         [
           0,
           0,
-          1,
-          5,
+          0,
+          8,
           1,
           2,
           0,
@@ -144,15 +144,15 @@
       ],
       "rowTotals": [
         13,
-        6,
-        9,
+        5,
+        11,
         13
       ],
       "colTotals": [
         6,
-        9,
-        5,
-        7,
+        8,
+        4,
+        10,
         8,
         4,
         0,
@@ -161,10 +161,15 @@
     },
     {
       "tradeType": "전세",
-      "total": 1,
-      "minPrice": 60000,
+      "total": 2,
+      "minPrice": 55000,
       "maxPrice": 60000,
       "priceBands": [
+        {
+          "lo": 55000,
+          "hi": 60000,
+          "label": "5.5억"
+        },
         {
           "lo": 60000,
           "hi": 65000,
@@ -176,21 +181,23 @@
           "exclusiveM2": 84,
           "supplyM2": 108,
           "pyeong": 33,
-          "count": 1,
-          "min": 60000,
+          "count": 2,
+          "min": 55000,
           "max": 60000,
-          "median": 60000
+          "median": 57500
         }
       ],
       "matrix": [
         [
+          1,
           1
         ]
       ],
       "rowTotals": [
-        1
+        2
       ],
       "colTotals": [
+        1,
         1
       ]
     },
@@ -231,20 +238,6 @@
     }
   ],
   "articles": [
-    {
-      "articleNo": "2650517651",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 141,
-      "price": 83000,
-      "rent": 0,
-      "floor": "중/19",
-      "direction": "동향",
-      "building": "110동",
-      "confirmYmd": "20260918",
-      "feature": "단지 중앙 위치 올수리 기본형 늦은 입주 가능",
-      "realtor": "아이원(풍림단지내)공인중개사사무소"
-    },
     {
       "articleNo": "2651417683",
       "tradeType": "매매",
@@ -386,20 +379,6 @@
       "realtor": "아이원(풍림단지내)공인중개사사무소"
     },
     {
-      "articleNo": "2653225303",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 141,
-      "price": 85000,
-      "rent": 0,
-      "floor": "저/18",
-      "direction": "남향",
-      "building": "116동",
-      "confirmYmd": "20261003",
-      "feature": "올인테리어 되어있고 거실확장 방2 확장 된 집으로 로얄동 매물입니다",
-      "realtor": "아이원(풍림단지내)공인중개사사무소"
-    },
-    {
       "articleNo": "2653312724",
       "tradeType": "매매",
       "exclusiveM2": 59,
@@ -412,20 +391,6 @@
       "confirmYmd": "20261003",
       "feature": "세안고 매매로 메인상가랑 가까워 생활 편리 버스정류장 인근 부분 수리",
       "realtor": "아이원(풍림단지내)공인중개사사무소"
-    },
-    {
-      "articleNo": "2653384915",
-      "tradeType": "매매",
-      "exclusiveM2": 59,
-      "supplyM2": 85,
-      "price": 72000,
-      "rent": 0,
-      "floor": "중/15",
-      "direction": "동향",
-      "building": "126동",
-      "confirmYmd": "20261005",
-      "feature": "세 인수조건 확장형 탁트인 조망 싱크대 화장실 도배 바닥등 수리된 집",
-      "realtor": "풍림(02-909-8249)공인중개사사무소"
     },
     {
       "articleNo": "2653385141",
@@ -526,20 +491,6 @@
       "realtor": "굿모닝(02-942-1004)공인중개사사무소"
     },
     {
-      "articleNo": "2654268560",
-      "tradeType": "매매",
-      "exclusiveM2": 60,
-      "supplyM2": 79,
-      "price": 72000,
-      "rent": 0,
-      "floor": "중/14",
-      "direction": "동향",
-      "building": "128동",
-      "confirmYmd": "20261008",
-      "feature": "계단식 투자매물 주택담보대출가능 트인 전망 올확장형 수리된 집",
-      "realtor": "아이원(풍림단지내)공인중개사사무소"
-    },
-    {
       "articleNo": "2654520188",
       "tradeType": "매매",
       "exclusiveM2": 84,
@@ -554,20 +505,6 @@
       "realtor": "아이원(풍림단지내)공인중개사사무소"
     },
     {
-      "articleNo": "2654660193",
-      "tradeType": "매매",
-      "exclusiveM2": 59,
-      "supplyM2": 85,
-      "price": 67000,
-      "rent": 0,
-      "floor": "고/15",
-      "direction": "동향",
-      "building": "126동",
-      "confirmYmd": "20261011",
-      "feature": "기본형 귀한 실입주 물건 입니다",
-      "realtor": "월드(단지내)공인중개사사무소"
-    },
-    {
       "articleNo": "2654731975",
       "tradeType": "매매",
       "exclusiveM2": 114,
@@ -580,20 +517,6 @@
       "confirmYmd": "20261012",
       "feature": "채광량 풍부 단지 중앙동으로 초등학교 정류장 이용편리",
       "realtor": "아이원(풍림단지내)공인중개사사무소"
-    },
-    {
-      "articleNo": "2655114673",
-      "tradeType": "매매",
-      "exclusiveM2": 114,
-      "supplyM2": 141,
-      "price": 88000,
-      "rent": 0,
-      "floor": "저/18",
-      "direction": "남향",
-      "building": "113동",
-      "confirmYmd": "20261013",
-      "feature": "정남향 전체수리된 깨끗한 집입니다",
-      "realtor": "월드(단지내)공인중개사사무소"
     },
     {
       "articleNo": "2655178409",
@@ -624,20 +547,6 @@
       "realtor": "믿음공인중개사사무소"
     },
     {
-      "articleNo": "2655201849",
-      "tradeType": "전세",
-      "exclusiveM2": 84,
-      "supplyM2": 108,
-      "price": 60000,
-      "rent": 0,
-      "floor": "저/20",
-      "direction": "동향",
-      "building": "112동",
-      "confirmYmd": "20261013",
-      "feature": "귀한 전세. 올레길 포레스트뷰 방1 확장형 깨끗한 추천매물입니다.",
-      "realtor": "삼성행정사공인중개사사무소"
-    },
-    {
       "articleNo": "2655289799",
       "tradeType": "매매",
       "exclusiveM2": 59,
@@ -649,20 +558,6 @@
       "building": "124동",
       "confirmYmd": "20261014",
       "feature": "남산 조망 채광량 풍부한 남향 확장형 올수리",
-      "realtor": "아이원(풍림단지내)공인중개사사무소"
-    },
-    {
-      "articleNo": "2655290171",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 108,
-      "price": 78000,
-      "rent": 0,
-      "floor": "중/19",
-      "direction": "동향",
-      "building": "120동",
-      "confirmYmd": "20261014",
-      "feature": "기본형 산책로 조망 집으로 상가 인근이라 생활 편리한 동",
       "realtor": "아이원(풍림단지내)공인중개사사무소"
     },
     {
@@ -680,35 +575,35 @@
       "realtor": "아이원(풍림단지내)공인중개사사무소"
     },
     {
-      "articleNo": "2655526699",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 108,
-      "price": 80000,
-      "rent": 0,
-      "floor": "중/20",
-      "direction": "동향",
-      "building": "112동",
-      "confirmYmd": "20261015",
-      "feature": "최근 올수리된 집으로 작은방 확장 깔끔 입주정상인 집입니다",
-      "realtor": "풍림단지내공인중개사사무소"
-    },
-    {
-      "articleNo": "2655530871",
+      "articleNo": "2656094958",
       "tradeType": "매매",
       "exclusiveM2": 59,
       "supplyM2": 81,
-      "price": 69000,
+      "price": 68000,
       "rent": 0,
-      "floor": "1/18",
+      "floor": "6/18",
       "direction": "동향",
-      "building": "124동",
-      "confirmYmd": "20261015",
-      "feature": "안전한 놀이공간과 어린이집 있는 동 올수리된 집",
-      "realtor": "아이원(풍림단지내)공인중개사사무소"
+      "building": "123동",
+      "confirmYmd": "20261017",
+      "feature": "강력추천,실입주매물,전자계약,27년2월이사 협의가능합니다",
+      "realtor": "국제(02-909-8151)공인중개사사무소"
     },
     {
-      "articleNo": "2655532710",
+      "articleNo": "2656158069",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 82000,
+      "rent": 0,
+      "floor": "고/20",
+      "direction": "동향",
+      "building": "117동",
+      "confirmYmd": "20261018",
+      "feature": "작은방 확장  탁트인  전망  쾌적함.",
+      "realtor": "삼성(02-915-0020)공인중개사사무소"
+    },
+    {
+      "articleNo": "2656220266",
       "tradeType": "매매",
       "exclusiveM2": 114,
       "supplyM2": 139,
@@ -717,110 +612,54 @@
       "floor": "저/15",
       "direction": "남향",
       "building": "106동",
-      "confirmYmd": "20261015",
-      "feature": "확장형 채광 좋은 남향으로 화장실 수리 된 집입니다",
-      "realtor": "아이원(풍림단지내)공인중개사사무소"
-    },
-    {
-      "articleNo": "2655549307",
-      "tradeType": "매매",
-      "exclusiveM2": 60,
-      "supplyM2": 81,
-      "price": 76000,
-      "rent": 0,
-      "floor": "저/20",
-      "direction": "남향",
-      "building": "122동",
-      "confirmYmd": "20261015",
-      "feature": "내년초 입주협의 가능한 집으로 수리되어 추천드리는 매물입니다",
+      "confirmYmd": "20261019",
+      "feature": "정남향의 확장세대 화장실 수리 된 집으로 추천드리는 깨끗한 매물",
       "realtor": "풍림단지내공인중개사사무소"
     },
     {
-      "articleNo": "2655576079",
+      "articleNo": "2656239193",
+      "tradeType": "매매",
+      "exclusiveM2": 60,
+      "supplyM2": 79,
+      "price": 72000,
+      "rent": 0,
+      "floor": "중/14",
+      "direction": "동향",
+      "building": "128동",
+      "confirmYmd": "20261019",
+      "feature": "상가 정류장 인접한 조용한 동 올확장형의 세인수조건 실입주 협의",
+      "realtor": "풍림(02-909-8249)공인중개사사무소"
+    },
+    {
+      "articleNo": "2656514273",
       "tradeType": "매매",
       "exclusiveM2": 114,
       "supplyM2": 141,
       "price": 85000,
       "rent": 0,
-      "floor": "중/18",
+      "floor": "저/18",
       "direction": "남향",
-      "building": "118동",
-      "confirmYmd": "20261015",
-      "feature": "남향으로 따뜻하고 깨끗하게 잘 관리된 매물입니다. 전자계약 가능합니다.",
-      "realtor": "삼성(02-915-0020)공인중개사사무소"
+      "building": "116동",
+      "confirmYmd": "20261020",
+      "feature": "올수리 최상급인테리어 정원같은 뷰로 정남향 채광 좋은 집",
+      "realtor": "풍림단지내공인중개사사무소"
     },
     {
-      "articleNo": "2655577611",
+      "articleNo": "2656572850",
       "tradeType": "매매",
-      "exclusiveM2": 60,
-      "supplyM2": 79,
-      "price": 74000,
+      "exclusiveM2": 114,
+      "supplyM2": 141,
+      "price": 83000,
       "rent": 0,
-      "floor": "중/14",
+      "floor": "중/19",
       "direction": "동향",
-      "building": "128동",
-      "confirmYmd": "20261015",
-      "feature": "계단식 채광좋고 깔끔한집 11월 중순이후 입주가",
-      "realtor": "OK공인중개사사무소"
+      "building": "110동",
+      "confirmYmd": "20261020",
+      "feature": "단지 중앙 위치 올수리 기본형 늦은 입주 가능",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
     },
     {
-      "articleNo": "2655578433",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 105,
-      "price": 80000,
-      "rent": 0,
-      "floor": "저/15",
-      "direction": "동향",
-      "building": "107동",
-      "confirmYmd": "20261015",
-      "feature": "올수리 정상입주가 관리잘된 깨끗한집 ",
-      "realtor": "OK공인중개사사무소"
-    },
-    {
-      "articleNo": "2655640937",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 108,
-      "price": 80000,
-      "rent": 0,
-      "floor": "저/20",
-      "direction": "동향",
-      "building": "112동",
-      "confirmYmd": "20261015",
-      "feature": "급매 입주하시 방확장 앞 틔어 조망나옴 정릉초교 북한산보국문역 북한산둘레",
-      "realtor": "부동산써브(02-943-8500)공인중개사사무소"
-    },
-    {
-      "articleNo": "2655666998",
-      "tradeType": "매매",
-      "exclusiveM2": 60,
-      "supplyM2": 79,
-      "price": 78000,
-      "rent": 0,
-      "floor": "중/14",
-      "direction": "동향",
-      "building": "128동",
-      "confirmYmd": "20261015",
-      "feature": "북한산둘레길인접,정릉초인접,뻥뷰,아이키우기좋아요",
-      "realtor": "굿모닝(02-942-1004)공인중개사사무소"
-    },
-    {
-      "articleNo": "2655762514",
-      "tradeType": "매매",
-      "exclusiveM2": 59,
-      "supplyM2": 81,
-      "price": 69000,
-      "rent": 0,
-      "floor": "15/15",
-      "direction": "동향",
-      "building": "125동",
-      "confirmYmd": "20261016",
-      "feature": "세안고.대출가능.샷시포함. 특올수리. 올마루. 올확장",
-      "realtor": "미스터홈즈부동산중개성북정릉센터"
-    },
-    {
-      "articleNo": "2655762706",
+      "articleNo": "2656751243",
       "tradeType": "매매",
       "exclusiveM2": 59,
       "supplyM2": 81,
@@ -829,9 +668,205 @@
       "floor": "저/15",
       "direction": "동향",
       "building": "125동",
-      "confirmYmd": "20261016",
-      "feature": "빠른입주가능. 최상급 올수리매물. 컨디션최상.",
-      "realtor": "미스터홈즈부동산중개성북정릉센터"
+      "confirmYmd": "20261021",
+      "feature": "샷시 포함 올수리 된 집 정류장 어린이집 이용편리한 동 즉시입주가능",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2656856456",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 141,
+      "price": 88000,
+      "rent": 0,
+      "floor": "저/18",
+      "direction": "남향",
+      "building": "113동",
+      "confirmYmd": "20261021",
+      "feature": "정남향 전체수리된 깨끗한 집입니다",
+      "realtor": "월드(단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2656926302",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 85,
+      "price": 72000,
+      "rent": 0,
+      "floor": "6/15",
+      "direction": "동향",
+      "building": "126동",
+      "confirmYmd": "20261022",
+      "feature": "올수리 안방베란다보너스공간 끝집 26년도 보일러교체 전자계약가능",
+      "realtor": "리앤홍부동산공인중개사사무소"
+    },
+    {
+      "articleNo": "2656972997",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 81,
+      "price": 69000,
+      "rent": 0,
+      "floor": "1/18",
+      "direction": "동향",
+      "building": "124동",
+      "confirmYmd": "20261022",
+      "feature": "올수리 내년 1월 실입주 가능한 집으로 추천드리는 아이키우기 좋은 동",
+      "realtor": "풍림(02-909-8249)공인중개사사무소"
+    },
+    {
+      "articleNo": "2656998197",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 82000,
+      "rent": 0,
+      "floor": "고/20",
+      "direction": "동향",
+      "building": "117동",
+      "confirmYmd": "20261022",
+      "feature": "트인전망으로 로얄층 단지 중앙에 위치하여 추천드리는 매물",
+      "realtor": "풍림단지내공인중개사사무소"
+    },
+    {
+      "articleNo": "2656999189",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 80000,
+      "rent": 0,
+      "floor": "고/20",
+      "direction": "동향",
+      "building": "117동",
+      "confirmYmd": "20261022",
+      "feature": "올수리 중문 트인전망으로 로얄층 단지 중앙에 위치하여 추천드리는 매물",
+      "realtor": "풍림단지내공인중개사사무소"
+    },
+    {
+      "articleNo": "2657001451",
+      "tradeType": "매매",
+      "exclusiveM2": 60,
+      "supplyM2": 79,
+      "price": 78000,
+      "rent": 0,
+      "floor": "고/14",
+      "direction": "남향",
+      "building": "127동",
+      "confirmYmd": "20261022",
+      "feature": "정남향 로얄동 로얄층 계단식 매물로 수리되어 탁트인 전망 추천매물",
+      "realtor": "풍림단지내공인중개사사무소"
+    },
+    {
+      "articleNo": "2657127162",
+      "tradeType": "전세",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 55000,
+      "rent": 0,
+      "floor": "저/18",
+      "direction": "남향",
+      "building": "119동",
+      "confirmYmd": "20261022",
+      "feature": "출입 편리한 로얄동 채광량 풍부한 남향 전망 있는 집",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2657197301",
+      "tradeType": "매매",
+      "exclusiveM2": 59,
+      "supplyM2": 81,
+      "price": 69000,
+      "rent": 0,
+      "floor": "15/15",
+      "direction": "동향",
+      "building": "125동",
+      "confirmYmd": "20261023",
+      "feature": "폴딩도어 확장 올수리 세안고 진행되는 매물입니다. 전자계약 가능합니다.",
+      "realtor": "삼성(02-915-0020)공인중개사사무소"
+    },
+    {
+      "articleNo": "2657229872",
+      "tradeType": "매매",
+      "exclusiveM2": 114,
+      "supplyM2": 141,
+      "price": 85000,
+      "rent": 0,
+      "floor": "중/18",
+      "direction": "남향",
+      "building": "118동",
+      "confirmYmd": "20261023",
+      "feature": "입주협의 채광 좋은 남향집으로 추천드리는 매물 내집마련의 기회",
+      "realtor": "풍림(02-909-8249)공인중개사사무소"
+    },
+    {
+      "articleNo": "2657230825",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 80000,
+      "rent": 0,
+      "floor": "중/20",
+      "direction": "동향",
+      "building": "112동",
+      "confirmYmd": "20261023",
+      "feature": "작은방 확장 된 올수리 된 집으로 깔끔하며 입주 협의 가능합니다",
+      "realtor": "풍림(02-909-8249)공인중개사사무소"
+    },
+    {
+      "articleNo": "2657238273",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 105,
+      "price": 80000,
+      "rent": 0,
+      "floor": "저/15",
+      "direction": "동향",
+      "building": "107동",
+      "confirmYmd": "20261023",
+      "feature": "입주협의 올수리된 집으로 추천드리는 매물 숲 전망으로 쾌적",
+      "realtor": "풍림단지내공인중개사사무소"
+    },
+    {
+      "articleNo": "2657240195",
+      "tradeType": "전세",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 60000,
+      "rent": 0,
+      "floor": "저/20",
+      "direction": "동향",
+      "building": "112동",
+      "confirmYmd": "20261023",
+      "feature": "정원같은 숲속같은 뷰 작은방 확장 수리된 깨끗한 집입니다.",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2657240467",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 108,
+      "price": 80000,
+      "rent": 0,
+      "floor": "저/20",
+      "direction": "동향",
+      "building": "112동",
+      "confirmYmd": "20261023",
+      "feature": "정원같은 숲속같은 뷰 작은방 확장 수리된 깨끗한 집입니다.",
+      "realtor": "아이원(풍림단지내)공인중개사사무소"
+    },
+    {
+      "articleNo": "2657273788",
+      "tradeType": "매매",
+      "exclusiveM2": 60,
+      "supplyM2": 79,
+      "price": 78000,
+      "rent": 0,
+      "floor": "중/14",
+      "direction": "동향",
+      "building": "128동",
+      "confirmYmd": "20261023",
+      "feature": "전자계약 공동환영 조용한 단지로 전망 좋은집",
+      "realtor": "가온누리부동산중개법인주식회사"
     }
   ]
 }

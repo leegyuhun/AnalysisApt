@@ -1,8 +1,8 @@
 {
   "complexNo": "108142",
   "complexName": "신내우디안1단지",
-  "scrapedAt": "2026-10-16T00:53:48.960Z",
-  "totalCount": 16,
+  "scrapedAt": "2026-10-23T06:56:33.503Z",
+  "totalCount": 14,
   "detail": {
     "address": "서울시 중랑구 신내동",
     "totalHouseHold": 1402,
@@ -17,15 +17,10 @@
   "byTradeType": [
     {
       "tradeType": "매매",
-      "total": 16,
-      "minPrice": 77000,
+      "total": 14,
+      "minPrice": 80000,
       "maxPrice": 120000,
       "priceBands": [
-        {
-          "lo": 75000,
-          "hi": 80000,
-          "label": "7.5억"
-        },
         {
           "lo": 80000,
           "hi": 85000,
@@ -75,18 +70,18 @@
       "areas": [
         {
           "exclusiveM2": 59,
-          "supplyM2": 85,
-          "pyeong": 26,
-          "count": 3,
-          "min": 77000,
+          "supplyM2": 84,
+          "pyeong": 25,
+          "count": 2,
+          "min": 80000,
           "max": 86000,
-          "median": 80000
+          "median": 83000
         },
         {
           "exclusiveM2": 84,
           "supplyM2": 120,
           "pyeong": 36,
-          "count": 7,
+          "count": 6,
           "min": 88000,
           "max": 100000,
           "median": 92000
@@ -105,7 +100,6 @@
         [
           1,
           1,
-          1,
           0,
           0,
           0,
@@ -116,9 +110,8 @@
         ],
         [
           0,
-          0,
           1,
-          4,
+          3,
           1,
           1,
           0,
@@ -127,7 +120,6 @@
           0
         ],
         [
-          0,
           0,
           0,
           2,
@@ -140,15 +132,14 @@
         ]
       ],
       "rowTotals": [
-        3,
-        7,
+        2,
+        6,
         6
       ],
       "colTotals": [
         1,
-        1,
         2,
-        6,
+        5,
         2,
         3,
         0,
@@ -159,20 +150,6 @@
     }
   ],
   "articles": [
-    {
-      "articleNo": "2650657121",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 119,
-      "price": 100000,
-      "rent": 0,
-      "floor": "고/22",
-      "direction": "남향",
-      "building": "112동",
-      "confirmYmd": "20260918",
-      "feature": "4베이, 단독세대, 최고의 전망,  욕실리모델링, 채광좋은정남향, 입주가",
-      "realtor": "우디안샛별부동산공인중개사사무소"
-    },
     {
       "articleNo": "2651807460",
       "tradeType": "매매",
@@ -188,34 +165,6 @@
       "realtor": "우디안공인중개사사무소"
     },
     {
-      "articleNo": "2653578268",
-      "tradeType": "매매",
-      "exclusiveM2": 101,
-      "supplyM2": 142,
-      "price": 102000,
-      "rent": 0,
-      "floor": "8/22",
-      "direction": "남향",
-      "building": "112동",
-      "confirmYmd": "20261006",
-      "feature": "방4, 욕실2, 4베이구조, 밝은남향, 확장형, 주인거주로 바로 입주가능",
-      "realtor": "우디안샛별부동산공인중개사사무소"
-    },
-    {
-      "articleNo": "2653963767",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 120,
-      "price": 90000,
-      "rent": 0,
-      "floor": "고/21",
-      "direction": "남동향",
-      "building": "113동",
-      "confirmYmd": "20261007",
-      "feature": "뻥뷰 거실과 방 모두 산뷰 조용한동 11월 30일 입주협의",
-      "realtor": "우디안시티 공인중개사사무소"
-    },
-    {
       "articleNo": "2654499463",
       "tradeType": "매매",
       "exclusiveM2": 101,
@@ -228,20 +177,6 @@
       "confirmYmd": "20261010",
       "feature": "조망굿, 남향, 방4화2, 판상형 4베이구조, 27년 1월 입주협의",
       "realtor": "우디안 탑 공인중개사사무소"
-    },
-    {
-      "articleNo": "2654747764",
-      "tradeType": "매매",
-      "exclusiveM2": 101,
-      "supplyM2": 142,
-      "price": 92000,
-      "rent": 0,
-      "floor": "저/22",
-      "direction": "남향",
-      "building": "112동",
-      "confirmYmd": "20261012",
-      "feature": "남향  붙박이장 중문 줄눈 주인거주 주출입구 버스정류장 새솔초 가까운 동",
-      "realtor": "우디안시티 공인중개사사무소"
     },
     {
       "articleNo": "2654750407",
@@ -272,20 +207,6 @@
       "realtor": "봉화산역 공인중개사사무소"
     },
     {
-      "articleNo": "2655116881",
-      "tradeType": "매매",
-      "exclusiveM2": 59,
-      "supplyM2": 85,
-      "price": 77000,
-      "rent": 0,
-      "floor": "저/21",
-      "direction": "남서향",
-      "building": "115동",
-      "confirmYmd": "20261013",
-      "feature": "급매, 방3화2, 조망굿, 생활편리, 27년1월13일 입주,조정가",
-      "realtor": "우디안 탑 공인중개사사무소"
-    },
-    {
       "articleNo": "2655213457",
       "tradeType": "매매",
       "exclusiveM2": 84,
@@ -300,7 +221,35 @@
       "realtor": "우디안시티 공인중개사사무소"
     },
     {
-      "articleNo": "2655326524",
+      "articleNo": "2656503952",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 102000,
+      "rent": 0,
+      "floor": "중/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20261020",
+      "feature": "채광좋은남향. 선호하는4bay구조. 주인거주하여깔끔",
+      "realtor": "우디안샛별부동산공인중개사사무소"
+    },
+    {
+      "articleNo": "2656505339",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 92000,
+      "rent": 0,
+      "floor": "저/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20261020",
+      "feature": "채광좋은남향. 안방한샘붙박이장. 중문. 줄눈시공. 주인거주. 입주가",
+      "realtor": "우디안샛별부동산공인중개사사무소"
+    },
+    {
+      "articleNo": "2656812942",
       "tradeType": "매매",
       "exclusiveM2": 59,
       "supplyM2": 85,
@@ -309,12 +258,12 @@
       "floor": "4/21",
       "direction": "남서향",
       "building": "110동",
-      "confirmYmd": "20261014",
+      "confirmYmd": "20261021",
       "feature": "전망굿 욕실2개 관리상태  좋아요 로얄동  입주날짜 협의",
       "realtor": "우디안시티 공인중개사사무소"
     },
     {
-      "articleNo": "2655327892",
+      "articleNo": "2656813127",
       "tradeType": "매매",
       "exclusiveM2": 84,
       "supplyM2": 118,
@@ -323,40 +272,12 @@
       "floor": "고/24",
       "direction": "남서향",
       "building": "102동",
-      "confirmYmd": "20261014",
+      "confirmYmd": "20261021",
       "feature": "포베이 선호 구조  뻥뷰 환하고 밝은 집 내부 깔끔 주출입구동  주인거주",
       "realtor": "우디안시티 공인중개사사무소"
     },
     {
-      "articleNo": "2655508610",
-      "tradeType": "매매",
-      "exclusiveM2": 84,
-      "supplyM2": 120,
-      "price": 88000,
-      "rent": 0,
-      "floor": "저/22",
-      "direction": "남서향",
-      "building": "112동",
-      "confirmYmd": "20261015",
-      "feature": "귀한 비확장 타입, 조망굿, 수납공간 많고 버스정류장 가까워요, 입주협의",
-      "realtor": "우디안 탑 공인중개사사무소"
-    },
-    {
-      "articleNo": "2655531805",
-      "tradeType": "매매",
-      "exclusiveM2": 101,
-      "supplyM2": 142,
-      "price": 93000,
-      "rent": 0,
-      "floor": "13/22",
-      "direction": "남향",
-      "building": "112동",
-      "confirmYmd": "20261015",
-      "feature": "입주협의 관리 잘되어 컨디션 좋은 남향집",
-      "realtor": "봉화산역 공인중개사사무소"
-    },
-    {
-      "articleNo": "2655662567",
+      "articleNo": "2657088410",
       "tradeType": "매매",
       "exclusiveM2": 84,
       "supplyM2": 120,
@@ -365,12 +286,12 @@
       "floor": "중/20",
       "direction": "남서향",
       "building": "104동",
-      "confirmYmd": "20261015",
-      "feature": "주출입구동 입주협의 깨끗",
-      "realtor": "우디안시티 공인중개사사무소"
+      "confirmYmd": "20261022",
+      "feature": "확장형 작은방넓고수납공간좋은인기타입 밝고환한며바람길탁월 집주인거주깔",
+      "realtor": "우디안 탑 공인중개사사무소"
     },
     {
-      "articleNo": "2655721785",
+      "articleNo": "2657088626",
       "tradeType": "매매",
       "exclusiveM2": 84,
       "supplyM2": 120,
@@ -379,8 +300,50 @@
       "floor": "고/20",
       "direction": "남서향",
       "building": "104동",
-      "confirmYmd": "20261015",
+      "confirmYmd": "20261022",
       "feature": "조망 완전 좋은집, 신내역과 상가 가까워 생활이 편리, 입주협의",
+      "realtor": "우디안 탑 공인중개사사무소"
+    },
+    {
+      "articleNo": "2657302849",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 119,
+      "price": 100000,
+      "rent": 0,
+      "floor": "고/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20261023",
+      "feature": "옆집없는 단독세대, 남향, 조망굿, 욕실공사,귀한 비확장, 입주협의",
+      "realtor": "우디안 탑 공인중개사사무소"
+    },
+    {
+      "articleNo": "2657367587",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 120,
+      "price": 88000,
+      "rent": 0,
+      "floor": "저/22",
+      "direction": "남서향",
+      "building": "112동",
+      "confirmYmd": "20261023",
+      "feature": "귀한 비확장 타입, 조망굿, 수납공간 많고 버스정류장 가까워요, 입주협의",
+      "realtor": "우디안 탑 공인중개사사무소"
+    },
+    {
+      "articleNo": "2657368128",
+      "tradeType": "매매",
+      "exclusiveM2": 101,
+      "supplyM2": 142,
+      "price": 93000,
+      "rent": 0,
+      "floor": "13/22",
+      "direction": "남향",
+      "building": "112동",
+      "confirmYmd": "20261023",
+      "feature": "조망굿, 남향, 방4화2, 판상형 4베이구조, 주인거주, 입주협의",
       "realtor": "우디안 탑 공인중개사사무소"
     }
   ]

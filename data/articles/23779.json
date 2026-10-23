@@ -1,8 +1,8 @@
 {
   "complexNo": "23779",
   "complexName": "정릉힐스테이트3차",
-  "scrapedAt": "2026-10-16T00:53:53.329Z",
-  "totalCount": 3,
+  "scrapedAt": "2026-10-23T06:56:37.866Z",
+  "totalCount": 5,
   "detail": {
     "address": "서울시 성북구 정릉동",
     "totalHouseHold": 522,
@@ -17,14 +17,19 @@
   "byTradeType": [
     {
       "tradeType": "매매",
-      "total": 3,
+      "total": 5,
       "minPrice": 90000,
-      "maxPrice": 91000,
+      "maxPrice": 98000,
       "priceBands": [
         {
           "lo": 90000,
           "hi": 95000,
           "label": "9억"
+        },
+        {
+          "lo": 95000,
+          "hi": 100000,
+          "label": "9.5억"
         }
       ],
       "areas": [
@@ -32,22 +37,24 @@
           "exclusiveM2": 84,
           "supplyM2": 110,
           "pyeong": 33,
-          "count": 3,
+          "count": 5,
           "min": 90000,
-          "max": 91000,
-          "median": 90000
+          "max": 98000,
+          "median": 91000
         }
       ],
       "matrix": [
         [
-          3
+          4,
+          1
         ]
       ],
       "rowTotals": [
-        3
+        5
       ],
       "colTotals": [
-        3
+        4,
+        1
       ]
     }
   ],
@@ -67,21 +74,35 @@
       "realtor": "아이원(풍림단지내)공인중개사사무소"
     },
     {
-      "articleNo": "2655306316",
+      "articleNo": "2657004656",
       "tradeType": "매매",
       "exclusiveM2": 84,
       "supplyM2": 110,
-      "price": 90000,
+      "price": 91000,
       "rent": 0,
-      "floor": "2/10",
-      "direction": "남향",
-      "building": "310동",
-      "confirmYmd": "20261014",
-      "feature": "세안고 매매 내 집 마련 저렴한 매물로 추천드리는 남향집 작은방2확장",
-      "realtor": "풍림(02-909-8249)공인중개사사무소"
+      "floor": "저/10",
+      "direction": "동향",
+      "building": "309동",
+      "confirmYmd": "20261022",
+      "feature": "올확장 층고높은동 주인거주 정상입주",
+      "realtor": "OK공인중개사사무소"
     },
     {
-      "articleNo": "2655566661",
+      "articleNo": "2657127792",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 110,
+      "price": 98000,
+      "rent": 0,
+      "floor": "저/10",
+      "direction": "남향",
+      "building": "310동",
+      "confirmYmd": "20261022",
+      "feature": "남향 올확장 주인거주 깨끗합니다. 전자계약 가능합니다.",
+      "realtor": "삼성(02-915-0020)공인중개사사무소"
+    },
+    {
+      "articleNo": "2657238835",
       "tradeType": "매매",
       "exclusiveM2": 84,
       "supplyM2": 110,
@@ -90,9 +111,23 @@
       "floor": "중/10",
       "direction": "남향",
       "building": "310동",
-      "confirmYmd": "20261015",
-      "feature": "남향 주인거주 작은방 확장 입주협의",
-      "realtor": "OK공인중개사사무소"
+      "confirmYmd": "20261023",
+      "feature": "성북문화의 집 이용편리 남향 방확장 주인거주로 집 상태 깔끔",
+      "realtor": "풍림단지내공인중개사사무소"
+    },
+    {
+      "articleNo": "2657239008",
+      "tradeType": "매매",
+      "exclusiveM2": 84,
+      "supplyM2": 110,
+      "price": 90000,
+      "rent": 0,
+      "floor": "2/10",
+      "direction": "남향",
+      "building": "310동",
+      "confirmYmd": "20261023",
+      "feature": "세안고매매 저렴한 매물로 후문과 가까워 생활 편리 작은방2 확장 깔끔",
+      "realtor": "풍림단지내공인중개사사무소"
     }
   ]
 }
